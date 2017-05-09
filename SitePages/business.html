@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--<%@ Page Language="C#" %>-->
+<!--<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<html>
+
+<head>
+    	<meta content="full" name="WebPartPageExpansion">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+	<!-- Title -->
+
+
+    <title>IT Major Business Case Summary</title>
+
+    <link rel="icon" type="image/png" href="../SiteAssets/img/favicon.ico" />
+
+
+    <!-- Animation library for notifications -->
+    <!--<link rel="stylesheet" type="text/css" href="../SiteAssets/css/animate.min.css" />-->
+
+    <!-- Light Bootstrap Table core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/light-bootstrap-dashboard.css" />
+
+
+    <!-- DC Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/dc.min.css" />
+
+    <!-- Tooltip Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/tooltip.css" />
+
+    <!-- Fonts and icons -->
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' />-->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/pe-icon-7-stroke.css" />
+    
+</head>
+
+<body>
+
+    <!-- SharePoint security validation aspx controls -->
+    <!-- https://msdn.microsoft.com/en-us/library/office/ms472879%28v=office.14%29.aspx -->
+    <form id="Form1" method="post" runat="server">
+        <SharePoint:FormDigest ID="FormDigest1" runat="server"></SharePoint:FormDigest>
+
+
+        <!-- body wrapper -->
+        <div class="wrapper">
+
+            <!-- sidebar -->
+            <div class="sidebar" data-color="blue">
+
+                <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+ -->
+
+                <div class="sidebar-wrapper">
+                    <div class="logo">
+                    <!--<div>-->
+                        <ul class="nav">
+                            <li>
+                                <a href="index.aspx">
+                                    <i class="pe-7s-home" style="font-size:34px;margin-right:0px"></i>
+                                    <p class="simple-text" style="padding:0px;margin-left:15px">HOME</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--<a href="index.aspx">-->
+                        <!--<i class="pe-7s-home" aria-hidden="true"></i>-->
+                        <!--<a href="index.aspx" class="simple-text">HOME</a>-->
+                        <!--</a>-->
+                    </div>
+
+                    <ul class="nav">
+                        <li>
+                            <a href="portfolio.aspx">
+                                <i class="pe-7s-graph"></i>
+                                <p>Portfolio View</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="investment.aspx">
+                                <i class="pe-7s-graph3"></i>
+                                <p>IT Investment View</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="itar.aspx">
+                                <i class="pe-7s-graph1"></i>
+                                <p>IT Acquisition View</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="savings.aspx">
+                                <i class="pe-7s-graph2"></i>
+                                <p>IT Cost Savings &#38; Avoidance View</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="systems.aspx">
+                                <i class="pe-7s-graph2"></i>
+                                <p>IT Systems View</p>
+                            </a>
+                        </li>
+                        <!--<li class="active">-->
+                        <!--    <a href="business.aspx">-->
+                        <!--        <i class="pe-7s-note2"></i>-->
+                        <!--        <p>IT Major Business Case View</p>-->
+                        <!--    </a>-->
+                        <!--</li>-->
+                        <li>
+                            <a target="_blank" href="MajorITInvestments.aspx">
+                                <i class="pe-7s-graph"></i>
+                                <p>IT Major Investments View</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-wrapper -->
+            </div>
+            <!-- /.sidebard -->
+
+            <!-- main panel -->
+            <div class="main-panel">
+
+                <!-- navigation bar -->
+                <nav class="navbar navbar-default navbar-fixed">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse">
+                            <!-- numerical displays -->
+                            <div id="header" class="row">
+                                <div class="col-sm-12">
+                                    <div class="row" style="padding-top:5px;padding-bottom:33px">
+										<div class="col-sm-4">
+											<div>
+												<h5 class="w3-text-uppercase">Business Case Summary:</h5>
+												<div id="components"></div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+										</div>
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.col-sm-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+                <!-- /.navbar -->
+
+                <!-- dashboard content -->
+                <div id="dashboard" class="content">
+
+                    <!-- dashboard container -->
+                    <div class="container-fluid">
+                        
+                        <!-- summary data table -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Investment Summary</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="data-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                        <!-- project manager and lifecycle costs data table -->
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Program Manager</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="pm-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">LifeCycle Costs</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="lifecycle-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                        <!-- services and risks data table -->
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Investment Services and Systems</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="services-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Investment Risks</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="risks-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                        <!-- projects data table -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Project Information</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="projects-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                        <!-- contracts and operations data table -->
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Contract Information</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="contracts-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card ">
+                                    <div class="header">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="title">Operational Performance & Analysis</h4>
+                                                <p class="category"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <table class="table table-condensed table-bordered table-responsive" id="operations-table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+                    <!-- /.container-fluid -->
+
+                </div>
+                <!-- #dashboard -->
+
+            </div>
+            <!-- /.main-panel -->
+
+        </div>
+        <!-- /.wrapper -->
+
+        <!-- item modal -->
+        <div class="w3-modal w3-animate-opacity" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="w3-modal-content w3-card-4">
+                
+                    <header class="w3-container"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="modal-title" id="modalLabel">Investment Details</h4>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </header>
+                    <!-- /.modal-header -->
+                    <div class="w3-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="tableDiv" style="margin-top:20px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-body -->
+                    <footer class="w3-container"></footer>
+                    <!-- /.modal-footer -->
+                </div>
+                <!-- /.w3-modal-content -->
+        </div>
+        <!-- /.modal -->
+
+    </form>
+    <!-- #Form1 -->
+
+</body>
+
+<!-- SharePoint Core JavaScript -->
+<SharePoint:ScriptLink name="clienttemplates.js" runat="server" LoadAfterUI="true" Localizable="false"/>
+<SharePoint:ScriptLink name="clientforms.js" runat="server" LoadAfterUI="true" Localizable="false"/>
+<SharePoint:ScriptLink name="clientpeoplepicker.js" runat="server" LoadAfterUI="true" Localizable="false"/>
+<SharePoint:ScriptLink name="autofill.js" runat="server" LoadAfterUI="true" Localizable="false"/>
+<script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+<script type="text/javascript" src="/_layouts/1033/init.js"></script>
+<script type="text/javascript" src="/_layouts/15/core.js"></script>
+<script type="text/javascript" src="/_layouts/15/sp.core.js"></script>
+<script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+<script type="text/javascript" src="/_layouts/15/sp.js"></script>
+
+<!-- Core JS Files -->
+<script src="../SiteAssets/js/jquery.min.js" type="text/javascript"></script>
+<script src="../SiteAssets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Checkbox, Radio & Switch Plugins -->
+<!--<script src="../SiteAssets/js/bootstrap-checkbox-radio-switch.js"></script>-->
+
+<!-- Charts Plugin -->
+<!--<script src="../SiteAssets/js/chartist.min.js"></script>-->
+
+<!-- Notifications Plugin -->
+<!--<script src="../SiteAssets/js/bootstrap-notify.js"></script>-->
+
+<!-- Google Maps Plugin -->
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+
+<!-- D3 -->
+<script type="text/javascript" src="../SiteAssets/js/d3.v3.min.js" charset="utf-8"></script>
+
+<!-- D3 Queue -->
+<script type="text/javascript" src="../SiteAssets/js/d3-queue.v2.min.js" charset="utf-8"></script>
+
+<!-- Crossfilter -->
+<script type="text/javascript" src="../SiteAssets/js/crossfilter.min.js"></script>
+
+<!-- DC.js -->
+<script type="text/javascript" src="../SiteAssets/js/dc.min.js"></script>
+
+<!-- Datatables Core JavaScript -->
+<script type="text/javascript" src="../SiteAssets/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/js/dataTables.bootstrap.min.js"></script>
+
+<!-- Moment.js -->
+<script type="text/javascript" src="../SiteAssets/js/moment.min.js"></script>
+
+<!-- SheetJS -->
+<script type="text/javascript" src="../SiteAssets/js/xlsx.core.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/js/Blob.js"></script>
+<script type="text/javascript" src="../SiteAssets/js/FileSaver.js"></script>
+<script type="text/javascript" src="../SiteAssets/js/Export2Excel.js"></script>
+
+<!-- Spin.js -->
+<script type="text/javascript" src="../SiteAssets/js/spin.min.js"></script>
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script type="text/javascript" src="../SiteAssets/js/light-bootstrap-dashboard.js"></script>
+
+<!-- Colorbrewer -->
+<script  type="text/JavaScript" src="../SiteAssets/js/colorbrewer.min.js"></script>
+
+<!-- JavaScript Utilities -->
+<script type="text/javascript" src="../SiteAssets/js/utils.js"></script>
+
+<!-- Custom JavaScript -->
+<script type="text/javascript" src="../SiteAssets/js/business.js"></script>
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+
+    //     demo.initChartist();
+
+    //     $.notify({
+    //         icon: 'pe-7s-gift',
+    //         message: "Welcome to <b>Light Bootstrap Investment Summary</b> - a beautiful freebie for every web developer."
+
+    //     }, {
+    //         type: 'info',
+    //         timer: 4000
+    //     });
+
+    // });
+</script>
+
+</html>

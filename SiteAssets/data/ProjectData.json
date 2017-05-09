@@ -1,0 +1,3696 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2449)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2449)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "07cc6344-a84e-4fcc-81c5-53d2b93258ca",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "86cd3619-29ba-4acf-b378-0da2487fec59",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "594",
+          "ProjectName": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c7cb6f3c-337b-4bb0-88db-9dda7edc199e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2449,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 2.954621,
+        "CostVariance": 6.98,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2002-10-01T04:00:00Z",
+        "CompletionDate": "2021-09-30T04:00:00Z",
+        "ID": 2449
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2450)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2450)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "07c73f56-7c1b-4a7c-af21-7564c69e2651",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "fb1c1875-0740-4fde-96e9-32e51b5fd9bd",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "2929",
+          "ProjectName": "Federal Bureau of Investigation (FBI) Phase 2 (CJIS) Pilot"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "99d1ebdf-f54a-429a-8fee-a59f11aa11c6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2450,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.627596,
+        "CostVariance": 7.47,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -110,
+        "ScheduleVariance": -13.72,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2010-10-18T04:00:00Z",
+        "CompletionDate": "2012-12-28T05:00:00Z",
+        "ID": 2450
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2451)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2451)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4ec1b536-6201-4f67-bd6f-f90e2ec979ec",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "e3b2e05d-3ecb-49ce-b9f6-9cdf13f1c860",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "2930",
+          "ProjectName": "United States Marshals Service (USMS) Phase 2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "28850a3e-7087-4112-8bad-2ee176cb381a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2451,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.438415,
+        "CostVariance": 7.87,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2010-03-01T05:00:00Z",
+        "CompletionDate": "2013-11-16T05:00:00Z",
+        "ID": 2451
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2452)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2452)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "f6d37db5-96ee-46f4-b906-8d97866f3e1f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "491a60f0-ca5b-4f77-b97f-060d88274bb0",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "2931",
+          "ProjectName": "Bureau of Prisons (BOP)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ba34936f-ee06-4786-b2fc-74dd81e69ecf",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2452,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.097416,
+        "CostVariance": 13.04,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2012-01-01T05:00:00Z",
+        "CompletionDate": "2013-01-02T05:00:00Z",
+        "ID": 2452
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2453)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2453)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b3f52195-9ef9-4f72-9b16-e0099f432c47",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "ecdeccfd-fb73-4446-9f63-19c6560d5bb8",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "2932",
+          "ProjectName": "Asset Forfeiture Program (AFP) Phase 2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7e99fc48-ff0c-4365-a1bd-a856c5c4abf7",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2453,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.131149,
+        "CostVariance": 2.19,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 46,
+        "ScheduleVariance": 5.13,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2010-11-01T04:00:00Z",
+        "CompletionDate": "2013-04-15T04:00:00Z",
+        "ID": 2453
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2454)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2454)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4651c73a-dc08-45a3-9372-27e571284b5b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "d2ad5020-2775-491a-a838-944a97e25163",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7775",
+          "ProjectName": "UFMS SBU Consolidation"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c547ee1e-85cb-4843-9dee-84af4213d8ba",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2454,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.072923,
+        "CostVariance": -0.53,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -39,
+        "ScheduleVariance": -6.44,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2012-05-14T04:00:00Z",
+        "CompletionDate": "2014-07-10T04:00:00Z",
+        "ID": 2454
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2455)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2455)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "6e6eb709-caee-49df-9f98-2e979b3c2339",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "fe50437b-388d-4798-9423-6a8dc94cb77b",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7777",
+          "ProjectName": "Federal Bureau of Investigation (FBI) Phase 3 Full Financial &amp; Acquisition Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bf4c2721-6f82-4d53-bd53-b8cdfb218a86",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2455,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.001141,
+        "CostVariance": -0.01,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2012-10-15T04:00:00Z",
+        "CompletionDate": "2013-12-31T05:00:00Z",
+        "ID": 2455
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2456)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2456)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "100ef012-3c57-4b17-99f9-2fa402c7a148",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "7bd07269-0740-4432-bfaa-377e8124da83",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11099",
+          "ProjectName": "Office of the Inspector General Migration"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "2e5b7355-051c-4423-997c-54b783bbbf9b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2456,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.338502,
+        "CostVariance": 6.44,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2014-07-17T04:00:00Z",
+        "CompletionDate": "2015-12-14T05:00:00Z",
+        "ID": 2456
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2457)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2457)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "983e1f2d-91fa-4341-99c9-1d941dc401ec",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "45a02f88-39b1-471e-97c0-6c3bf782a075",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "13775",
+          "ProjectName": "OBD UFMS Wave 2 Implementation"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "75925488-dd21-45ab-8466-85fe63783c69",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2457,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.071654,
+        "CostVariance": 0.88,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2015-05-11T04:00:00Z",
+        "CompletionDate": "2016-12-12T05:00:00Z",
+        "ID": 2457
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2458)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2458)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "73c5a9db-edcb-49a9-8059-63497d4456a8",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "a4aca6b7-43c8-448c-81a8-8ebc7f8b6ebb",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "3349",
+          "ProjectName": "LEO Enterprise Portal (LEO EP) Transition"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7f497ce9-a406-4413-bd88-3976cfb8d116",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 2458,
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "CostVarianceDollars": 0.0015,
+        "CostVariance": 0.1,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -15,
+        "ScheduleVariance": -5,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-08-12T04:00:00Z",
+        "StartDate": "2012-06-07T04:00:00Z",
+        "CompletionDate": "2013-04-03T04:00:00Z",
+        "ID": 2458
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2459)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2459)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "eee1996d-6b73-440f-ae71-d0d49df86656",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "1f026133-b33a-4ec7-90c8-1f40c80c6534",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "555",
+          "ProjectName": "NGCODIS Multi-Lingual Prototype - in support of soutwest borders"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "77216263-901b-4aea-83a7-7478e5d20d2b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2459,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2011-08-01T04:00:00Z",
+        "CompletionDate": "2012-07-31T04:00:00Z",
+        "ID": 2459
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2460)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2460)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "eccaa70d-0718-4e24-bd1f-ef3650272cb6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "ceaaaa05-545b-4259-bc98-0cca83b5f6b5",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "9911",
+          "ProjectName": "NGCODIS 7.0 SP3 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "1699cb2c-939d-4eb5-94b2-bcacff8d2f48",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2460,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 37,
+        "ScheduleVariance": 32.74,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2014-01-23T05:00:00Z",
+        "CompletionDate": "2014-05-16T04:00:00Z",
+        "ID": 2460
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2461)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2461)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a85efa0c-2f8f-4344-8854-5eee5c90e76c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "68d52400-abef-46a2-8f2e-e29b5b41757c",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "9913",
+          "ProjectName": "Rapid DNA Prototype - Phase 1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b01cffed-213c-4ca0-937c-7cd93231983d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2461,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.006,
+        "CostVariance": -0.35,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2013-08-29T04:00:00Z",
+        "CompletionDate": "2014-08-28T04:00:00Z",
+        "ID": 2461
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2462)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2462)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "aa4102f2-e517-4331-95bf-1518605af3d7",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "023d5108-1afb-4b43-adee-675a23034a15",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12507",
+          "ProjectName": "NGCODIS 7.0 SP4 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3e6b996a-8ab2-4910-a20f-7f429dca81ad",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2462,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2014-09-16T04:00:00Z",
+        "CompletionDate": "2014-11-21T05:00:00Z",
+        "ID": 2462
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2463)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2463)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b6a9f66c-5509-4324-a886-beaccb29ce15",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "e59b7c2b-43db-4975-b43a-15f1c75699e3",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12509",
+          "ProjectName": "Rapid DNA Prototype - Phase 2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f398db00-192b-4d15-ac7a-5177ffc93cd6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2463,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2014-08-29T04:00:00Z",
+        "CompletionDate": "2015-12-24T05:00:00Z",
+        "ID": 2463
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2464)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2464)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "492948ec-46a3-4a83-8c70-0165d69c1102",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "d5362612-d757-4b68-9322-72a6013a9f56",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12511",
+          "ProjectName": "DMSS - CODIS 8.0 Development"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c58b3023-630b-48cd-ad8e-5e35931f41bd",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2464,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2016-02-22T05:00:00Z",
+        "CompletionDate": "2017-07-14T04:00:00Z",
+        "ID": 2464
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2465)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2465)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c233e2e0-9de8-4295-b48d-df895d555558",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "2156b419-24e6-40c2-9cfd-f7a406eceaa9",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12513",
+          "ProjectName": "Automated Testing"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "eaeeae92-982a-4319-ad40-e024967a7d49",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2465,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2014-11-24T05:00:00Z",
+        "CompletionDate": "2017-01-31T05:00:00Z",
+        "ID": 2465
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2466)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2466)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "56a856fc-f6aa-4f4c-b211-af8dfc78a7ee",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "32d094e1-59c4-47b7-8c79-6d8482a31df5",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12591",
+          "ProjectName": "NGCODIS 7.0 SP5 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b704d2d3-c30b-49d0-b825-50fa46ad4fe0",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2466,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2015-05-06T04:00:00Z",
+        "CompletionDate": "2015-08-14T04:00:00Z",
+        "ID": 2466
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2467)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2467)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b1e468fd-057a-4866-8b9d-c0436cca1b60",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "14f22ea9-32f0-4e00-b0d0-f28f526214c9",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "13598",
+          "ProjectName": "NGCODIS 7.0 SP6 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "be08c58d-8b85-4d04-91bf-fe0bff4ddc48",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2467,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 7,
+        "ScheduleVariance": 6.36,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2015-12-02T05:00:00Z",
+        "CompletionDate": "2016-03-21T04:00:00Z",
+        "ID": 2467
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2468)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2468)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "1c09e417-0369-403c-af77-7cc2ac0d5f11",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "296d9daf-6d8c-477a-846c-21b0c338cb72",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "14320",
+          "ProjectName": "NGCODIS 7.0 SP7 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "34d2ed75-64d4-4012-9837-2e808817846b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2468,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2016-10-04T04:00:00Z",
+        "CompletionDate": "2017-01-26T05:00:00Z",
+        "ID": 2468
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2469)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2469)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "57b113a7-f66c-4293-8bcb-477431c1eb70",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "1ef61562-d923-4e01-ade9-19216453c94a",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "572",
+          "ProjectName": "NCIC CIB Study."
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "6e8e899c-5350-4b28-8b6b-97fd3821b214",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2469,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.007722,
+        "CostVariance": 0.89,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 4,
+        "ScheduleVariance": 1.3,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2011-12-28T05:00:00Z",
+        "CompletionDate": "2012-10-31T04:00:00Z",
+        "ID": 2469
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2470)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2470)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7b4fd00e-8801-4a4e-adf4-f0adcd3cd458",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "f428f947-dc06-4d8f-b7a6-29e822951c30",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7751",
+          "ProjectName": "CIB Development"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "20162dbe-f69a-49e6-9767-5c8fee882185",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2470,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.065785,
+        "CostVariance": 16.18,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": -19,
+        "ScheduleVariance": -2.68,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2013-03-14T04:00:00Z",
+        "CompletionDate": "2015-09-30T04:00:00Z",
+        "ID": 2470
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2471)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2471)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "35a28a69-f33f-40d6-832e-9fe4b6b0c4c5",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "4ec8c110-e128-454c-95ad-364b1868fca8",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11055",
+          "ProjectName": "N3G Formulation"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c9bb5500-f4a1-4c0e-8796-9ab7531c3e50",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2471,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.036014,
+        "CostVariance": -2.59,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2014-10-01T04:00:00Z",
+        "CompletionDate": "2016-12-31T05:00:00Z",
+        "ID": 2471
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2472)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2472)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7094d79e-fca5-4c47-b00d-92ee3ba6bc25",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "eb212cd9-1502-44fb-88b6-ac8b9bae084d",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "14233",
+          "ProjectName": "N3G System Concept Review"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "e1f0e81b-2c75-44e4-971e-966f57b2b42e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2472,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.028179,
+        "CostVariance": 2.74,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2016-10-01T04:00:00Z",
+        "CompletionDate": "2017-09-30T04:00:00Z",
+        "ID": 2472
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2473)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2473)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "89006bfe-f361-4a36-a12b-bda21fbd39be",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "71bec129-bf34-41e9-93f2-0542a2c85d1d",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "561",
+          "ProjectName": "Next Generation Digital Collection System 5000 (NG DCS-5000)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7d7da015-f327-48f4-9bbc-39d49f2c14d9",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2473,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.17,
+        "CostVariance": 1.04,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-22T05:00:00Z",
+        "StartDate": "2011-07-18T04:00:00Z",
+        "CompletionDate": "2012-09-30T04:00:00Z",
+        "ID": 2473
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2474)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2474)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "70cf1731-fd85-4295-8ef9-d24d0d1fecea",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "d7336101-2db6-4371-8864-e240629635aa",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "562",
+          "ProjectName": "Integration and Engineering Services (IES)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0a42355d-c777-4d57-8bab-f7a81809850a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2474,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.785,
+        "CostVariance": 12.83,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-22T05:00:00Z",
+        "StartDate": "2011-10-01T04:00:00Z",
+        "CompletionDate": "2012-09-30T04:00:00Z",
+        "ID": 2474
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2475)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2475)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c3729d0b-ecfa-4616-afe0-2e4d6c6297c8",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "6dd85f04-9950-40b8-89b9-18067d092f4e",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "573",
+          "ProjectName": "NNICS Development Project"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "85cd0a15-41e6-41a3-baf4-9eb7a279593d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2475,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -2.35609,
+        "CostVariance": -4.3,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -231,
+        "ScheduleVariance": -12.87,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2011-05-01T04:00:00Z",
+        "CompletionDate": "2016-03-31T04:00:00Z",
+        "ID": 2475
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2476)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2476)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4ecc8cd7-e2e1-4db7-9acd-332cbfca5718",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "9135b8c3-850f-4fd6-a434-5a11e5946d1d",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "13800",
+          "ProjectName": "NNICS FOC Development"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "69da33fe-a471-4b99-8132-b72c5f09409b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2476,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.184,
+        "CostVariance": -0.51,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -151,
+        "ScheduleVariance": -19.48,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2015-08-01T04:00:00Z",
+        "CompletionDate": "2017-09-14T04:00:00Z",
+        "ID": 2476
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2477)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2477)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4e994ac6-7ff2-4ebc-b4e5-eb26d881f761",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "e05c4f93-9019-42b0-a800-0a4352e1d139",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "552",
+          "ProjectName": "Web Sentry Migration"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "54b7ad79-ebf1-4f16-8b8f-5e88a1cbc128",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2477,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.00001,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 62,
+        "ScheduleVariance": 15.7,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-29T05:00:00Z",
+        "StartDate": "2011-06-01T04:00:00Z",
+        "CompletionDate": "2012-06-30T04:00:00Z",
+        "ID": 2477
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2478)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2478)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5f2eedf8-a605-4731-bf0a-b670f077424e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "a3fe3889-32e4-4fb5-ba0c-f4cc41b3d5e0",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12537",
+          "ProjectName": "Web SENTRY Modernization - Phase II"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "59e0c2c3-2ac4-4218-aa3b-49eb995baf6a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2478,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.0337,
+        "CostVariance": 40,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": 61,
+        "ScheduleVariance": 37.65,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-29T05:00:00Z",
+        "StartDate": "2014-10-01T04:00:00Z",
+        "CompletionDate": "2015-09-30T04:00:00Z",
+        "ID": 2478
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2479)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2479)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9bffde52-dbd0-40bb-bded-66b43acb8938",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "49c7ea34-fe2d-46a7-86bd-cb5a93ce0f60",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "13031",
+          "ProjectName": "Web SENTRY Modernization - Phase III"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ad24eb85-bcd0-46e9-aec4-3b11102337ec",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2479,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-29T05:00:00Z",
+        "StartDate": "2015-09-01T04:00:00Z",
+        "CompletionDate": "2017-01-31T05:00:00Z",
+        "ID": 2479
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2480)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2480)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "cca616f5-ec0f-4c59-af6e-92836b383864",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "c4f7465d-8b91-409e-ae71-bf2d9f62b5e1",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "552",
+          "ProjectName": "Web Sentry Migration"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "799c759e-d8d9-4a41-8325-ea1b76aae040",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2480,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.00001,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 62,
+        "ScheduleVariance": 15.7,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-29T05:00:00Z",
+        "StartDate": "2011-06-01T04:00:00Z",
+        "CompletionDate": "2012-06-30T04:00:00Z",
+        "ID": 2480
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2481)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2481)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "055de0a8-a39a-444d-b783-baae777020a0",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "3638173f-59e8-45d9-af28-9d37df0a1d24",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12537",
+          "ProjectName": "Web SENTRY Modernization - Phase II"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "41e33ea5-5273-4fa0-8a7c-73a2f4804a4f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2481,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.0337,
+        "CostVariance": 40,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": 61,
+        "ScheduleVariance": 37.65,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-29T05:00:00Z",
+        "StartDate": "2014-10-01T04:00:00Z",
+        "CompletionDate": "2015-09-30T04:00:00Z",
+        "ID": 2481
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2482)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2482)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "30acfba4-6be4-4d0b-b04a-565ad98cd9d5",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "b8a869c1-b7cb-42a3-b41c-9b6444e61ac8",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "13031",
+          "ProjectName": "Web SENTRY Modernization - Phase III"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9c26248b-5200-4319-b44d-18f079c9aed6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2482,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-29T05:00:00Z",
+        "StartDate": "2015-09-01T04:00:00Z",
+        "CompletionDate": "2017-01-31T05:00:00Z",
+        "ID": 2482
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2483)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2483)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "38929d17-db2e-4c14-b3db-3483768857ec",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "9c864b51-d423-45bc-82ee-cc0fa4fc864d",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "575",
+          "ProjectName": "SCION Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "594cb335-437d-46d1-9ed2-e68040defafe",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2483,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.206,
+        "CostVariance": -2.43,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2011-10-01T04:00:00Z",
+        "CompletionDate": "2012-09-30T04:00:00Z",
+        "ID": 2483
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2484)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2484)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5a4255c2-6c8e-4a13-a81f-550087520311",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "8255157c-648c-478e-b212-1eff32abfa66",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "576",
+          "ProjectName": "NGSCION Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3f4f4c0d-56f5-4c98-a3b4-23c63730bc2e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2484,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.065,
+        "CostVariance": 37.26,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": 32,
+        "ScheduleVariance": 4.39,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2011-05-02T04:00:00Z",
+        "CompletionDate": "2013-04-30T04:00:00Z",
+        "ID": 2484
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2485)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2485)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8b87bfa0-a6c3-40c3-9648-f1703d548697",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "f4bfc15d-efde-4383-941a-9cc4e73dc929",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "577",
+          "ProjectName": "Site 2 Delivery"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7dcd66b4-ef07-4615-8e60-c9d6719bedbd",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2485,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -7,
+        "ScheduleVariance": -1.96,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2011-07-01T04:00:00Z",
+        "CompletionDate": "2012-06-23T04:00:00Z",
+        "ID": 2485
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2486)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2486)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ce97b22b-b276-4360-b7e8-fa6236127ca6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "e5136004-26ea-4741-9f2c-fcc74f27d8a7",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "578",
+          "ProjectName": "Site 3 Delivery"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c3076e24-7dc3-4431-88c6-16a9c9f7575c",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2486,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -25,
+        "ScheduleVariance": -4.13,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2011-10-31T04:00:00Z",
+        "CompletionDate": "2013-06-28T04:00:00Z",
+        "ID": 2486
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2487)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2487)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5b53b2ff-27b5-402d-927c-f2c19f52b161",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "6131d98c-1121-44c0-ae84-b6065637fcf3",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "579",
+          "ProjectName": "SCION FY 13 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b310763b-ea13-4315-a717-d134295c999f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2487,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.069,
+        "CostVariance": 0.62,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2012-10-01T04:00:00Z",
+        "CompletionDate": "2013-09-30T04:00:00Z",
+        "ID": 2487
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2488)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2488)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e5e2791a-a1c5-4e43-aa69-72dd607e4621",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "ec245d06-3893-469f-9b89-eaa005a2aa41",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7817",
+          "ProjectName": "SCION FY 14 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a9a5a6a5-68ac-4bf6-9fb4-79eb5d51c08b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2488,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.403,
+        "CostVariance": 3.9,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2013-10-01T04:00:00Z",
+        "CompletionDate": "2014-09-30T04:00:00Z",
+        "ID": 2488
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2489)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2489)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8de46a86-2195-41cc-bd3f-50c1fe77cec0",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "59d23b78-bbcb-4da3-8acb-781b48cf9b73",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7819",
+          "ProjectName": "SCION FY 15 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d0eedf3a-b549-47de-8cd6-5709d5d7b6cb",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2489,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.712,
+        "CostVariance": -6.89,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2014-10-01T04:00:00Z",
+        "CompletionDate": "2015-09-30T04:00:00Z",
+        "ID": 2489
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2490)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2490)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "fbe7617e-2ff7-4e9a-939c-196dc06c445f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "9de343c8-dd93-4933-a4d5-078770fabd7c",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12862",
+          "ProjectName": "SCION FY 16 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "61e43621-dd0e-42d1-ada4-e891a25ad6b7",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2490,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2015-10-01T04:00:00Z",
+        "CompletionDate": "2016-09-30T04:00:00Z",
+        "ID": 2490
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2491)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2491)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "493c4977-7d1f-4270-8f6f-49fb2f20ee1b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "fe7f1e04-db3d-4e6a-bcb6-7e1e152b225a",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "14234",
+          "ProjectName": "SCION FY 17 Deployment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b55ab91e-d3fc-4f26-93c8-aa9ec624bf28",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2491,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2016-10-01T04:00:00Z",
+        "CompletionDate": "2017-09-30T04:00:00Z",
+        "ID": 2491
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2492)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2492)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b7ac1745-e2ca-4ba2-ad66-4f3030645794",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "c2c6debb-c94a-4e9e-ba5f-18f9a5e09b0c",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11031",
+          "ProjectName": "Workstation Asset Recovery - Phase 1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "85648477-b975-4492-9267-834e39abeac6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 2492,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Future",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2018-06-01T04:00:00Z",
+        "CompletionDate": "2018-09-30T04:00:00Z",
+        "ID": 2492
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2493)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2493)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "75680df3-3c6d-48f0-95c2-ab81810a5baa",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "5b915b82-d9c7-4ae8-a279-a3a49522d98a",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "569",
+          "ProjectName": "N-DEx Phase II Enhancements"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "434110d2-bb6c-4101-9d3b-83ac8f2af257",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2493,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.458,
+        "CostVariance": 9.79,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -77,
+        "ScheduleVariance": -21.04,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2011-03-23T04:00:00Z",
+        "CompletionDate": "2012-04-27T04:00:00Z",
+        "ID": 2493
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2494)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2494)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9ba18427-e354-4ebd-b8a9-2b79a6b5886c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "3a117b99-1979-4f14-881d-c8dfedeef68b",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "3373",
+          "ProjectName": "N-DEx Multi Enrichment Project (MEP)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "fdef9e08-e2ea-4af6-beca-c705943b04d8",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2494,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -1.23144,
+        "CostVariance": -12.94,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2012-05-29T04:00:00Z",
+        "CompletionDate": "2014-03-07T05:00:00Z",
+        "ID": 2494
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2495)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2495)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5498a2b6-69e2-47db-b4ab-538b09220b24",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "bc9eaf54-7458-4af9-bb49-20f3f65498b7",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12547",
+          "ProjectName": "N-DEx Ingest and Correlation/Resolution Services Scalability Project"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9436b87d-7604-45ee-abec-ba0038e7bbd6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2495,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.100443,
+        "CostVariance": 5.91,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2015-01-01T05:00:00Z",
+        "CompletionDate": "2016-12-12T05:00:00Z",
+        "ID": 2495
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2496)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2496)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "d962607f-54ed-4d89-8361-28a9f1296cbc",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "2569448c-2a4c-4ba5-b74c-7baa9c57cc6a",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "646",
+          "ProjectName": "TSDB 2.10"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "74d2a48d-efae-4701-8353-43a6d7fd68d3",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2496,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 1,
+        "ScheduleVariance": 0.58,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2011-06-03T04:00:00Z",
+        "CompletionDate": "2011-12-03T05:00:00Z",
+        "ID": 2496
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2497)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2497)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "dfcd4e48-de5b-4590-b81b-13611909ff8b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "360af1b6-a2ae-4b20-a7cb-98337fdbb8f5",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "647",
+          "ProjectName": "EMA 2.8"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "fb19d284-cdb8-45d3-a788-59f4a23e9622",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2497,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 14,
+        "ScheduleVariance": 5.71,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2011-06-03T04:00:00Z",
+        "CompletionDate": "2012-02-15T05:00:00Z",
+        "ID": 2497
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2498)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2498)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8b2a9f34-77a3-45ec-8fc0-66c3bff550b3",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "7259143a-9fc6-41a8-9622-0c42a97c7021",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "648",
+          "ProjectName": "TSDB 2.11"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "945c88b3-78c6-4243-a323-fe7dbf4e35cb",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2498,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -1.482,
+        "CostVariance": -45.47,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": -107,
+        "ScheduleVariance": -60.45,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2011-12-05T05:00:00Z",
+        "CompletionDate": "2012-05-30T04:00:00Z",
+        "ID": 2498
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2499)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2499)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a6f4eaa4-a5f5-4f46-b870-4b18c2850f6f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "0dfd6ee6-e587-4cb9-8aad-cae593dd36c5",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "649",
+          "ProjectName": "EMA 2.9"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0aed0761-23ff-4e89-9079-b51ad785928f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2499,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.157,
+        "CostVariance": 35.5,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": 96,
+        "ScheduleVariance": 26.52,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-01-02T05:00:00Z",
+        "CompletionDate": "2012-12-31T05:00:00Z",
+        "ID": 2499
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2500)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2500)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "aa0468b3-8af0-43a7-ae4a-960f6376e56c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "c53bfddf-5257-4ce6-913d-f0caf0534a76",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "650",
+          "ProjectName": "TSDB 2.12.1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "6341e374-0d87-4ebc-9062-d904a302f6a6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2500,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.692,
+        "CostVariance": 20.93,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": 34,
+        "ScheduleVariance": 28.1,
+        "ScheduleColor": "Yellow",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-08-01T04:00:00Z",
+        "CompletionDate": "2012-11-30T05:00:00Z",
+        "ID": 2500
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2501)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2501)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e523a5c7-d5fd-4e21-961c-7d2d1c05cc4e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "22373a15-dd56-4c44-a0cc-63209a5ae61d",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "651",
+          "ProjectName": "EMA 2.10.1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "076899ca-6123-4476-bd3d-93bde60db665",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2501,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.267,
+        "CostVariance": 16.14,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-08-14T04:00:00Z",
+        "CompletionDate": "2012-11-07T05:00:00Z",
+        "ID": 2501
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2502)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2502)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "dd8d8a10-7b0f-4723-b5c6-0dc6830d0684",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "eea2b5bf-ee3f-4e19-adc8-d8bbbff0e617",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "652",
+          "ProjectName": "TSDB 2.12.2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5043a6c5-0808-466a-966b-56eca098e4ff",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2502,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.007,
+        "CostVariance": -0.28,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -95,
+        "ScheduleVariance": -113.1,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-09-14T04:00:00Z",
+        "CompletionDate": "2012-12-10T05:00:00Z",
+        "ID": 2502
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2503)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2503)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "6a94fff7-ccf3-48ed-9816-3edcd420901e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "9d659ae5-0c07-415e-8edd-66c43ef73190",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "654",
+          "ProjectName": "TSDB 2.13.2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "06794759-a5fe-45b1-82ee-0f3ba669bcdb",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2503,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.027,
+        "CostVariance": 1.09,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 6,
+        "ScheduleVariance": 4.8,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2013-02-06T05:00:00Z",
+        "CompletionDate": "2013-09-26T04:00:00Z",
+        "ID": 2503
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2504)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2504)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "17a58fce-5641-451b-b5a4-24521e1644f6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "c9396104-03a9-4d97-9e55-6b13b80ace61",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "5029",
+          "ProjectName": "TSDB 2.13.1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c086cbea-1b0c-45b4-8317-adc599222c62",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2504,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.089,
+        "CostVariance": -3.61,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -157,
+        "ScheduleVariance": -280.36,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-12-11T05:00:00Z",
+        "CompletionDate": "2013-02-05T05:00:00Z",
+        "ID": 2504
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2505)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2505)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e39b9747-8ff9-4e73-9dab-f182585fd589",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "1b92090c-d4f9-4c17-99dc-8ddc1d6033dd",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "5031",
+          "ProjectName": "EMA 2.10.2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "95b9bfb9-13cb-4088-a307-731601ca704b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2505,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.041,
+        "CostVariance": 2.44,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -83,
+        "ScheduleVariance": -98.81,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-10-03T04:00:00Z",
+        "CompletionDate": "2012-12-26T05:00:00Z",
+        "ID": 2505
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2506)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2506)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "d06f0ba3-862d-4cbe-a69b-6f2b94144f2f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "ef7d959f-560c-4fd9-a6ba-d8e4550d3aa2",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "5033",
+          "ProjectName": "EMA 2.11.1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0f941bed-8e57-4d86-b08c-baf450766d7d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2506,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.055,
+        "CostVariance": -3.34,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -99,
+        "ScheduleVariance": -176.79,
+        "ScheduleColor": "Red",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-12-11T05:00:00Z",
+        "CompletionDate": "2013-02-05T05:00:00Z",
+        "ID": 2506
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2507)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2507)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ddb17e60-cca6-42f5-a7b9-1b8c9682c9c5",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "b03cbbf9-90d0-4ff0-acd0-80aa8c9a7f17",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "6051",
+          "ProjectName": "EMA 2.11.2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bc6289c0-b0e2-4d86-9fa8-8a56ca1eb6b5",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2507,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.103,
+        "CostVariance": -7.27,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2013-05-08T04:00:00Z",
+        "CompletionDate": "2013-08-27T04:00:00Z",
+        "ID": 2507
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2508)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2508)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "03a9a3e0-774e-485f-9c71-76aabd563046",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "64134c1b-d46a-443b-a875-83dd1200a195",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "6055",
+          "ProjectName": "EMA 2.12.1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0b5b9ceb-1eea-4107-a773-92148416d70c",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2508,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.06,
+        "CostVariance": -4.24,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2013-04-04T04:00:00Z",
+        "CompletionDate": "2013-10-22T04:00:00Z",
+        "ID": 2508
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2509)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2509)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "15483a78-9c5c-48f7-9bda-07cb6b8f4bd0",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "585a52c7-9b3f-45b6-9f17-0654741a8d51",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "6347",
+          "ProjectName": "EMA 2.10.1.1"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9060e763-9dc5-4ce6-a269-58d75829c61f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2509,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.014,
+        "CostVariance": -1.67,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -13,
+        "ScheduleVariance": -9.29,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2012-10-03T04:00:00Z",
+        "CompletionDate": "2013-02-20T05:00:00Z",
+        "ID": 2509
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2510)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2510)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "26b6394b-b9bb-4d25-980e-228c0bb16512",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "0498e1c4-ba63-459f-9598-e49c6ade5ff0",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "6349",
+          "ProjectName": "TSDB 2.12.3"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "165f0469-28dc-4f2a-90c9-0a4393feec10",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2510,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.007,
+        "CostVariance": -0.49,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2013-01-01T05:00:00Z",
+        "CompletionDate": "2013-03-01T05:00:00Z",
+        "ID": 2510
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2511)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2511)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "f9bc76d2-a6ad-46f0-9a98-4e05ea963da6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "7fd40fc9-0d1a-4700-8088-0f2d0045bce5",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7805",
+          "ProjectName": "Fiscal Year 2014 Consolidated Watchlist and Encounter Management Planning and Architecture"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d8074950-61d2-42d1-9711-4098952bbc51",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2511,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -1.833878,
+        "CostVariance": -44.91,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2013-10-01T04:00:00Z",
+        "CompletionDate": "2014-09-30T04:00:00Z",
+        "ID": 2511
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2512)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2512)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "20aba7d2-1f28-487e-a9b8-f6d09e659852",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "01505dbd-606a-4d96-83be-fedb56958df6",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "7807",
+          "ProjectName": "Plan and architect activities"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "42ee923f-c546-460b-ac05-233bef48e828",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2512,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.058648,
+        "CostVariance": -1.07,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2014-10-01T04:00:00Z",
+        "CompletionDate": "2023-09-30T04:00:00Z",
+        "ID": 2512
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2513)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2513)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b98b0794-79a1-4c8a-b186-8d9eae90431e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "3bd7e748-ee12-480e-aa9a-f1b73f1d75e5",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11061",
+          "ProjectName": "Consolidated Watchlisting and Encounter Management Development Projects"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "555b2c44-e644-4ec6-8e2d-6902a1b3db40",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2513,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.257224,
+        "CostVariance": 1.53,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -61,
+        "ScheduleVariance": -7.48,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2014-07-07T04:00:00Z",
+        "CompletionDate": "2022-09-30T04:00:00Z",
+        "ID": 2513
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2514)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2514)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "2428a288-0fd7-43c7-b886-59fa95de0a5c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "b364f37c-41c0-46c4-89e6-47467854a53f",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "2556",
+          "ProjectName": "Sentinel"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3c2659f4-9bb2-4866-8423-2fdf2cb71f37",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 2514,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 6.108607,
+        "CostVariance": 18.72,
+        "CostColor": "Yellow",
+        "ScheduleVarianceDays": -15,
+        "ScheduleVariance": -2.53,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-21T05:00:00Z",
+        "StartDate": "2010-10-01T04:00:00Z",
+        "CompletionDate": "2012-05-16T04:00:00Z",
+        "ID": 2514
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2515)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2515)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e22d0550-9a9e-46d7-8626-6ec0d705c516",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "4748fa14-603d-4d06-8ea8-7762327f966c",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12331",
+          "ProjectName": "Execute Sentinel FY Quarterly Priorities"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f58b32e0-eda5-4ef8-ba2d-8daa444ce955",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 2515,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": -0.007,
+        "CostVariance": -0.17,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-21T05:00:00Z",
+        "StartDate": "2014-07-01T04:00:00Z",
+        "CompletionDate": "2016-09-30T04:00:00Z",
+        "ID": 2515
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2516)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2516)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "31b29b59-b738-4a82-b4ab-a3fa03a81871",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "b032cca0-104c-41cc-a627-58a7598b4f8c",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "12333",
+          "ProjectName": "Sentinel Strategic Planning and Concept Development"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "8ca4cc95-001e-4d55-9802-db034a06e212",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 2516,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.001,
+        "CostVariance": 0.05,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-21T05:00:00Z",
+        "StartDate": "2014-10-01T04:00:00Z",
+        "CompletionDate": "2017-09-30T04:00:00Z",
+        "ID": 2516
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2517)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2517)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "f512575d-676f-4993-abdd-943a9731d701",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "6d61c97e-ee87-4c00-a7af-acda4a2509f7",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "14552",
+          "ProjectName": "Execute Sentinel FY17 Quarterly Priorities"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "12793adf-92d5-4838-844d-d5b6623aea27",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 2517,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-21T05:00:00Z",
+        "StartDate": "2016-09-15T04:00:00Z",
+        "CompletionDate": "2017-09-30T04:00:00Z",
+        "ID": 2517
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2518)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2518)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "45c0b5ca-b437-4b3d-b4a1-5c803f5bc280",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "b61df1fb-0bf0-4b38-a500-95289baea077",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "559",
+          "ProjectName": "DIVS Increment 2"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "6a674580-82e0-465a-b82d-00e915e6e1d1",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 2518,
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "CostVarianceDollars": 1.819,
+        "CostVariance": 6.88,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-08-12T04:00:00Z",
+        "StartDate": "2011-01-04T05:00:00Z",
+        "CompletionDate": "2011-09-30T04:00:00Z",
+        "ID": 2518
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2519)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2519)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a29275f6-9039-4a14-97a7-21b0b44d655f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "3bbc689c-ab5f-4508-a20e-136082b898fb",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "560",
+          "ProjectName": "DIVS Increment 3"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "662dd001-b22e-47da-8e1d-7cda0dce93f2",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 2519,
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "CostVarianceDollars": 12.342,
+        "CostVariance": 57.21,
+        "CostColor": "Red",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-08-12T04:00:00Z",
+        "StartDate": "2011-10-03T04:00:00Z",
+        "CompletionDate": "2012-09-28T04:00:00Z",
+        "ID": 2519
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2520)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2520)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9239d326-763a-478d-8d52-745393be3f9c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "1032c34b-6c83-4f93-ba1c-ecaf9a3fb3e3",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "5185",
+          "ProjectName": "DIVS Increment 4"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "1a23e917-67aa-4f7d-821f-aa0caf956127",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 2520,
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "CostVarianceDollars": -0.1585,
+        "CostVariance": -3.14,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-08-12T04:00:00Z",
+        "StartDate": "2012-10-01T04:00:00Z",
+        "CompletionDate": "2013-09-30T04:00:00Z",
+        "ID": 2520
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2521)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2521)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b9197c33-ff29-445a-9ad4-09b877dbd9ef",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "ce6c4c4b-1ee9-4783-8f7b-3b36f3bad30b",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "6027",
+          "ProjectName": "DIVS Increment 5"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5277cb91-0c7f-4cb7-a4cb-883241ebe2e3",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 2521,
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-08-12T04:00:00Z",
+        "StartDate": "2013-10-01T04:00:00Z",
+        "CompletionDate": "2014-09-30T04:00:00Z",
+        "ID": 2521
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2522)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2522)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "946ece4d-693c-4e17-badf-4639a826fa6a",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003373",
+          "ShortName": "Guardian",
+          "InvestmentTitle": "FBI Guardian"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "8f039188-adc8-4195-9dd1-75417b96451c",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "5745",
+          "ProjectName": "Guardian Releases 2.5.13 - 2.5.16"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "76500edd-b8da-4c09-9a2b-ad47b442090b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Guardian"
+        },
+        "Id": 2522,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.004,
+        "CostVariance": 0.26,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-22T05:00:00Z",
+        "StartDate": "2013-03-01T05:00:00Z",
+        "CompletionDate": "2013-09-27T04:00:00Z",
+        "ID": 2522
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2523)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2523)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "bbda3eca-8485-4ebe-8baa-9ef5eb7da427",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003373",
+          "ShortName": "Guardian",
+          "InvestmentTitle": "FBI Guardian"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "4a5a6989-282c-4ece-8cec-3ec751a22e62",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "5747",
+          "ProjectName": "eGuardian Releases 1.4.9 - 1.4.12"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "829e5192-0d82-495e-81e1-f6d8039d9740",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Guardian"
+        },
+        "Id": 2523,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.021,
+        "CostVariance": 1.19,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-22T05:00:00Z",
+        "StartDate": "2013-04-01T04:00:00Z",
+        "CompletionDate": "2013-09-30T04:00:00Z",
+        "ID": 2523
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2524)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2524)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5a7c7168-6b5b-44e7-98b8-a26599317742",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "262666a5-7907-42dc-8c4b-1137ce097403",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "580",
+          "ProjectName": "Next Generation Identification"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "2ae0c88b-96d3-4753-bd93-d7ff3bf5e1f3",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2524,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.182267,
+        "CostVariance": 0.4,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2010-06-01T04:00:00Z",
+        "CompletionDate": "2014-09-30T04:00:00Z",
+        "ID": 2524
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2525)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2525)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c2cbb974-bfed-4acd-91a7-81b1c93d38b9",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "5ca67760-e15b-4105-aee6-d6a1e4b4e2af",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11097",
+          "ProjectName": "NGI Technology Refreshment"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7c397533-be9b-402c-ae91-9f26c7dc7d3b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2525,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0.393429,
+        "CostVariance": 0.43,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-23T05:00:00Z",
+        "StartDate": "2014-07-01T04:00:00Z",
+        "CompletionDate": "2017-09-30T04:00:00Z",
+        "ID": 2525
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2526)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2526)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "59616a99-252e-4823-b5b1-c922c08d0168",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "5b1b837d-51ec-4b6f-a682-26a44964da00",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11033",
+          "ProjectName": "DOJ-JMD Dallas, TX Data Center Closure"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0b9e558d-760d-4af0-b2fa-fbf6fa873192",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 2526,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 1.430996,
+        "CostVariance": 7.02,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 47,
+        "ScheduleVariance": 7.91,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "Completed",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2014-04-01T04:00:00Z",
+        "CompletionDate": "2015-11-16T05:00:00Z",
+        "ID": 2526
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2527)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2527)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5f3f25fa-9ded-49d5-be8d-464cac6b8631",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "edccd8a5-797a-40ab-b9a2-68f5ced72d72",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11035",
+          "ProjectName": "DOJ Non-Core Data Center (JMD-Rockville) Closure Planning"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "328cb1cb-fdaf-407f-81d6-f5d162629c87",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 2527,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-18T05:00:00Z",
+        "StartDate": "2016-10-01T04:00:00Z",
+        "CompletionDate": "2017-09-29T04:00:00Z",
+        "ID": 2527
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2528)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2528)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4a6fa93a-bf9b-488c-b0bc-2a80fa989486",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "e5a0bc92-c73a-4908-8a75-a2ac1e0d20b8",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11037",
+          "ProjectName": "APT Detection and Mitigation"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "fe84d2a8-4e14-43a2-838e-d5c2345ba8b2",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 2528,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 23,
+        "ScheduleVariance": 6.59,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-21T05:00:00Z",
+        "StartDate": "2014-06-15T04:00:00Z",
+        "CompletionDate": "2016-09-30T04:00:00Z",
+        "ID": 2528
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2529)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2529)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c07f7fd8-d95c-4479-9c3b-1479423807bc",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "e8e462c5-f5db-47c0-b140-cdd51c5151f2",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "11039",
+          "ProjectName": "Continuous Monitoring"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a5a32212-2dd4-47c9-9036-540595e606a8",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 2529,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": 0,
+        "ScheduleVariance": 0,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-21T05:00:00Z",
+        "StartDate": "2014-01-01T05:00:00Z",
+        "CompletionDate": "2017-03-30T04:00:00Z",
+        "ID": 2529
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2530)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'6ebcf263-09ef-4779-9655-b5d400058ab2')/Items(2530)",
+          "etag": "\"1\"",
+          "type": "SP.Data.ProjectDataListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4f8adaca-0077-49f7-a0f5-535d78797b08",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003618",
+          "ShortName": "Capture",
+          "InvestmentTitle": "USMS Mission Modernization - Capture"
+        },
+        "ProjectID": {
+          "__metadata": {
+            "id": "3cdf4337-96e0-46cb-905e-767dd1b38426",
+            "type": "SP.Data.ProjectsListItem"
+          },
+          "ProjectID": "14495",
+          "ProjectName": "Capture Discovery Phase"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f8eb49aa-3301-40fc-b494-e9530e1a3a13",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "USMS Capture"
+        },
+        "Id": 2530,
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "CostVarianceDollars": 0,
+        "CostVariance": 0,
+        "CostColor": "Green",
+        "ScheduleVarianceDays": -12,
+        "ScheduleVariance": -9.76,
+        "ScheduleColor": "Green",
+        "ProjectStatus": "In-progress",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "StartDate": "2016-07-18T04:00:00Z",
+        "CompletionDate": "2016-11-18T05:00:00Z",
+        "ID": 2530
+      }
+    ]
+  }
+}

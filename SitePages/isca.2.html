@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--<%@ Page Language="C#" %>-->
+<!--<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<html>
+
+<head>
+    <meta content="full" name="WebPartPageExpansion">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+	<!-- Title -->
+    <title>ISCA Summary</title>
+    <link rel="icon" type="image/png" href="../SiteAssets/img/favicon.ico" />
+    <!-- w3 Core CSS -->
+    <link rel="stylesheet" href="../SiteAssets/css/w3.min.css" />
+    <!-- Datatables/Bootstrap CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="../SiteAssets/css/dataTables.bootstrap.min.css" />-->
+    <!-- DC Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/dc.min.css" />
+    <!-- Tooltip Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/tooltip.css" />
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/pe-icon-7-stroke.css" />
+    <!-- SharePoint Core JavaScript -->
+    <SharePoint:ScriptLink name="clienttemplates.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="clientforms.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="clientpeoplepicker.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="autofill.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+    <script type="text/javascript" src="/_layouts/1033/init.js"></script>
+    <script type="text/javascript" src="/_layouts/15/core.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.core.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../SiteAssets/js/jquery.min.js"></script>
+    <!-- D3 -->
+    <!--<script type="text/javascript" src="../SiteAssets/js/d3.v3.min.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="../SiteAssets/js/d3.v3.min.js" charset="utf-8"></script>
+    <!-- D3 Queue -->
+    <script type="text/javascript" src="../SiteAssets/js/d3-queue.v2.min.js" charset="utf-8"></script>
+    <!-- Crossfilter -->
+    <script type="text/javascript" src="../SiteAssets/js/crossfilter.min.js"></script>
+    <!-- DC.js -->
+    <script type="text/javascript" src="../SiteAssets/js/dc.2.1.0-dev.2.js"></script>
+    <!-- Moment.js -->
+    <script type="text/javascript" src="../SiteAssets/js/moment.min.js"></script>
+    <!-- Spin.js -->
+    <script type="text/javascript" src="../SiteAssets/js/spin.min.js"></script>
+    <!-- Colorbrewer -->
+    <script type="text/JavaScript" src="../SiteAssets/js/colorbrewer.min.js"></script>
+    <!-- JavaScript Utilities -->
+    <script type="text/javascript" src="../SiteAssets/js/utils.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="../SiteAssets/js/isca.2.js"></script>
+    
+    <style>
+        table.table th:nth-child(-n+1),
+        table.table td:nth-child(-n+1)
+        {
+            display:none;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- SharePoint security validation aspx controls -->
+    <!-- https://msdn.microsoft.com/en-us/library/office/ms472879%28v=office.14%29.aspx -->
+    <form id="Form1" method="post" runat="server">
+        <SharePoint:FormDigest ID="FormDigest1" runat="server"></SharePoint:FormDigest>
+
+        <!-- Collapsible Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-w3-container w3-card-4 w3-white-2 w3-animate-left w3-indigo" style="width:200px;" id="portSidebar">
+            <a href="index.aspx" class="w3-bar-item w3-button">
+                <h2>
+                    <i class="pe-7s-home" style="font-size:48px;padding-right:0px"></i>
+                </h2>
+            </a>
+            <a class="w3-bar-item w3-button w3-large w3-hide-large" href="javascript:w3_close()">Close &times;</a>
+            <a href="portfolio.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph"></i>
+                <p>Portfolio View</p>
+            </a>
+            <a href="investment.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph3"></i>
+                <p>IT Investment View</p>
+            </a>
+            <a href="itar.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph1"></i>
+                <p>IT Acquisition View</p>
+            </a>
+            <a href="savings.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph2"></i>
+                <p>IT Cost Savings &#38; Avoidance View</p>
+            </a>
+            <a href="systems.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph3"></i>
+                <p>IT Systems View</p>
+            </a>
+            <a target="_blank" href="MajorITInvestments.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph"></i>
+                <p>IT Major Investments View</p>
+            </a>
+        </div>
+        <!-- End Collapsible Sidebar -->
+
+        <!-- Main Content -->
+        <div class="w3-main" style="margin-left:200px">
+
+            <!-- Header -->
+            <header class="w3-padding-8">
+                <a class="w3-button w3-white w3-xlarge w3-hide-large" href="javascript:w3_open()">&#9776;</a>
+                <div class="w3-container w3-center">
+                    <!-- numerical displays -->
+                    <div id="header" class="w3-row-padding">
+                        <div class="w3-col l12">
+                            <div class="w3-row-padding" style="padding-bottom:3px">
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Component</h5>
+                                        <div id="components"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Fiscal Year</h5>
+                                        <div id="years"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l3">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Data generated</h5>
+                                        <div class="dc-chart">
+                                            <span id="dateHeader" class="w3-xxlarge"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 id="total-spend-header" class="w3-text-uppercase">Total IT Spend</h5>
+                                        <div id="total-spend"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l3">
+                                    <div>
+                                        <h5 id="data-count-header" class="w3-text-uppercase">Selected Investments</h5>
+                                        <div id="data-count" class="">
+                                            <span class="filter-count w3-xxlarge"></span> investments
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <!-- .w3-col l3 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.w3-col l12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Content Container -->
+            <div id="dashboard" class="w3-container">
+
+                <!-- Main Content Row -->
+                <div class="w3-row-padding">
+
+                    <!-- Main Content Container -->
+                    <div class="w3-container w3-padding-4">
+
+                        <!-- bubble charts -->
+                        <div id="bubbleChart" class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <div class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Department of Justice ISCA Spending</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="component" class="dc-chart"></div>
+                                    <!-- #component -->
+                                    
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div><i class="fa fa-history"></i><span class="w3-small">Total amount of yearly IT spend in dollars. Click on a circle to filter by a component.</span></div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- /.w3-col l12 -->
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+                    <!-- /.w3-container -->
+
+                    <!-- Main Content Container -->
+                    <div class="w3-container w3-padding-4">
+
+                        <!-- data table -->
+                        <div class="w3-row-padding">
+
+                            <!-- Data Table -->
+                            <div class="w3-col l12 w3-padding-4">
+                                <div id="tableChart" class="w3-container w3-card-4 w3-white ">
+                                    <!-- Header -->
+                                    <header>
+                                        <div class="w3-col l9">
+                                            <h4 class="title">Source Data</h4>
+                                            <p class="category"></p>
+                                        </div>
+                                        <div class="w3-col l3">
+                                            <div class="w3-right">
+                                                <input id="btnExports" class="w3-button" type="button" value="Export to Excel" onclick="exportTable()" style="text-align: left; margin: 10px 0px;">
+                                            </div>
+                                        </div>
+
+                                    </header>
+                                    <!-- End Header -->
+                                    
+                                    <!-- Chart -->
+                                    <div>
+                                        <table class="table table-condensed table-bordered table-responsive" id="data-table" cellpadding="0" cellspacing="0" border="0"></table>
+                                    </div>
+                                    <!-- End Chart -->
+                                    
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div><i class="fa fa-history"></i><span class="w3-small">Click on a component name to explore details of each component. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC) Tool</span></div>
+                                    </footer>
+                                    <!-- End Footer -->
+                                </div>
+                            </div>
+                            <!-- End Data Table -->
+                        </div>
+                        <!-- /.w3-row-padding -->
+
+                    </div>
+                    <!-- /.w3-container -->
+                </div>
+                <!-- /.main-panel -->
+
+            </div>
+            <!-- /.wrapper -->
+            
+            <!-- Footer -->
+            <footer class="w3-padding-8"></footer>
+            <!-- End Footer -->
+            
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Modal -->
+        <div class="w3-modal w3-animate-opacity" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="w3-modal-content w3-card-4">
+                
+                    <header class="w3-container"> 
+                        <span onclick="document.getElementById('itemModal').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+                        <div class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <h4 class="modal-title" id="modalLabel">Investment Details</h4>
+                            </div>
+                        </div>
+                        <!-- /.w3-row-padding -->
+                    </header>
+                    <!-- /.modal-header -->
+                    <div class="w3-container">
+                        <div class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <div id="tableDiv" style="margin-top:20px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-body -->
+                    <footer class="w3-container"></footer>
+                    <!-- /.modal-footer -->
+                </div>
+                <!-- /.w3-modal-content -->
+        </div>
+        <!-- End Modal -->
+        
+    </form>
+    <!-- #Form1 -->
+
+</body>
+
+</html>

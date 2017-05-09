@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--<%@ Page Language="C#" %>-->
+<!--<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<html>
+
+<head>
+    <meta name="WebPartPageExpansion" content="full" />
+    <meta charset="utf-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <title>JMD IT Projects Summary</title>
+    <link rel="icon" type="image/png" href="../SiteAssets/img/favicon.ico" />
+    <!-- w3 Core CSS -->
+    <link rel="stylesheet" href="../SiteAssets/css/w3.min.css" />
+    <!-- DC Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/dc.min.css" />
+    <!-- Tooltip Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/tooltip.css" />
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/pe-icon-7-stroke.css" />
+    <!-- SharePoint Core JavaScript -->
+    <SharePoint:ScriptLink name="clienttemplates.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="clientforms.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="clientpeoplepicker.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="autofill.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+    <script type="text/javascript" src="/_layouts/1033/init.js"></script>
+    <script type="text/javascript" src="/_layouts/15/core.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.core.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../SiteAssets/js/jquery.min.js"></script>
+    <!-- D3 -->
+    <script type="text/javascript" src="../SiteAssets/js/d3.v3.min.js" charset="utf-8"></script>
+    <!-- D3 Queue -->
+    <script type="text/javascript" src="../SiteAssets/js/d3-queue.v2.min.js" charset="utf-8"></script>
+    <!-- Crossfilter -->
+    <script type="text/javascript" src="../SiteAssets/js/crossfilter.min.js"></script>
+    <!-- DC.js -->
+    <script type="text/javascript" src="../SiteAssets/js/dc.js"></script>
+    <!-- Datatables Core JavaScript -->
+    <script type="text/javascript" src="../SiteAssets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/dataTables.bootstrap.min.js"></script>
+    <!-- Moment.js -->
+    <script type="text/javascript" src="../SiteAssets/js/moment.min.js"></script>
+    <!-- SheetJS -->
+    <script type="text/javascript" src="../SiteAssets/js/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/Blob.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/FileSaver.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/Export2Excel.js"></script>
+    <!-- Spin.js -->
+    <script type="text/javascript" src="../SiteAssets/js/spin.min.js"></script>
+    <!-- Colorbrewer -->
+    <script type="text/JavaScript" src="../SiteAssets/js/colorbrewer.min.js"></script>
+    <!-- JavaScript Utilities -->
+    <script type="text/javascript" src="../SiteAssets/js/utils.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="../SiteAssets/js/projects.js"></script>
+    
+    <style>
+        table.dataTable th:nth-child(-n+2),
+        table.dataTable td:nth-child(-n+2),
+        table.dataTable th:nth-child(6),
+        table.dataTable td:nth-child(6),
+        table.dataTable th:nth-child(7),
+        table.dataTable td:nth-child(7),
+        table.dataTable th:nth-child(8),
+        table.dataTable td:nth-child(8) {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- SharePoint security validation aspx controls -->
+    <!-- https://msdn.microsoft.com/en-us/library/office/ms472879%28v=office.14%29.aspx -->
+    <form id="Form1" method="post" runat="server">
+        <SharePoint:FormDigest ID="FormDigest1" runat="server"></SharePoint:FormDigest>
+
+        <!-- Collapsible Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-w3-container w3-card-4 w3-white-2 w3-animate-left w3-indigo" style="width:200px;" id="portSidebar">
+            <a href="index.aspx" class="w3-bar-item w3-button">
+                <h2>
+                    <i class="pe-7s-home" style="font-size:48px;padding-right:0px"></i>
+                </h2>
+            </a>
+            <a class="w3-bar-item w3-button w3-large w3-hide-large" href="javascript:w3_close()">Close &times;</a>
+            <a href="portfolio.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph"></i>
+                <p>Portfolio View</p>
+            </a>
+            <a href="investment.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph3"></i>
+                <p>IT Investment View</p>
+            </a>
+            <a href="itar.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph1"></i>
+                <p>IT Acquisition View</p>
+            </a>
+            <a href="savings.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph2"></i>
+                <p>IT Cost Savings &#38; Avoidance View</p>
+            </a>
+            <a href="systems.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph3"></i>
+                <p>IT Systems View</p>
+            </a>
+            <a target="_blank" href="MajorITInvestments.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph"></i>
+                <p>IT Major Investments View</p>
+            </a>
+        </div>
+        <!-- End Collapsible Sidebar -->
+
+        <!-- Main Content -->
+        <div class="w3-main" style="margin-left:200px">
+
+            <!-- Header -->
+            <header class="w3-padding-8">
+                <a class="w3-button w3-white w3-xlarge w3-hide-large" href="javascript:w3_open()">&#9776;</a>
+                <div class="w3-container w3-center">
+                    <!-- numerical displays -->
+                    <div id="header" class="w3-row-padding">
+                        <div class="w3-col l12">
+                            <div class="w3-row-padding" style="padding-bottom:3px">
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Staff Org</h5>
+                                        <div id="components"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Report Month</h5>
+                                        <div id="months"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l3">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Data generated</h5>
+                                        <div class="dc-chart">
+                                            <span id="dateHeader" class="w3-xxlarge"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 id="total-spend-header" class="w3-text-uppercase">Total IT Spend</h5>
+                                        <div id="total-spend"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l3">
+                                    <div>
+                                        <h5 id="filter-count-header" class="w3-text-uppercase">Selected Investments</h5>
+                                        <div class="dc-chart" id="data-count">
+                                            <span class="filter-count w3-xxlarge"></span> investments
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .w3-col l3 -->
+                            </div>
+                            <!-- /.w3-row-padding -->
+                        </div>
+                        <!-- /.w3-col l12 -->
+                    </div>
+                    <!-- /.w3-row-padding -->
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Content Container -->
+            <div id="dashboard" class="w3-container">
+
+                <!-- Main Content Row -->
+                <div class="w3-row-padding">
+
+                    <!-- Main Content Container -->
+                    <div class="w3-container w3-padding-4">
+
+                        <!-- pie charts -->
+                        <div class="w3-row-padding">
+                            <!-- Pie Chart 1 -->
+                            <div class="w3-col l2 w3-padding-4">
+                                <div id="pieChart1" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Schedule</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="scheduleChart" class="dc-chart scaling-svg-container"></div>
+                                    <!-- #scheduleChart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small"></span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Pie Chart 1 -->
+                            <!-- Pie Chart 2 -->
+                            <div class="w3-col l2 w3-padding-4">
+                                <div id="pieChart2" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Staffing</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="staffingChart" class="dc-chart scaling-svg-container"></div>
+                                    <!-- #staffingChart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small"></span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Pie Chart 2 -->
+                            <!-- Pie Chart 3 -->
+                            <div class="w3-col l2 w3-padding-4">
+                                <div id="pieChart3" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Risks</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="risksChart" class="dc-chart scaling-svg-container"></div>
+                                    <!-- #risksChart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small"></span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Pie Chart 3 -->
+                            <!-- Pie Chart 4 -->
+                            <div class="w3-col l2 w3-padding-4">
+                                <div id="pieChart4" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Issues</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="issuesChart" class="dc-chart scaling-svg-container"></div>
+                                    <!-- #issuesChart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small"></span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Pie Chart 4 -->
+                            <!-- Pie Chart 5 -->
+                            <div class="w3-col l2 w3-padding-4">
+                                <div id="pieChart5" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Cost</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="costChart" class="dc-chart scaling-svg-container"></div>
+                                    <!-- #costChart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small"></span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Pie Chart 5 -->
+                            <!-- Pie Chart 6 -->
+                            <div class="w3-col l2 w3-padding-4">
+                                <div id="pieChart6" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">Customer Satisfaction</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div id="customerChart" class="dc-chart scaling-svg-container"></div>
+                                    <!-- #customerChart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small"></span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Pie Chart 6 -->
+
+                        </div>
+                        <!-- /.w3-row-padding -->
+
+                    </div>
+                    <!-- /.w3-container -->
+
+                    <!-- Main Content Container -->
+                    <div class="w3-container w3-padding-4">
+
+                        <!-- data table -->
+                        <div class="w3-row-padding">
+                            <!-- Data Table -->
+                            <div id="tableChart" class="w3-col l12 w3-padding-4">
+                                <div class="w3-container w3-card-4 w3-white ">
+                                    <!-- Header -->
+                                    <header>
+                                        <div class="w3-col l9">
+                                            <h4 class="title">Source Data</h4>
+                                            <p class="category"></p>
+                                        </div>
+                                        <div class="w3-col l3">
+                                            <div class="w3-right">
+                                                <input id="btnExports" class="w3-button" type="button" value="Export to Excel" onclick="exportTable()" style="text-align: left; margin: 10px 0px;">
+                                            </div>
+                                        </div>
+
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <div>
+                                        <table class="table table-condensed table-bordered table-responsive" id="data-table" cellpadding="0" cellspacing="0" border="0"></table>
+                                    </div>
+                                    <!-- End Chart -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div><i class="fa fa-history"></i><span class="w3-small">Click on the investment title to explore details of each investment. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC)</span></div>
+                                    </footer>
+                                    <!-- End Footer -->
+                                </div>
+                            </div>
+                            <!-- End Data Table -->
+                        </div>
+                        <!-- /.w3-row-padding -->
+
+                    </div>
+                    <!-- /.w3-container -->
+
+
+                </div>
+                <!-- End Main Content Row -->
+
+            </div>
+            <!-- End Main Content Container -->
+
+            <!-- Footer -->
+            <footer class="w3-padding-8"></footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Modal -->
+        <div class="w3-modal w3-animate-opacity" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="w3-modal-content w3-card-4">
+                
+                    <header class="w3-container"> 
+                        <span onclick="document.getElementById('itemModal').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+                        <div class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <h4 class="modal-title" id="modalLabel">Investment Details</h4>
+                            </div>
+                        </div>
+                        <!-- /.w3-row-padding -->
+                    </header>
+                    <!-- /.modal-header -->
+                    <div class="w3-container">
+                        <div class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <div id="tableDiv" style="margin-top:20px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-body -->
+                    <footer class="w3-container"></footer>
+                    <!-- /.modal-footer -->
+                </div>
+                <!-- /.w3-modal-content -->
+        </div>
+        <!-- End Modal -->
+
+    </form>
+    <!-- #Form1 -->
+
+</body>
+
+</html>

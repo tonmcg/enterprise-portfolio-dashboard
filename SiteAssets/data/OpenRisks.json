@@ -1,0 +1,4424 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2792)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2792)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "da0ddcdd-221d-4fb9-a969-af43918390fc",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2792)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "56f5b6c7-d738-4217-a7cb-5076f645fdb5",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9079"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f05b40ea-364e-4ed0-9fbf-581e650b8e94",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2792,
+        "RiskName": "Interim Sam Solution may not be developed according to Schedule                                                                                                                                                                                                                                                                                                                    \n                                                                                                                                                                                                                           \n                                                                                                                                                                                                                                                                                                                    \n                                                                                                                                                                                                                           \n\n",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Monitor GSA's development schedule for SAM to determine the impact to UFMS. The program waited to develop and test the new format after SAM go-live. The interim SAM solution is currently in testing and is planned to go live prior to 11/4/2014. The final monthly refresh extract of the legacy format will be 11/2/2014, as of 11/4/2014 UFMS will use the new SAM format for extracts and web services.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2792
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2793)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2793)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4adcb5e7-2946-4075-98de-c8ede31b2aa3",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2793)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "1db82f94-e6ef-4b9e-97b2-20d6fe53acbe",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9081"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "8c308b31-4be9-430e-9095-c8bc64492677",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2793,
+        "RiskName": "Justice Data Center move from Dallas TX, to Pocatello ID.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Mitigate risk by using as a contingency for failover capacity if disaster recovery is not available.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2793
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2794)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2794)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "05fada43-6413-4cb2-a9d5-8dedce6f9721",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2794)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "08532bbc-f3fb-48c9-9e3d-0a549f80fee4",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15159"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f2efe034-e3f9-47c3-a4da-ac3e1a231106",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2794,
+        "RiskName": "N3G Project Risk:\nFailure to incorporate IT input into functional requirements development",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Express the need to ITMS management to dedicate immediate resources to this effort.  Apply Program Office resources as necessary.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2794
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2795)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2795)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "d29b5a2a-55b3-4a7d-9152-0b048b3faa6f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2795)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "7a57cd2d-1170-4894-8f85-f6353675cabe",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15160"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "8017cb7e-5ac7-4afa-ab86-d50da0bb75d1",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2795,
+        "RiskName": "N3G Project Risk:\nDelays in legal/privacy reviews.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Collaborate early and often with legal and privacy staff to ensure they have maximum situational awareness on all topics forwarded to them for review.  Minimize the number of legal/privacy reviews by ensuring all topics considered by the legal/privacy staff are approved for consideration in the N3G.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2795
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2796)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2796)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b6f8b601-0734-4aa1-84dc-6463884fec3e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2796)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "985acdaf-4413-4cc0-a46b-cab2fb9a8711",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15161"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "569d085d-9d4b-464d-9040-56bdaa775510",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2796,
+        "RiskName": "N3G Project Risk:\nInsufficient Project Management Support",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Express the need to ITMS management to dedicate immediate resources to this effort.  Apply Program Office resources as necessary.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2796
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2797)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2797)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "981f7772-e920-4aab-9753-ce4ce9297209",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2797)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "cf61f526-66bd-4a82-90fb-231123b8b464",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15162"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "616266ce-cd68-426e-8bac-b0bd21a75dfb",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2797,
+        "RiskName": "N3G Project Risk:\nInsufficient resources to generate system requirements.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Express the need to ITMS management to dedicate immediate resources to this effort.  Apply Program Office resources as necessary.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2797
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2798)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2798)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8a5b169a-2a0a-4383-ad7c-af1141d45e12",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2798)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "2b8bfff3-48ef-40e3-ae25-57e4797e1ff5",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "573"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f04053d5-a99f-48dc-b178-feff2e9ca4e3",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2798,
+        "RiskName": "If technology continues to grow at a rapid pace, then current collection systems may not be able to keep pace with emerging technologies.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "TICTU will continue to work closely with technical experts, the system vendor, and other stakeholders to stay abreast of the latest technology.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2798
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2799)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2799)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ba1af2fc-ac30-436b-a2f4-f9d89bcdc6d9",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2799)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "d0350fa8-38f5-4d08-8f41-4f2729bba903",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "574"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "2c9c7d79-2c2e-45fa-bd67-eb8eb4b6e20f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2799,
+        "RiskName": "If the vendor cannot deliver the desired operational system functionality in a timely fashion, then the necessary system capabilities could impact users' experience.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "TICTU will continue to work closely with the vendor to communicate desired functionality and track the development of that functionality.",
+        "ReportDate": "2014-11-30T05:00:00Z",
+        "UpdatedDate": "2014-12-23T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2799
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2800)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2800)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ab883840-5d59-4e4a-a738-ca554ee7e946",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2800)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "896c995a-ddff-4fc8-b284-7b298195be04",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "575"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f6ff8a6f-523a-4ea9-9fe6-c2312221a7cb",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2800,
+        "RiskName": "If there is not enough storage capacity or reliable data backup controls, then the system may lose vital information.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "TICTU ensured there was sufficient data backup controls built into each deployed system. Further, TICTU has deployed and is utilizing the Disaster Recovery (DR) sites for data replication and availability. The technology and processes involved with data backup and recovery are closely monitored.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2800
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2801)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2801)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "fa219dfd-943c-42d7-a420-2b05cf8a32a6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2801)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "67275b4d-f1ef-45a8-aa7f-82c6343f2b36",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "3297"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bb15bae3-9d6b-453b-90f3-3d79fe9a94c9",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2801,
+        "RiskName": "If other FBI Units and field personnel do not support hardware refresh and consolidation activities, then the systems may not get the necessary updates and maintenance to function properly.",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "TICTU has implemented a comprehensive Communications Management Plan to engage all stakeholders early and often to communicate requirements and expectations and to solicit feedback. Communication is continuous to ensure all required actions leading up to regionalization are completed.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2801
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2802)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2802)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "539df2e9-cd45-4495-bde2-f2d249414647",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2802)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "a3b5b0b0-ccc7-46db-a06c-062587498ad9",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "5663"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "1e5e483a-1b1f-40a5-a110-c0e600eedae0",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 2802,
+        "RiskName": "If the Investment continues to be impacted by significant budget cuts, then it will negatively affect TICTU's ability to respond to the operational needs of the field, including the hardware, software, and services required, and system maintenance requirements.",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "TICTU may require the field to pay for the hardware, software, and services installed and used in their offices.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2802
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2803)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2803)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "cb2dbce8-4926-4456-b9f8-1a6556b2fd76",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2803)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "a14a0b5e-023f-4609-90d1-7d9174d999db",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "598"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "1d44441f-48e8-4272-bce7-a66bb92c7ec3",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2803,
+        "RiskName": "If security is not maintained, upgraded, and/or monitored efficiently in regards to the proper access to the NICS, there could be a misuse of data and/or information of a private and/or sensitive nature.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Strict monitoring of the NICS, jointly by the NICS Assessment Unit and the CJIS Audit Unit, is conducted internally with assessments and quality control of FBI employees and externally with audits of the POC states.  This occurs on a routine basis.  Any breach of security or misuse of the NICS will be recorded and handled in an expedient manner, with the appropriate actions taken.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2803
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2804)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2804)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7b33d1ea-2f92-49cd-87c2-4f78baa4cab1",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2804)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "2a6afbf4-ebab-44d8-b023-5e68337c72f9",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "599"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f51a8955-f1aa-4440-9af1-eb02d3d31e41",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2804,
+        "RiskName": "If there are legislative changes that require the NICS to be used for additional purposes, additional staffing and system upgrades will be required.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Proactive identification and awareness of possible legislative changes which may occur. Legislative changes will require an alternative plan outlining scenarios and necessary steps to lessen the impact brought on by legislative changes. Adjustments will be made to current usage of the NICS to meet the new legislation within the set time frame.  The NICS Section will use overtime to handle the increased workload until an FSL increase can be realized to support legislative changes.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2804
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2805)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2805)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "fa4c21be-5e48-4573-8dab-abf095d9d91d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2805)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "0577e04e-52ca-48e2-a6e3-22533f41250c",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "600"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5dd652ea-a7a6-4765-8b92-1364e7df5539",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2805,
+        "RiskName": "If transaction volumes continue to increase, system upgrades will be required for both hardware and software. Current NICS architecture may not allow the needed upgrades in functionality for processing the steady rise in transaction volume within three business days.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "The New NICS Development Project is underway with plans to upgrade and redesign the current NICS technical architecture as a means to enhance current functionality, provide support, and work level efficiencies.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2805
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2806)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2806)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "60fcb534-6c54-43d1-85bf-bc4be54aa753",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2806)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "eda7f42f-d99b-46b5-a631-03e608162de2",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "601"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "387e0276-1e56-49f1-b8a7-b8565857164c",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2806,
+        "RiskName": "If security requirements are not sufficiently defined and refined throughout the life cycle of the project, there could be a loss or misuse of data and/or information of a private and/or sensitive nature.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "The NICS Section has identified and appointed a Personally Identifiable Information (PII) POC.  The POC has been tasked and is currently identifying, defining, and implementing NICS Section procedures to proactively stop the improper exchange of PII and other sensitive information.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2806
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2807)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2807)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c409943a-484f-4925-bb0b-a9df3db173ba",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2807)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "884ba567-2305-4518-be32-4f0a0ceff7c2",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15314"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5f288fc6-baf2-49b6-a64a-1909db6ffd4d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 2807,
+        "RiskName": "The New NICS FOC project will require increased effort which will negatively impact schedule and cost if the amount of visibility and oversight continues or increased due to firearm related criminal events.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "1. Continue to work with FBI oversight support to enable them to respond to requests prior to inquiries being submitted to the PMO. 2. Canvass for additional FSL with oversight experience.  3. Utilize other avenues to enable more visibility into the project by oversight and remove the need for duplicative reporting.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2807
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2808)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2808)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b29007bb-b4ac-4559-b816-7639f9d5c5b9",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2808)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "55c913fb-7bf2-48f8-b528-7bbc81583dc9",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12079"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "e83edef3-2c51-4473-9f25-560c342fa078",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2808,
+        "RiskName": "Undocumented Change",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "Established a Change Control Board that reviews changes monthly.  Implemented an operating procedure that requires all changes be tracked via change management system.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2808
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2809)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2809)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "554ba31f-3d18-4941-9bb5-02ba0b542526",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2809)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "98bc7bf6-d5ec-4a6f-a65b-fd6f3b93b78e",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12081"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "35fe5613-188c-4aab-84d8-1a51d6d37468",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2809,
+        "RiskName": "Management Risk",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "Train additional staff to manage the investment.  Current management is retirement eligible in 2 years",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2809
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2810)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2810)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "49a5aaef-999f-4c92-8b9a-755517e5231b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2810)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "5ec583dc-e637-46f5-b23d-4b2eaceb9ffc",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9083"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "8fa3ea1f-2b1e-40c0-abc1-765dbb23e1ae",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 2810,
+        "RiskName": "Staying current with the Momentum Software",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "Routinely evaluate critical open PRs to determine if a Momentum backpatch is available and consume as part of a schedule software release. Consume at least one Momentum Service Pack annually. Upgrade to the latest version of Momentum at least every three years.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2810
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2811)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2811)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "2d4eb1ba-85d3-437b-a41c-e64afcafa4bf",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2811)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "630c009c-be9a-44c4-a338-07285d847c54",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "594"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "2537c8a0-6cc6-41ca-a67a-df787a2b67dd",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 2811,
+        "RiskName": "Failure to retain LEO users.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1) Identify reasons for customer's attrition. M2) Add new technology which supplies the Law Enforcement Community the services which they need to perform their mission more effectively and efficiently. M3) Create a working group and implement ways to promote LEO and LEEP.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2811
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2812)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2812)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "36ff22eb-6fc4-4149-a09a-0f9d5eaa0358",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2812)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "cfcaf0ba-3560-4dc4-95d8-f2fa4b92924c",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "5779"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3a5de08d-cb8f-4bff-b5c9-27d96a5293ce",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 2812,
+        "RiskName": "RSA Authentication not meeting the NIST requirements.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1) Work with an information technology specialist to ensure all needed personnel have two factor authentication. M2) Use RSA AA which binds the users device to the identity and uses challenge questions to verify.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2812
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2813)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2813)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "66c2af17-6325-4e0c-9835-cb330e33363b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2813)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "b8219bd4-3244-45d5-a54c-390712d8b185",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12735"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d3eeca4d-bbea-4345-b9ce-548e1474abcc",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 2813,
+        "RiskName": "Hits to LEEP",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1) Identify reasons for customer's attrition. M2) Add new technology which supplies the Law Enforcement Community the services which they need to perform their mission more effectively and efficiently. M3) Hire more Personnel and liaisons to conduct outreach to bring on partnered agencies and services M4) Create a working group and implement ways to promote LEO and LEEP.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2813
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2814)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2814)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "70fa0055-4164-4539-8c8a-692f7ead44ab",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2814)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "ee101c62-7c60-4914-ab42-8893d45b2ae5",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12736"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9b5df5b8-3d47-40bb-aded-42b59387d79b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 2814,
+        "RiskName": "If the LEEP Program Office does not implement system changes suggested by the user community, then users will become frustrated and not use the system, and therefore not benefit from the data in the LEEP system.",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "M1) Communicate future system enhancements/upgrades to the user community. M2) Analysis Review Board to address suggested system enhancements. M3) Communicate to users the internal process to implement system changes/enhancements. M4) Implement user feedback capability on the LEEP portal. M5) Hold periodic User Conferences. M6) Ensure user needs based development occurs through system fixes and enhancements.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2814
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2815)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2815)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7e06bf9a-6077-428e-9ad3-7321239261e8",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2815)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "4858711a-da2a-4b08-98e9-ae9d542ec960",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13734"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c44f45b2-e58a-44ac-89d0-14704c919855",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2815,
+        "RiskName": "Emerging Cyber Security threats are changing the operational requirements for managing the CODIS software and production environments. CODIS Program may not have the appropriate resources to respond in a timely manner to an imminent Cyber Threat",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Update the security requirements in the NDIS Procedures-done; Implement automated Fortify monitoring-done; Pending TO3 to operations contractor and DMSS contract actions will mitigate this risk",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2815
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2816)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2816)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "846eed62-2752-4671-b000-155939f2e502",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2816)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "31c1cd5c-04b8-49cd-8a5b-a5aa78cf5ba1",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13735"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "6967e0db-ac4b-47b9-a223-227e74f8e141",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2816,
+        "RiskName": "Project:  NGCODIS 7.0 SP7 Deployment - Differences in virtualization approaches and platforms make it difficult for FBI to recommend/approve virtualization, increasing complexity and time to deploy to different platforms; process is reactive and results in lack of standardization",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "Ensure that Hardware Software Recommendation Guide includes virtualization specifications to support deployment; Government currently producing a white paper with approved specifications. PMO Issue #11 added to track the assignment of an Author Added to the scope of Task Order 9",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2816
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2817)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2817)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "216e8d37-262e-4895-818d-eda3c0798e60",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2817)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "5c1025a5-8572-4e0b-a2c1-9ede629b5934",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15748"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "4f9821af-82e2-41fd-901b-5deb54d37cb5",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2817,
+        "RiskName": "Project:  Automated Testing - Test stacks planned as part of this effort may not be completed before the end of the Period of Performance",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "Monitor progress of development in the monthly PMRs. Plan to extend the PoP as needed to complete the necessary stacks or move scope of work to DMSS contract vehicle. PoP has been extended to Jan 2017",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2817
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2818)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2818)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e5eb1d00-bb62-40a2-9005-1b7b8879cae2",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2818)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "9c4e34d4-6364-42ce-89a1-148613b015fa",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15749"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ad949cc3-c137-40fb-98b9-cac3260a28aa",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2818,
+        "RiskName": "Project:  DMSS - CODIS 8.0 Development - Developers at contractor location may lose access to development environment for more than 4 hours. This site is a single point of failure.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Work with development contractor to produce an approved mitigation plan",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2818
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2819)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2819)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "089cae01-18b9-4bd0-94d0-b982e9e4b342",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2819)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "d8398320-f15b-4381-ba74-bc918080e8d4",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15750"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0b5990ea-3487-4991-a356-eaaafe2e75ed",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 2819,
+        "RiskName": "Project:  DMSS - CODIS 8.0 Development - CODIS 8.0 may take longer than 12 months after the Rapid law is signed to be implemented at NDIS",
+        "Probability": "High",
+        "Impact": "High",
+        "RiskScore": 5,
+        "Risk": "High",
+        "MitigationPlan": "1. Reduce the non-Rapid scope as required - 2. Develop Test plan to include UAT scope of activities3. Start Acceptance Test activities early 4. George to provide updated briefing on the overall testing plan/strategy",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2819
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2820)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2820)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e65c2382-3566-453f-b9b2-86af72719615",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2820)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "de256773-c4f0-473f-a2a3-71dafed23c16",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "3307"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "766cf8a0-b827-4b34-8d13-85d5fd335792",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2820,
+        "RiskName": "NCIC O&amp;M Risk:MSU Softcap configuration setting of 140 is to low for optimum performance",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1) Monitor performance of system to ensure system transactions are processed efficiently. M2) Optimize other system components to keep MSU Softcap setting.  System administrators raise the cap to 160 during the NCIC busy season and will lower the cap to 140 when things slow down (October 2017).",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2820
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2821)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2821)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9538a148-1589-4cbe-aabe-a45a06fd8c80",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2821)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "6ebc8ace-fd97-48ab-ab43-fbb4f0a46459",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "3309"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "293be7e2-6bdb-4ac7-bfd8-e1c6b713946a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2821,
+        "RiskName": "NCIC O&amp;M Risk:NCIC DR Mainframe can not perform to requirements.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1) Prioritize system load so that DR site can process crtitical transactions first, if DR site is turned on. M2) Continue to test DR failover once a year. M3) Continue to analyze OE system load against DR capabilities. M4) Investigate upgrade of DR system.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2821
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2822)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2822)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "856aa9e0-79ed-4bb4-bcc8-3157af911836",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2822)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "dcf41ab5-9c35-47f7-bf2c-df07b85639f6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9009"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5ea1e20b-3550-4f21-a2d1-520a5ad31ef7",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2822,
+        "RiskName": "NCIC O&amp;M Risk:NCIC Mainframe can not perform to requirements with DOJ Consolidation effort and predicted increase of transactions",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "M1) Investigate technical refresh for NCIC System.  2) Perform studies to verify impact of Name Search Algorithm and determine resources needed for DOJ application",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2822
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2823)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2823)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5be74ebf-d2d0-41d4-9b50-283f5ec54165",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2823)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "e3940614-0112-43bd-8494-f4ee84e6948c",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15157"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ea7a7ca8-3f8e-4f5f-a60d-c1c1e0877581",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2823,
+        "RiskName": "N3G Project Risk:\nDelay in procuring SME and PMSS Contractors",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Prepare acquisition documents early.  Ensure acquisition documents are approved by reviewers in a timely manner.  Collaborate with CO and COR on progress of requisition and purchase order.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2823
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2824)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2824)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "078c96e2-27e9-45db-a3cc-0cdc539a6e35",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2824)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "adc4445f-413f-4e8d-bf8c-189bfef69259",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15158"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "933a1981-8d4f-405d-8439-1f354bcfeb80",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 2824,
+        "RiskName": "N3G Project Risk:  \nIncomplete translation of functional requirements into system requirements.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Ensure that Program Office personnel assist in development of the system requirements to ensure the original intent of the functional requirements are met.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2824
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2825)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2825)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "3ec894e9-8f2f-4a65-9220-fa1c11080392",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2825)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "abb38193-4ccf-4d87-8c10-c21ce5e9c8e6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12083"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a59ce78a-d699-4e63-889e-adef397113d9",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2825,
+        "RiskName": "UI Modernization",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "Evaluate and implement newer user interface technologies to improve user productivity.  Technologies must support mainframe operational systems",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2825
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2826)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2826)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "911a7ce1-b487-4d25-a649-58f4f85f6caa",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2826)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "815f4076-2fe0-4aea-a930-ea4677059538",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12085"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0d3a83c3-dffc-4b65-85d6-a06eeae3db1c",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2826,
+        "RiskName": "Unsupported Software",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "Document software that is approaching end of life.  Develop a plan to upgrade within a year of end of life support.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2826
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2827)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2827)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c2d45e46-c6f9-401c-a456-fe63dae3dfe5",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2827)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "8baecee7-adf3-4a8a-b4c9-f185445d10d4",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15156"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "19530b63-dd17-4985-8587-d00ba57f97ad",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 2827,
+        "RiskName": "Stakeholder Support",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Engage and train multiple stakeholders within the same division to reduce the potential for lack of support.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2827
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2828)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2828)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "cfd9d448-f49a-4d9f-8868-a19c3630e9e4",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2828)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "a5b7c84a-ccd8-46a7-9316-768db2cfba9a",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11013"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "28b79f09-73aa-47de-9eef-2c4672029be9",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2828,
+        "RiskName": "Aging system(s) will be unable to provide utilities at reasonable cost compared to newer technology.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Continue Workstation Technical Refreshment and Next Generation upgrade plans: Establish and follow technology road map and perform technology refreshments when maintenance upgrades and technological advancement provides cost-effective alternatives.  Adhere to industry standards.",
+        "ReportDate": "2015-11-30T05:00:00Z",
+        "UpdatedDate": "2015-12-16T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2828
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2829)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2829)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "951e0acf-7696-498c-944d-b6d850affdf6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2829)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "feb1a99e-ea8c-4f43-b7a1-59a752ad2093",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11015"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "1c994801-10fb-4b36-ae3c-144b892524aa",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2829,
+        "RiskName": "Compromise of sensitive enterprise data or lack of system confidentiality, integrity, or availability.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Full use of firewall technology, strong IT security program, and simplified COTS architecture.  Maintain strong working relationship with Information Security Group and DOJ SOC.  Require adherence to Information Rules of Behavior by staff.  Insure adherence to Secure Configuration Standards.",
+        "ReportDate": "2014-09-30T04:00:00Z",
+        "UpdatedDate": "2014-10-21T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2829
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2830)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2830)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ec20446e-ac16-42d8-869b-1668965e1f08",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2830)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "f3369aa4-8217-4918-8150-a345ef913cd3",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11017"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c390f82b-65e5-4417-a433-8d8828a6d70d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2830,
+        "RiskName": "Reduction in Funding",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Structure acquisitions on the availability of funds on a year-by year basis; Continued education of management of funding requirements, system performance and value.",
+        "ReportDate": "2014-09-30T04:00:00Z",
+        "UpdatedDate": "2014-10-21T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2830
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2831)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2831)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c4b8fb51-7c8e-463e-8c4c-78c409ecf328",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2831)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "7ef27af2-9686-4291-b372-c2fc87ff50a5",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11019"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b3158e17-a75a-48e7-9a89-df256e4c2f34",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2831,
+        "RiskName": "Filling positions may take longer than planned due to protracted clearance process.",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "1. Continue communicating with Government PgM and COTR for status. 2. Schedule enough lead time in filling billets.",
+        "ReportDate": "2014-09-30T04:00:00Z",
+        "UpdatedDate": "2014-10-21T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2831
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2832)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2832)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "56f122d1-e790-41bd-9e7c-21e9172517d8",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2832)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "9fb6b34a-6b8f-4c11-8a39-2070db6d2bbf",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11477"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "2ebc2d76-a6be-4666-8c2f-0b20ef879373",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2832,
+        "RiskName": "Schedule Performance",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Maintain a targeted focus on the planning process with ample communication among team members to ensure concurrence of the schedule and the required timeline of each step within the deployment procedure.",
+        "ReportDate": "2014-12-31T05:00:00Z",
+        "UpdatedDate": "2015-01-26T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2832
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2833)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2833)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "0209139a-528e-4c34-9cbb-61fd723e0f75",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2833)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "8c09965e-d77a-49b5-8042-67966ecc1561",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11479"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "cc3c1672-04f8-4a1d-977a-9b3ad09aa3e6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2833,
+        "RiskName": "Funding",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "SI follows a structured approach; planning focuses on identifying best of breed technologies that meet requirements at a reasonable cost vs. unproven bleeding edge solutions, SI follows established procedures to plan, engineer and deploy systems in the most cost-effective manner, Firebird technologies enable SI to realize economies of scale while overall architecture retains the flexibility to meet new business requirements and security initiatives.",
+        "ReportDate": "2014-12-31T05:00:00Z",
+        "UpdatedDate": "2015-01-26T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2833
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2834)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2834)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "84debe1f-1f3b-45a1-bf60-e8940114ce38",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2834)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "21509b36-184e-4a35-b8c8-3b43c254f7fb",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11481"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "629a8ca3-1a0b-46cb-958d-f7e4d3098808",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2834,
+        "RiskName": "The Firebird Integration and Deployment schedule is highly dependent on the ability of DEAs IT Depot and Servicing Center to prepare, supply, and ship the required workstations and other equipment so they arrive to the FTR site just in time for the scheduled installation.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Maintain an acceptable level of inventory to continue deliveries for 30 -60 days.",
+        "ReportDate": "2014-12-31T05:00:00Z",
+        "UpdatedDate": "2015-01-26T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2834
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2835)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2835)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a8e65f5a-9d11-4652-9e03-879f81e18cdf",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2835)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "28e2aa94-9386-4ac4-876b-cfff3784708b",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11483"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "880af2d2-b7a3-4d01-a31c-033fafa9ae6f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2835,
+        "RiskName": "Staffing",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Requested that the contracting resources operate within a matrixed staffing plan so that resources have knowledge of several functional areas.",
+        "ReportDate": "2014-12-31T05:00:00Z",
+        "UpdatedDate": "2015-01-26T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2835
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2836)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2836)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "92b1e734-6a17-4de7-80e7-c2afba9a5e28",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2836)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "4e3c6781-03f6-4643-be00-3eba002b3d26",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11485"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ec62dea3-d241-40e3-a514-ad424a1adb3e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 2836,
+        "RiskName": "Inventory Availability",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Require that contractors who handle DEA inventory to install and maintain security systems and procedures that comply with DEA and Department of State regulations. Require all equipment to be packaged, shipped, and received according to DEA and Department of State guidelines.",
+        "ReportDate": "2014-12-31T05:00:00Z",
+        "UpdatedDate": "2015-01-26T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2836
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2837)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2837)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e84e8e9d-0698-4c7e-8834-b3b2fd4f707b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2837)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "2271f5fa-bb5f-4852-bf8d-9059d03d4eb5",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "615"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "87f12ce2-dc8d-4a80-b631-7c9bcf23f196",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2837,
+        "RiskName": "If the user base or their concurrent use of the system exceeds its design parameters, then system performance will degrade.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Initiate proactive planning with the Engineering Team to ensure suitable equipment is procured for infrastructure and network requirements.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2837
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2838)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2838)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "300d30c2-66bc-46ba-9fae-3ff232479e1d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2838)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "5ee1545f-43eb-45fd-8ba4-9e6a3964ebb4",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9015"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b193c186-b790-476b-8210-1fff733b0a7a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2838,
+        "RiskName": "Because system is operational, buildout schedule is subject to unscheduled freezes due to operational events.",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "Adapt to operational delays as necessary.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2838
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2839)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2839)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c38added-820c-49e1-8154-f6ae2b43804d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2839)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "f15f9c6b-f740-480d-bb98-d99dc1a89d9f",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9017"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "64b71351-dca1-421b-9f43-e2310612d823",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2839,
+        "RiskName": "Budget - O&amp;M Network redesign costs reduce funding for SCIF construction &amp; network deployment activities",
+        "Probability": "High",
+        "Impact": "Medium",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Adjust annual construction and deployment schedule to match available funds and extend overall completion date of program",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2839
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2840)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2840)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e54f0371-684e-495c-8b18-ffce6c0c7415",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2840)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "651cc685-964a-4c95-9d46-5160938086f9",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15167"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "87d9c3f7-cf75-4cfb-b037-c90b8a95715c",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 2840,
+        "RiskName": "Project: I - Hardware delivery can be impeded both by internal bureaucracy as well as the vendors supply constraints.  If required hardware is not delivered in a timely fashion, certain activities cannot proceed.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "The project will requisition all hardware as early as possible to minimize the impact of supply-chain delays.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2840
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2841)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2841)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8e275d4c-68d0-4f7f-8f38-c7d8c8c6557a",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2841)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "f684e9bd-1666-4c97-9a54-3328c591cbc3",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8977"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a8a29c66-fd4e-4e67-bf55-dfaafda239c2",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 2841,
+        "RiskName": "If Workstation software or hardware has issues, it will require staff to resolve the issues, causing them to change their focus from day to day tasks and priorities.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Track all issues and report them to the vendor early and often.  Have a qualified team on stand by to address major or complex issues.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2841
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2842)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2842)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a61e8705-ba87-4eca-9608-f17a1764784c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2842)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "c25f611c-9aa7-48e2-a19f-7f9ad33cb4b7",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8979"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bdde611f-1fc1-4e71-afca-076eb9320766",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 2842,
+        "RiskName": "If Workstation software or hardware has issues, it will require staff to work around the issue, causing reliability challenges.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Track all issues and report them to the vendor early and often.  Have a qualified team on stand by to address major or complex issues.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2842
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2843)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2843)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7f99eaa3-64bb-46de-aeea-2f90d75295a0",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2843)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "f7a5432b-ed5b-40da-9df4-2b3cdbb02f49",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8981"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d57fe880-5162-43eb-a80d-2f949e31d672",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 2843,
+        "RiskName": "If Workstations software or hardware issues, it may slow down productivity within IT, causing business delays.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Track all issues and report them to the vendor early and often.  Have a qualified team on stand by to address major or complex issues.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2843
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2844)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2844)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a8d437cc-e2df-4997-abdb-98a2585d4630",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2844)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "7c48181f-eda0-4334-a617-bc30599dbe22",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8983"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9adaeddd-40bb-4784-9946-d25ad77ee009",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 2844,
+        "RiskName": "If Workstation software or hardware has issues, it may result in patch management problems, and potentially create security vulnerabilities",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Track all issues and report them to the vendor early and often.  Have a qualified team on stand by to address major or complex issues.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2844
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2845)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2845)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e5b518b0-c999-4896-bbef-c096f0ce8e25",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2845)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "199f9a7c-1278-4ec2-ac68-4de0de0dbeee",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "5484"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bf889c09-d662-42e8-9acd-ab0b22aa5ccc",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2845,
+        "RiskName": "If N-DEx funding is significantly reduced, then system hardware and software upgrades will not be accomplished, and the system could experience significant downtime.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1. Submit Application for Resources (AFR). M2. Submit FY Exhibit 53 and OMB 300.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2845
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2846)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2846)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "78ebe482-2dde-4516-ba2f-131e3080403b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2846)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "8588e6e4-ef97-4393-a89e-21e9dd695bc1",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "5485"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "cfbf74b3-7ee2-499b-b401-a9f9f7ff0e6e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2846,
+        "RiskName": "If Criminal Justice Agencies seeking to contribute data to N-DEx experience lengthy delays during the on-boarding process, then N-DEx would experience a drop in participation, resulting in less users and data being added to the system.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M2. Ensure Agency decision makers and key staff attend meetings with N-DEx LS. M4. Utilize existing contracts to increase Data Mapping services. M5. Streamline the Onboarding process. M6. Research funding options available to CJAs for integration services. M7. Promote the N-DEx IEPD Standard to industry via papers, conferences and partnership with IJIS. M8. Identify additional steps during the mapping process required to be CJIS compliant with respect to PII data.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2846
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2847)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2847)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "224f3b95-0828-4478-8514-8177c26ea72b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2847)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "59035720-079f-426a-9655-f66070283cdf",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "7813"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b8ae1e78-1100-407a-8ffa-7c821737b65d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2847,
+        "RiskName": "If the N-DEx system  experiences slow growth in the use of N-DEx by current Criminal Justice Agency user base, there may be a reduction in resources and funding, resulting in the system becoming unsupportable.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1. Educate users on the value/benefit of N-DEx. M4. Address concerns identified in user surveys. M5. Create an online environment for training and system demonstration. M7. Establish Success Story of the Year; promote successes. M8. Establish Working Group to address suggested system enhancements. M9. Leverage FBI Field Offices to increase agency and user participation. M11. Partner with information sharing systems such as RISS and NLETS.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2847
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2848)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2848)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "054027bc-aa02-4e84-a29b-570f45de8202",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2848)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "dc57538f-92bd-4b84-82ba-ed22c665e1b3",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "10997"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ce9f8a2a-f7bc-4852-8526-05be4871c653",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2848,
+        "RiskName": "If the N-DEx Program Office does not implement system changes suggested by the user community, then users will become frustrated and not use the system, and therefore not benefit from the data in the N-DEx system.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1. Communicate future system enhancements/upgrades to the user community. M2. Charter N-DEx Analysis Review Board to address suggested system enhancements. M3. Communicate to users the internal process to implement system changes/enhancements. M4. Implement user feedback capability on the N-DEx portal. M5. Hold periodic User Conferences. M7. Ensure user needs based development occurs through system fixes and enhancements.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2848
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2849)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2849)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "27ddc84f-2b6a-429d-b1a8-8a8a64171c06",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2849)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "76b346b5-3612-47c2-a829-b30613e313e7",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13293"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ebb6b6c6-c5b0-4e00-b6a0-a4f8559084cd",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2849,
+        "RiskName": "Established targets on N-DEx metrics may become too challenging to achieve.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1. Review metrics and targets on a weekly basis for monthly metrics, monthly for quarterly and annual metrics.M2.  Ensure targets for all metrics are attainable, yet challenging.M3. Submit changes metrics via the Federal IT dashboard updates in a timely manner. M4. Provide a coordinated Program Office response to LInX states related to proactive audit assistance to CSOs.  M5.  Meet with states to provide them with an audit plan.  M6. Conduct training on N-DEx policies and procedures.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2849
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2850)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2850)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e39c9c9b-1340-45e7-8bd2-7db562fa440b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2850)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "f82da54f-cb5b-4099-b6c7-0ba50442af14",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13371"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9d3af35c-eccd-45bc-9b90-7659de053f3e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2850,
+        "RiskName": "Increased N-DEx usage may cause higher concurrent users than the system can handle.  If high numbers of concurrent users log in and use N-DEx at the same time, this may cause high system response times or unstable system performance.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1. Conduct testing where a high number of concurrent users log in to N-DEx.  M2. Determine the maximum number of concurrent users that do not impact performance.  M3.  Project the anticipated number of concurrent users into the future, given onboarding of new users.  M4.  Determine what system enhancements are needed (if any) to allow for increased usage of N-DEx.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2850
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2851)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2851)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "20e823ab-bfe8-4575-9721-fc75798948b0",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2851)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "2e4df1ca-205e-4746-b27a-c292a674fbf1",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13612"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "34a51bdc-749f-44ef-abb7-d4cc729ebba3",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2851,
+        "RiskName": "As state audits of N-DEx usage become sanctionable, CSO's may limit N-DEx users in their states.",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1.  Work with state CSOs with ongoing sanctionable audits to provide them with audit packets that will help them successfully manage users without disabling their access.  M2.  Take a pro-active approach by reaching out to CSOs with upcoming audits to provide them with audit packets that make the audit process proceed more smoothly.  M3. Retain audit expertise with the Program Office (former auditor is coming to N-DEx team).",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2851
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2852)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2852)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "0286e3aa-43d9-4037-941b-d916ab0e5b38",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2852)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "620801cd-0018-4414-8e8c-059be1c3bc52",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13680"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d1f03701-7cf4-468b-8d78-468a0c55595f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2852,
+        "RiskName": "If the transition of N-DEx from dedicated, physical servers, to the virtualized CJIS Common Compute Platform (CCP) environment encounters unforeseen technical issues, users may incur degraded services when attempting to use the N-DEx System and the Program Office may not reach service goals.  N-DEx Program service goals may not be met and user dissatisfaction with N-DEx System may occur.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1. Perform benchmark testing.  M2. Adjust system performance parameters. M3.  Identify issues that may cause slower performance and specific conditions associated with the degradation of services.  M4. Re-index bad indices incurred at CCP Cutover; actual cutover events completed.  M5.  Add additional performance measurement to discover and analyze performance bottlenecks.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2852
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2853)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2853)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "fa772b6f-e45c-428d-9751-15683740c2a7",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2853)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "ad0406a7-255a-4760-9a0a-d015ac0ecb3d",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15163"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b7696bb2-74d1-4756-bd9a-ccbe5a413de4",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2853,
+        "RiskName": "(N-DEx Ingest and Correlation/Resolution Services Scalability Project)  If NER does not receive CCP/Enterprise resources in a timely manner due to Divisional priorities, then NER replacement deployment may be delayed beyond the contracted SME s time causing schedule and cost increases.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1.  Obtain management support for the project early.  M2.  If Division priorities indicate that NER could lose support, plan on obtaining as many quick wins as possible.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2853
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2854)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2854)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "029d0423-f6a6-499f-a6d0-ffa083735975",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2854)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "ee2c6751-5d60-4803-a7f7-eb605218a563",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15164"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "84352458-e283-4792-a178-8690a874166d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2854,
+        "RiskName": "(N-DEx Ingest and Correlation/Resolution Services Scalability Project)  If N-DEx strings are not fully functional and available when needed for integration, development, deployment, testing, and transition, then schedule delays and increased costs may result.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1) Determine if a string schedule exists. M2) Develop a string schedule (as necessary) to support string management. M3) Obtain the necessary string windows to support project development. M4) Manage the project schedule and string schedules together to ensure minimal impact from unplanned schedule changes.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2854
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2855)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2855)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8761e75d-519f-47da-a319-8566e1dfbcf0",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2855)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "da3e13ea-1a3a-4ef6-b0e5-18edab4fedc6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15165"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7e8224ae-0476-41b3-af2e-772a96390ada",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2855,
+        "RiskName": "(N-DEx Ingest and Correlation/Resolution Services Scalability Project) If NER is unable to configure the COTS product to import the N-DEx data into the COTS and provide for the data handling requirements, then delays and added costs could be realized in customizing the COTS, procuring a new COTS solution, or developing a work around to resolve the necessary configuration/customization.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1.  Identify data requirements early.  M2.  Meet early with the vendor to discuss possible configuration.  M3.  Determine what methods the vendor uses to develop changes to their product.  M4.   Notify the vendor immediately if customization looks like it may be required",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2855
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2856)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2856)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7cb5040b-1623-4644-8378-230c2d86af49",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2856)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "bb55e207-0d1a-49d9-af78-54a3ce129971",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15166"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "1cf5b7d5-2263-491e-9e43-cc4fcebd0396",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 2856,
+        "RiskName": "(N-DEx Ingest and Correlation/Resolution Services Scalability Project) The product chosen for the N-DEx Entity Resolution (NER) will use the Common Computing Platform (CCP), but CCP may not be able to get resources delivered on time.",
+        "Probability": "Low",
+        "Impact": "Medium",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1) Request resources as early as possible once the decision is made. M2) Ensure prioritization of needs is identified clearly and have cost of delays identified for the project. M3) Plan on procuring the resources required based upon specifications for requested CCP.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2856
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2857)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2857)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "efb7db13-6e0f-491f-9cc9-6cd20b0f9fbb",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2857)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "e2af118a-bb0e-4fdb-a7b1-84291293aae7",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11377"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "18af4715-137c-48a1-90cb-87e20830f7fa",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2857,
+        "RiskName": "Project TSS.  If the TSC IT infrastructure is not updated as required to address vulnerabilities that can be revealed through IT attacks; the TSC may be exposed to vulnerabilities, such as hacker threats; the TSC Analysts cannot operationally maintain or update the TSS data; and external key stakeholders will receive obsolete or wrong information and will not be able to identify, deter, and capture Known or Suspected Terrorists.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Proactively monitor security and  End of Life  hardware/software announcements and schedule updates based on the severity of the vulnerability; Create a long-term plan for infrastructure updates; perform monthly vulnerability scans.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2857
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2858)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2858)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "57bf533a-5d5a-4ef5-979a-6e9fdb3742a2",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2858)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "5361aae0-9248-4833-ae7c-fc802e549d27",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11379"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "16451fe1-3b19-4b02-b669-7557275c41bd",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2858,
+        "RiskName": "Project TSS.  If key IT personnel depart the TSC and TSC is delayed in backfilling positions with cleared, qualified resources; the current operational environment may not be properly maintained.",
+        "Probability": "High",
+        "Impact": "Medium",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Identify key personnel; develop a transition plan, which documents the steps for training replacements; actively manage replacement when required. Require training overlap while individual is still with the TSC for knowledge transfer/retention.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2858
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2859)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2859)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "cace05f5-57aa-4a29-8fcd-240d88d74f83",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2859)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "cbc14b24-1231-4a91-b756-9d8f66ccfecd",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11381"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5dd2655b-d71d-455e-9f1a-230323e8a98d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2859,
+        "RiskName": "Project TSS.  If the TSC is not able to provide 24/7 support because an attack disrupts local IT services; the TSC Analysts cannot maintain, update or access the TSS data, which prevents the positivie identification of a suspected terrorist.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Update the Information System Contingency Plan to include specific recovery procedures for critical information, which is exercised on a scheduled basis with review and updates as needed.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2859
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2860)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2860)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9402e226-eb08-4a56-9464-24e636f44add",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2860)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "a07f45c6-1362-45a4-ba47-8b51b7d63c2a",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15323"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a6d61fb4-f7b5-4811-bf4c-fb32aab12b09",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 2860,
+        "RiskName": "If the TSC is not able to provide 24/7 support because an attack disrupts local IT services; the TSC Analysts cannot maintain, update or access the TSS data, which prevents the positivie identification of a suspected terrorist",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Continue the build-out of and equipping the CJIS  \"Hot-warm\" COOP facility to increase access to critical information should a contingency arise.  Update the Information System Contingency Plan to include specific recovery procedures for critical information, which is exercised on a scheduled basis with review and updates as needed.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2860
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2861)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2861)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ffb2488d-7853-454e-ba71-cf9b53da972f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2861)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "31823489-a8db-4e6f-89d5-8657ea724435",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11229"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b2ae9d31-169b-4f2f-abcb-7e99b28fd0c6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 2861,
+        "RiskName": "If Sentinel does not reduce the amount of duplicate code in its baseline, then the resources and costs required to maintain the code will negatively impact Sentinel's ability to respond to defects and enhancements.",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "M1: Ensure code from current development efforts do not contain duplicate code (In Progress). M2: Develop and implement plan to conduct a code review of current baseline code to detect duplicate code. (In Progress) M3: Develop and implement plan to reduce duplicate code in the baseline. (In Progress)",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2861
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2862)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2862)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "de0afca3-c11d-4e6f-b79c-d8d99e82fe37",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2862)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "6e08969c-22a2-4f0f-b184-930bc5d2f444",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12739"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a620c387-3299-4936-a216-140f7632023d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 2862,
+        "RiskName": "If contracting processes are not finalized and standardized, then contractor support personnel will delayed in reporting for duty, potentially adversely impacting the Case, Threat, and Source Management mission.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "M1: Develop and implement an escalation process with adequate timeline.M2: Monitor process effectiveness and adjust acquisition planning accordingly.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2862
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2863)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2863)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "2af9514e-ab51-401e-a319-1763cca2503f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2863)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "73d39e50-02d0-475f-9d0e-4fd71ef30564",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12740"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "4bbddbb7-e5d7-45d5-8019-3f8f3e837a86",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 2863,
+        "RiskName": "Lack of complete disaster recovery solution - If the primary site goes down, the recovery site has insufficient capabilities to sustain and ensure reliability.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Upgrade secondary site capability or identify new secondary site",
+        "ReportDate": "2015-08-31T04:00:00Z",
+        "UpdatedDate": "2015-09-15T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2863
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2864)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2864)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "81efb101-2f58-475f-a9ef-fc95ec50a3e7",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2864)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "b0ddfe6c-6e5c-4c23-b83a-751f452cca16",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12741"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d0b7317b-02f8-424b-87f5-6dbcbf016f96",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 2864,
+        "RiskName": "Aging Hardware - Hardware failures have increased due to age; fault conditions cannot be easily repaired.",
+        "Probability": "High",
+        "Impact": "Medium",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Perform technology refresh as needed",
+        "ReportDate": "2015-08-31T04:00:00Z",
+        "UpdatedDate": "2015-09-15T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2864
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2865)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2865)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a37a2f28-10cd-42c1-aea6-6c02617a5ae6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003373",
+          "ShortName": "Guardian",
+          "InvestmentTitle": "FBI Guardian"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2865)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "196fd5ed-23d7-4554-a845-1e55ab1c7e5c",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "5813"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "2b5bb886-ed63-4fc3-bd7f-ea1fe3efcb11",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Guardian"
+        },
+        "Id": 2865,
+        "RiskName": "Project 2016A COOP/DR -- If the primary hosting site is unavailable, then the Guardian and eGuardian projects will need to rely on the FTTTF COOP/DR capabilities, resulting in degraded performance.",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "Complete configuration, integration, and deployment of DR equipment.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2865
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2866)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2866)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "d971e28d-9e17-4aa8-80aa-166a26fdf7fe",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003373",
+          "ShortName": "Guardian",
+          "InvestmentTitle": "FBI Guardian"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2866)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "49fab5f8-b095-4809-b4f4-ae662de475dd",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13294"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0999fff6-50d7-4c6a-a856-34c276607e09",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Guardian"
+        },
+        "Id": 2866,
+        "RiskName": "Project 2016A Enterprise integration efforts will affect mission of current Guardian users.",
+        "Probability": "Low",
+        "Impact": "Low",
+        "RiskScore": 1,
+        "Risk": "Low",
+        "MitigationPlan": "1. Leverage fusion cell contains representatives from all programs to inform requirements.  2. Pilot enterprise integration with current user base before rolling out enterprise-wide.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2866
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2867)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2867)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "328a611f-4693-4f49-a68c-15fe47d84325",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2867)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "52cfcdd6-b2fe-47a7-a3f2-e87f363af0a6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12737"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "49e0cf7a-7bca-4e40-8382-cf2dcb8cf644",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2867,
+        "RiskName": "If NGI facilities experience failures, water leaks, natural events, fire, power outage, etc., the ability to provide timely and relevant criminal justice information could be irretrievably lost if back-up contingencies are not established.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "(M1) Ensure COOP plan is in place and up to date.  (M2) Ensure the areas key regional infrastructure and support systems are available/operable.  (M3) The use of FBI IT systems and communications capabilities will be capable of supporting off-site locations.  (M4) Emphasizing employee COOP education, training, and emergency preparedness.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2867
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2868)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2868)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "fef4475f-b28e-4ed1-aab0-93fb6df5459a",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2868)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "5c1a78bc-57e5-4d59-a00d-065a8f2e933a",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "12738"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "85238831-cc9d-448f-8f1e-f96f8a7d9d83",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2868,
+        "RiskName": "Incorrectly segmented and/or oriented tenprint and palm print submissions are not being detected or corrected, in many cases, resulting in the NGI failing to identify individuals with existing criminal history records, failing to cascade submissions against the ULF, and incorrectly establishing or updating the composite images.",
+        "Probability": "High",
+        "Impact": "High",
+        "RiskScore": 5,
+        "Risk": "High",
+        "MitigationPlan": "(M1) Vendor tenprint and palm print segmentation tool evaluation funded in FY17 for future procurement and integration into the NGI system.  (M2) Employee additional staff to process higher volumes of poor quality prints.  (M3) Overtime paid to staff to process higher volumes of poor quality prints.  (M4) Work with contributors to submit higher quality prints.  (M5) Assign staff to correct improperly segmented and/or oriented fingerprint/palm print enrollments.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2868
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2869)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2869)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "cc717756-9480-4f26-a875-dec79392c9cf",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2869)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "7036dc81-7835-4c35-934b-402b02ad2751",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13793"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "dd7ca4c5-4c1b-4745-bd7e-7b17356d94a0",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2869,
+        "RiskName": "If the current limited functionality supported by NGI's disaster recovery plan is not sufficient for NGI's needs in the case of a disaster, then NGI will not have complete disaster recovery capability.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "(M1) Pursue the Trusted Internet Connection infrastructure through the Active-Active Infrastructure (AAI) project.  (M2) Study improving the infrastructure through cloud computing initiatives.  (M3) Seek to improve the capabilities during Technical Refreshment Activities.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2869
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2870)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2870)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e610c3cd-d64c-4e14-a262-e195a81441b4",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2870)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "2e516ea4-0619-42c0-9f8e-c2ecc33f50db",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13794"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7ac0dff9-cae3-4acb-a3cd-118edda5e45d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2870,
+        "RiskName": "If the rate of breakage (patches, upgrades, and updates causing broken functionality) for NGI increase beyond O&M staff's ability to develop and implement fixes, in a timely manner, then NGI could experience a degradation of services.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "(M1) Monitor Enterprise Change Request (ECR) counts due to broken functionality.  (M2) Balance the value of new functionality to restoration of old functionality.  (M3) Determine if the ECR system can provide a higher level of metric detail on the proximate cause of required fixes.  (M5) Use ECR metrics to focus efforts on sources of breakage which could yield reductions in the rate of breakage.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2870
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2871)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2871)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "cc1ab989-2b43-4d46-9c62-e00b9f568c8c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2871)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "7fbee459-008b-4dab-83a4-947abdafc7a6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "13795"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "380813d6-9855-428c-91e7-805d979c0ff5",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 2871,
+        "RiskName": "If Transaction Status and Transaction History data is not accurate for usage data planning purposes, then NGI management may be making errors in staffing, reporting, and planning for NGI's future.",
+        "Probability": "High",
+        "Impact": "Low",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "(M1) Update Transaction Status and Transaction History (TS/TH) to produce more accurate information.  (M2) Manual counting utilizing additional resources.  (M3) Monitoring TS/TH data for accuracy prior to use.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-19T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2871
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2872)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2872)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "164b1997-683e-4923-9ea6-9d33fd5c1173",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003533",
+          "ShortName": "ICAM",
+          "InvestmentTitle": "DOJ Identity, Credential, and Access Management (ICAM)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2872)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "f8251932-3776-4d8c-a344-1d39ee75cae8",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8679"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a42b5d81-d7b9-4b0d-a06a-ac419423982e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ ICAM"
+        },
+        "Id": 2872,
+        "RiskName": "IF the Continuity of Operations (COOP) is not in place for Active Directory Federation Service (ADFS), Identity Management Validation System (IDMVS), or Virtual Directory Service (VDS); there is a RISK of a possible disruption in services during an emergency, which could THEN cause an impact on missions, personnel, and facilities at DOJ.",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "A COOP solution is not currently in place for DOJ Federation services; however, a plan is currently being developed.",
+        "ReportDate": "2016-01-31T05:00:00Z",
+        "UpdatedDate": "2016-02-23T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2872
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2873)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2873)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9f10c28f-a611-4710-ad8d-c7e43cf2b65e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003533",
+          "ShortName": "ICAM",
+          "InvestmentTitle": "DOJ Identity, Credential, and Access Management (ICAM)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2873)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "54b6395c-3a44-4aa3-ba28-77fec1c9bbd4",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11487"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "e35fad29-ee40-479d-a833-23cacb7c610a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ ICAM"
+        },
+        "Id": 2873,
+        "RiskName": "IF the Component resources for PIVCard application enablement have not been allocated, there is the RISK of not complying with NIST SP 800-53 Rev 4, which could THEN cause information security leaks/cyber-security attacks.",
+        "Probability": "High",
+        "Impact": "Medium",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Meet with Component senior management on allocating resources and technical hurdles. Continue to provide subject matter expertise to application owners and monitor project status. Leverage existing DOJ Federation Service enterprise level and scalable infrastructure as a highly viable solution to PIV enable applications.",
+        "ReportDate": "2015-08-31T04:00:00Z",
+        "UpdatedDate": "2015-09-17T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2873
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2874)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2874)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "89c1ca0c-b2dd-46fd-895c-e0cb974ff03f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003533",
+          "ShortName": "ICAM",
+          "InvestmentTitle": "DOJ Identity, Credential, and Access Management (ICAM)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2874)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "12eca783-3d3a-4720-ae20-c1b9ceccbc51",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "11489"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "a74523a4-6d5f-4168-ac02-aa26a9922202",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ ICAM"
+        },
+        "Id": 2874,
+        "RiskName": "IF DOJ resources for FICAM FY16 and FY17 priorities are not adequate, there is a RISK that the GSA Vendor Transition, Application Enablement, Logon, ABAC, Derived PIV, ePACS, Digital Workflow, IDM System, CDM Phase 2, and ISIMSC Support will not be adequately addressed, which could THEN not meet the compliance dates and mission critical tasks.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Agree on DOJ priorities with Components. Assess CDM Phase 2 IDM services and resources available for DOJ. Develop IDM service portfolio to include FICAM-S. Leverage existing DOJ Federation Service enterprise level, scalable infrastructure, and Connect.gov.",
+        "ReportDate": "2015-08-31T04:00:00Z",
+        "UpdatedDate": "2015-09-17T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2874
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2875)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2875)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "8e4674df-1ac4-4f22-98fe-388fbbff2f07",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003560",
+          "ShortName": "DOJ Telecom",
+          "InvestmentTitle": "DOJ Telecom"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2875)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "0ca43d7f-b9f5-412a-a09d-b3b77e0fd630",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8681"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "0a6b1bcb-1239-4c3f-af28-e6a26c7e1a9d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Telecom"
+        },
+        "Id": 2875,
+        "RiskName": "Leased carrier/infrastructure access from third party vendor other than the primary service provider increase cost that is supported by the JUTNet participating components.  While enterprise solutions are a strategic goal, costs remain high.  Searching for efficiencies and cost savings is paramount.  Failure to find savings risks the PMO's business case for an enterprise level managed WAN service.",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Local Exchange Carrier access (LEC) that our managed service provider, ATT leases from Verizon (main owner of DC area infrastructure) is the dominant cause of outage times at various vital locations.  Implementing the ATT proprietary fiber optic SONET ring and adding these sites to the ring removes the LEC access risk, by removing the need for a third party vendor.  It also decreases costs of service by up to 8%, and decreases upgrade/downgrade times by over 50%.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2875
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2876)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2876)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "73c539e0-5ce2-4a7f-b96e-2970ed65abd9",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003560",
+          "ShortName": "DOJ Telecom",
+          "InvestmentTitle": "DOJ Telecom"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2876)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "74626fe8-da02-4d80-a260-0eb027db8a61",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8683"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7776aec1-65b9-4754-b4d8-5a629c67e646",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Telecom"
+        },
+        "Id": 2876,
+        "RiskName": "Carrier Redundancy ensures that time sensitive data and information pertinent to national security are always accessible regardless of environmental conditions or threats.  JUTNet participants may then independently justify other service as their preferred means of data transport.  If the PMO loses the JUTNet participant pool it is impossible to support managed services, and DoJ will lose the enterprise solution.  Strategic goals for enterprise level service will no longer be supported.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Many DoJ components are removing carrier redundancy, citing high cost and acceptable reliability of the primary as reasons.  However, vital locations for high profile people, systems, and data could cause serious impact to DoJ operations and national security during a major outage.  Installing the DoJ SONET ring will guarantee path diversity as a substitute for carrier diversity, realize an 8% savings, and decrease repair time as techs will not work through 3rd parties for facility access.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2876
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2877)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2877)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "162f950e-3a7d-4674-adf4-d37d36e08c67",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003560",
+          "ShortName": "DOJ Telecom",
+          "InvestmentTitle": "DOJ Telecom"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2877)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "679c3d0c-74fd-4098-9d7f-660be8b4274a",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8685"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "8e3f58ca-7dc1-4f76-8a58-f6939e99ce24",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Telecom"
+        },
+        "Id": 2877,
+        "RiskName": "Superior Network Performance is an expectation of the managed WAN service the PMO pays for with ATT.  If network performance falls short of the service level agreements and customer expectations, the participating DoJ components may justify funding independent wide area networks tailored to their needs, thus leaving the PMO's participant pool.  If enough components leave, it may be difficult to justify the PMO' e, which comprises 1/3 of the major telecom investment.",
+        "Probability": "Low",
+        "Impact": "High",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Carrier performance is maintained through strict service level agreements (SLAs), that result in billing refund penalties when violated.  The telecommunications PMO also maintains an IT engineering cell, which monitors performance, detects anomalies, and verifies the vendor corrective action, while advising leadership and the vendor on the best practice course of action.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2877
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2878)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2878)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "473db23f-434b-4082-9db8-a0b0742b9995",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2878)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "4602a58b-ef3a-4860-b388-75e65d04e47a",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8993"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "648dcb51-abdf-49f9-aad3-cc585e003c0b",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 2878,
+        "RiskName": "If the external efforts DOJ Data Center is dependent on are delayed or not completed to scope then DOJ Data Center plans could be delayed, or stalled, resulting in the delayed closure of non-core data centers resulting in the additional costs for continued use of existing facilities and to maintain data center operations in the non-core facilities.",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Continues monitoring of dependent efforts and engage with leadership.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2878
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2879)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2879)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "63c6314f-39ad-457e-b4b1-f1f204df7886",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2879)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "4cd82693-3c53-468f-baf5-f5e22c1909d0",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15341"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7383b51c-4d0e-4b32-97f1-f5697532163f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 2879,
+        "RiskName": "If out year funding resources significantly change from estimates then external dependencies and project activity sequencing may result in significant project variance in schedule and costs.",
+        "Probability": "Medium",
+        "Impact": "Low",
+        "RiskScore": 2,
+        "Risk": "Low",
+        "MitigationPlan": "Establish contingency extension to facility lease, with commensurate increase in funding requirement.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2879
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2880)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2880)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "124a2146-7b26-4988-a9a6-b5650a60e81e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2880)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "752d1ac6-277c-4841-a436-aa777d24d814",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15342"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3bd493db-a51a-4cb0-9c1b-8451aa9f8c7d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 2880,
+        "RiskName": "If standard business processes and transition plans are not established THEN the component migration into CEFs and enterprise cloud/virtualization environments will be unorganized, disjointed and potentially result in service interruptions.",
+        "Probability": "High",
+        "Impact": "High",
+        "RiskScore": 5,
+        "Risk": "High",
+        "MitigationPlan": "1.) Establish a Component Engineering Team charter, 2.) Obtain Executive Steering Committee (ESC) approval, 3.) Engage Component Engineering Team with Components resident in data centers planned for closure, 4.) Collect Component Requirements and Inventory, 5.) Present recommendations to the Operations Working Group (OWG)",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2880
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2881)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2881)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4c9714c4-83e8-4128-bf2e-3693912a33cb",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2881)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "fd06b5f9-e887-4f89-a778-19491c4cc44f",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15343"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "e5f0cbe1-783c-49a7-8fee-cff736793d17",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 2881,
+        "RiskName": "If the FBI Pocatello Data Center expansion which is a significant external dependency is not complete on time and to scope then the accuracy and validity of the Non-Core Data Center Closure planning effort will be questionable resulting in the need for the Non-Core Data Center closure plan to be reevaluated and causing a delay in executions and potentially increasing the project costs and duration.",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Work closely with CIOC and Data Center Executive Steering Committee to identify as early and possible any potential impact from external dependencies and create contingency plans to accommodate delays.  Delays will have a funding consequence that will need to be address with leadership as quickly as possible.",
+        "ReportDate": "2016-09-30T04:00:00Z",
+        "UpdatedDate": "2016-10-21T04:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2881
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2882)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2882)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "712c6820-142e-4db5-8ab0-554025763ca9",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2882)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "7519d027-152b-475d-9354-46167abd95d1",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "8999"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c54fbac7-ce0b-4715-bc85-e3f1db583001",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 2882,
+        "RiskName": "Increase staffing required to proactively manage or consolidate security services may not be obtainable.",
+        "Probability": "High",
+        "Impact": "Medium",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "Build dedicated change management plan and communications campaign.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2882
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2883)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2883)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "27b0488c-f90a-4660-ab9d-0b3ee61bf99d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2883)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "5f9633e8-f7ac-4c5a-bf11-9b2452308aa6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9001"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3bdf0b51-db1f-42c0-b1cd-95c9f9a45c13",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 2883,
+        "RiskName": "Increased resources managed by current staff.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Select a limited number of projects to implement and ensure integration is accomplished effectively.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2883
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2884)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2884)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ecf4f457-c575-46cb-91d8-b59789632a10",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2884)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "14feb1c0-d79f-443d-87bc-f9b263f553a6",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "9003"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d3f2504c-10a8-4d55-b034-406614381acd",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 2884,
+        "RiskName": "Implementation of complex system may delay implementation.",
+        "Probability": "Medium",
+        "Impact": "Medium",
+        "RiskScore": 3,
+        "Risk": "Moderate",
+        "MitigationPlan": "Allocate resources toward project management team to track and management implementation issues.",
+        "ReportDate": "2014-08-31T04:00:00Z",
+        "UpdatedDate": "2014-09-11T04:00:00Z",
+        "UpdatedBy": "daniel.york@usdoj.gov",
+        "ID": 2884
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2885)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2885)",
+          "etag": "\"1\"",
+          "type": "SP.Data.OpenRisksListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ce27fe1f-0c7f-4f22-a782-646a46c84268",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003618",
+          "ShortName": "Capture",
+          "InvestmentTitle": "USMS Mission Modernization - Capture"
+        },
+        "ProjectID": {
+          "__deferred": {
+            "uri": "https://itim.doj.gov/_api/Web/Lists(guid'96134f4d-826c-4228-8ee3-bac041f9fe1e')/Items(2885)/ProjectID"
+          }
+        },
+        "RiskID": {
+          "__metadata": {
+            "id": "2967ecc8-8b19-4c53-b272-f6c4e1775b80",
+            "type": "SP.Data.RisksListItem"
+          },
+          "RiskID": "15754"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "24579f90-46b4-49e2-8177-5aa0dbdbaf8e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "USMS Capture"
+        },
+        "Id": 2885,
+        "RiskName": "Out-Year Funding Availability",
+        "Probability": "Medium",
+        "Impact": "High",
+        "RiskScore": 4,
+        "Risk": "High",
+        "MitigationPlan": "USMS continues to work with the CFO and division financial POCs for the different appropriations to get Capture program added into their FY18+ base budgets.",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "UpdatedDate": "2016-11-17T05:00:00Z",
+        "UpdatedBy": "robert.worrest@usdoj.gov",
+        "ID": 2885
+      }
+    ]
+  }
+}

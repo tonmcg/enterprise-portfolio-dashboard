@@ -1,0 +1,754 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(992)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(992)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a680abda-79cc-445f-99f2-c9451bb5a640",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f7ef5e54-410c-47fb-af47-1bbc16fcd4cb",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 992,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "The Justice Management Division (JMD) Finance Staff successfully completed the migration of the Office of the Inspector General (OIG), Executive Office for Immigration Review (EOIR), and the Office of the Pardon Attorney (OPA) from the legacy financial system, Financial Management Information System (FMIS) to the Unified Financial Management System (UFMS) on schedule, 10/13/15. The JMD Finance Staff UFMS Operations and Reporting Group and Unified Financial Systems Group Production Services teams are providing post implementation and operational support to the newly added 160 OBD and JMD end users. \n\nThe Wave 2 UFMS migration includes the National Security Division (NSD), Foreign Claims Settlement Commission (FSCS), Community Relations Service (CSR), and U.S. Parole Commission (USPC); as well as the Fees &amp; Expenses of Witness (FEW) functionality. The JMD FS has completed the Configuration and Conversion phases of the project and are currently delivering Training and conducting Business Transformation activities. The project is on schedule and under cost.",
+        "ComponentCIODate": "2016-10-31T04:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Justice Management Division (JMD) Unified Financial Management System (UFMS) has met its performance metrics for July. The Wave 2 migration project to UFMS is currently in the Configuration and Migration stage, and conversion and testing activities continue on budget and on schedule.  Project and operational risks are low to moderate and under mitigation plans.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 992
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(993)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(993)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4f35752a-8eaf-4b2b-8bef-17d357e5e33c",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "cda652bc-ef8d-4202-81e6-1cd3e32e4cc2",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 993,
+        "ComponentCIORating": 5,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Performance metrics,  were again met in September &amp; October, and all monitored areas remained at acceptable levels in an overall view of projects, risks, &amp; metrics.  The LEEP Program continues to focus on increasing agency and service-provider membership (24,000 new members per month/416 new 'event boards per month), bringing on new services, and increasing single-sign-on connections (ease of access), all designed to continuously improve customer satisfaction.  &#123;Additionally, the program has targets for customers defined as 'hits' on the site.  Each login or use of an app generates a hit.  There is an 8% increase in 'hits' goal as a target for customers&#125;",
+        "ComponentCIODate": "2016-11-22T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Law Enforcement Enterprise Portal (LEEP) met all performance metrics in July. It currently has no active projects. LEEP has identified a moderate level of operational risk and continues to monitor. LEEP focuses on improving customer satisfaction,  increasing agency and service-provider membership, bringing on new services, and increasing single-sign-on connections.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 993
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(994)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(994)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "f1c38a23-cfa2-45ff-a748-4eb36cd51e48",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3e4df4b2-f337-4fca-833c-f74c2566fb66",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 994,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "CODIS continues to meet all operational performance targets.  CODIS is doing maintenance work, including developing, testing, and deploying service packs without incident.  \n\nThe CODIS Program has received development funding with which to address new technological requirements and to meet statutory/legal mandates.  An award was made for development services at the end of FY 2015.  The development activities for CODIS 8.0 began in February 2016. The deployment of CODIS Service Pack 7 started approximately one month behind the scheduled start date.  However, the completion of the Service Pack 7 is expected to complete by the planned date.\n\n",
+        "ComponentCIODate": "2016-11-21T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Combined DNA Index System (CODIS) investment continues to meet operational performance targets. Automated testing and CODIS version 8 development continue on budget and on schedule. Overall investment risk is moderate; identified operational and project risks are being monitored.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 994
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(995)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(995)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ccc81b9e-2bf9-449c-a3af-eb7c954af160",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "326bc058-74b2-4fbd-aa46-c0044028bb77",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 995,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "The NCIC system continues meet requirements and to operate efficiently within performance parameters.  There are no issues which adversely impact the operation or maintenance of the system.  \n\nThrough coordination with senior leadership, the investment's risks are prioritized for all projects, while being continuously reviewed.  The current result is an overall moderate low risk to the investment with a rating of 4.  There is potential for an increase to the project's total cost resulting for a recently approved two-month extension to the SME task order (More SME's brought on for requirements development in N3G-next generation system).  CPU is monitoring cost variance over the next two months (POP end date now 6-28) for the telltale 10% variance to cost that would trigger a PBCR to make adjustments.\n\nNCIC just completed a PBCR for a system concept review for the N3G upgrade, which slightly increases investment risk, which continues a recommended rating of 4.",
+        "ComponentCIODate": "2016-11-22T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The FBI National Crime Information Center (NCIC) system continues to operate efficiently and within performance requirements. The investment includes one project, the NCIC 3rd Generation (N3G) formulation project, which is currently on schedule and within budget. There is a risk of cost increases from additional subject matter experts for N3G requirements development; management is monitoring cost variance and will request a baseline change if cost variance exceeds 10% in the next two months.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 995
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(996)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(996)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "70d9e239-1ac6-409e-92fc-32d01620cb23",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9922be99-6352-44fc-8a4f-f9c7c2110be0",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 996,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "NGI maintenance project is stable and all performance metrics have been met.  Since investment is in O&amp;M, recommend a CIO rating of 4.",
+        "ComponentCIODate": "2016-11-23T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Next Generation Identification (NGI) met all performance metrics. NGI has one active project, a Tech Refresh project that is on schedule and on budget. NGI is managing moderate and high operational and project risks, including the risk of incorrect fingerprint submissions needing additional labor to process. The DIRC reviewed NGI in May, and action items are being tracked.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 996
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(997)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(997)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b7394bab-6474-4132-af31-85a8868bf82d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003533",
+          "ShortName": "ICAM",
+          "InvestmentTitle": "DOJ Identity, Credential, and Access Management (ICAM)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ffda9f13-d5cf-4bb1-9598-fc325e70a6f9",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ ICAM"
+        },
+        "Id": 997,
+        "ComponentCIORating": 3,
+        "ComponentCIOColor": "Yellow",
+        "ComponentCIOComment": "The Department of Justice (DOJ) Identity, Credential, and Access Management (ICAM) program continues to work with components towards full Personal Identity Validation (PIV) card adoption including providing support for the FBI s project to PIV-enable its privileged user population.  ICAM is conducting monthly data calls to track progress on PIV logins, and is reporting results to OCIO and component CIOs.  ICAM is reaching out to Components to determine factors impacting PIV authentication for privileged users and working to identify solutions in order to achieve 100% compliance across the Department.  \n\nBased on Component feedback, ICAM is running several projects to assist PIV compliance including&#58;\n1.  PIV-I Pilot project that will provide an alternate LOA-4 compliant credential for individuals who do not qualify for a PIV.\n2.  Privileged Access Manager (PAM) implementation through CDM Phase 2 to remove usernames and passwords from the network.\n3.  Identity and Access Management (IAM) solution to standardize digital identities and form the foundation for automated provisioning and Derived Credentials (PIV-D).\n\nICAM met three out of four performance metrics, and two of three risks identified for ICAM are rated as high-risk.",
+        "ComponentCIODate": "2016-11-18T05:00:00Z",
+        "DOJCIORating": 3,
+        "DOJCIOColor": "Yellow",
+        "DOJCIOComment": "The Department of Justice (DOJ) Identity, Credential, and Access Management (ICAM) program met performance targets for closing helpdesk tickets and for the percentage of DOJ applications requiring PIV access, but missed its target percentage of DOJ computers requiring PIV login. Two out of three operational risks identified for ICAM are rated as high-risk.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 997
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(998)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(998)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "666ac44e-9550-4268-9027-be8f7e5a91e2",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003560",
+          "ShortName": "DOJ Telecom",
+          "InvestmentTitle": "DOJ Telecom"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f97cd7b5-24ba-405f-b421-f6b7798c37ed",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Telecom"
+        },
+        "Id": 998,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Of the Telecom major investment only the JUTNet telecom portion of the investment was measured in Budget year 2017. \nAdditionally, the other component's telecom portions that comprised the investment were reported accurately in eCPIC.\nDOJ is working with the JUTNet service provider to evolve current legacy TDM services to Ethernet for increased performance while reducing costs for bandwidth. \n\n\n\n",
+        "ComponentCIODate": "2016-11-01T04:00:00Z",
+        "DOJCIORating": 3,
+        "DOJCIOColor": "Yellow",
+        "DOJCIOComment": "The Department of Justice (DOJ) Telecommunications investment met two out of four metrics, and narrowly missed targets for internet and network availability. Vendor service agreement violations resulted in rebates to the Department.  Service repair times met performance targets and identified risks are under mitigation plans.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 998
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(999)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(999)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "482ca3eb-c0c2-46db-bead-52f11dc2152e",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c323f95e-ec0f-40da-a4c0-de1466e9be20",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 999,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Status&#58;\nOf the original 110 unclassified data centers the Department started with in FY2010, three (3) have been designated as Core Enterprise Facilities (CEFs), 72 have been closed; leaving 35 non-core data centers left to be closed. The Departments goal is to migrate these remaining 35 non-core data centers to one of the DOJ CEFs or the commercial cloud by end of FY2019.\n\nThe three DOJ designated Core Enterprise Facilities (CEF) continue to develop and refine the enterprise level service offerings (virtualized common compute platform, Storage as a Services, Network services).\n\nTransforming the Department's consumption and delivery of IT to a services-oriented model that leverages commodity infrastructure is critical to achieving the Departments vision of providing efficient IT services to all stakeholders.\n\nData Center Transformation Initiative (DCTI) has engaged data center migration industry expertise to provide standardized repeatable processes and tools, provide support in orchestrating the remaining data center migrations, and to assist, in refining CEF operational and performance metrics.\n\nRecent Activity&#58;\n-    For the FY2016 successfully closed five (5) non-core data centers\n-   JMD Rockville data center migration, project planning continues and system discovery and asset inventory is underway.\n-   Continue to evolve the DCTI Roadmap (people, process, and technology).\n-   Unify DCTI vision, architecture, technologies, and services in order to provide a single solution to all department clientele.\n-   Continued outreach with components to plan for FY 2017-2019 migrations and to identify and mitigate identified risks and issues.\n-   Continue to refine the DCTI master migration schedule in order to accelerate the schedule where possible.\n-   Contract vehicle for procuring Public Cloud resources though the DOI has been awarded; activities underway to obtain C&amp;A and ATO.\n-   CEF-East (Clarksburg) facility expansion underway   planned available for occupancy by 1Q18.\n-   CEF-West (Pocatello) facility expansion underway   planned available for occupancy by 4Q18.\n",
+        "ComponentCIODate": "2016-10-31T04:00:00Z",
+        "DOJCIORating": 3,
+        "DOJCIOColor": "Yellow",
+        "DOJCIOComment": "The Data Center Transformation Initiative (DCTI) continues work consolidating 110 data centers into three Core Enterprise Facilities (CEFs) by FY2019. Five data centers were closed in FY 2016. \nThe Department Investment Review Council (DIRC) reviewed the DCTI project at its September 8th meeting, and asked DCTI to review ways to improve data storage utilization. The DIRC also asked DCTI to compare costs of DOJ cloud services to commercial options. \nAn issue that could possibly lead to closure delays involves the capacity of CEFs to accept infrastructure. Currently, CEFs have minimal space to accommodate co-location of infrastructure from other component data centers, which may delay closures of non-core data-centers ready to co-locate to a CEF. DCTI is optimizing space at CEFs to make more room for component infrastructure. \nThe DOJ CIO rates this investment as a three.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 999
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1000)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1000)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "d5e17dce-e8c9-4504-8ecb-e7b6788fc3bb",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "de6b7988-d656-4846-9517-54841e894c31",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 1000,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "The IT Security program is continuing to integrate monitoring and security activities into the operational infrastructure.  All program performance metrics are being met.  The identified project risks are manageable and should not impact delivery of currently scheduled activities.",
+        "ComponentCIODate": "2016-11-18T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Department of Justice (DOJ) IT Security program continues to integrate monitoring and security activities into the operational infrastructure and meet all program performance targets. The investment's projects are on cost and on schedule.  Investment risk is moderate overall, with mitigation plans for  identified project and operational risks.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1000
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1001)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1001)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "6e358035-23bb-49d8-9851-d5b896a75ab7",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003618",
+          "ShortName": "Capture",
+          "InvestmentTitle": "USMS Mission Modernization - Capture"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "434fb403-0769-4bb5-8e95-a722850f1d50",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "USMS Capture"
+        },
+        "Id": 1001,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "New investment for FY2017.",
+        "ComponentCIODate": "2016-11-16T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "New investment for FY2017.",
+        "DOJCIODate": "2016-11-16T05:00:00Z",
+        "ID": 1001
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1002)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1002)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9bbda20c-1093-4635-b629-79b89aac37ad",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003627",
+          "ShortName": "IT Security",
+          "InvestmentTitle": "FBI IT Security"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c5206631-a888-4a6e-ad7c-3bbb52151cef",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI IT Security"
+        },
+        "Id": 1002,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "New major investment for FY 2017",
+        "ComponentCIODate": "2016-11-16T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "New major investment for FY 2017.",
+        "DOJCIODate": "2016-11-16T05:00:00Z",
+        "ID": 1002
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1003)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1003)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "2525b013-34a1-4b5b-b71b-d8ea20f099f5",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "15f907f8-2a4d-40cd-b210-3854ad7760f6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 1003,
+        "ComponentCIORating": 5,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "All Digital Collection systems are in an O&amp;M state and are meeting all FY 2016 operational performance goals showing that all Title 50 and Title III collection systems are available to users and collect all intercepted data.",
+        "ComponentCIODate": "2016-11-22T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Digital Collection investment met all performance metrics in July. Digital Collections is in O&amp;M Status, with no active projects and moderate operational risk.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1003
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1004)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1004)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ac4d5330-d979-4dde-99da-17b9bb7abb7d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "419cc5db-c02d-41dd-b5e7-659f2b367dce",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 1004,
+        "ComponentCIORating": 3,
+        "ComponentCIOColor": "Yellow",
+        "ComponentCIOComment": "Recommend a continued rating of three (3).  \n\nThe Program Office has submitted a PBCR to combine separate parts of a single project into one project as opposed to two projects.  The &quot;immediate Determination Rate&quot; performance metric was slightly off for the third consecutive month due to high volumes and low staffing levels.  If this is not resolved before the busy seasons starts this Fall, there could be serious operation issues.  Although the performance variance is less than 10%, this needs to be very closely watched.  The four other performance metrics were met.  Risks should be monitored and assessed to ensure all possible impacts on NICS operation are properly mitigated.",
+        "ComponentCIODate": "2016-11-23T05:00:00Z",
+        "DOJCIORating": 3,
+        "DOJCIOColor": "Yellow",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) National Instant Criminal Background Check System (NICS) continues a rating of three, or &quot;Yellow&quot; status, with high-probability/high-impact risks. NICS continues work on the NICS replacement system through development and FOC projects; both development projects remain behind schedule but are on budget. NICS met four out of five performance metrics. A slight decrease in network speed delayed eligibility-determination, and the monthly immediate-determination rate (IDR) was narrowly missed;  the mitigation plan to meet the IDR target is to increase staff overtime hours, while advocating for increased staffing levels.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1004
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1005)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1005)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "94663060-b7f2-4592-8f4a-3197a2e2064f",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bcf5fcde-5a56-4f49-b66d-8b375a517bd8",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 1005,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Sentry continues to operate in a O&amp;M status with minimal risk as of October 31, 2016.  Preliminary planning is underway to perform an alternative analysis on Sentry infrastructure.  The high-level goal is to determine what technologies exist that may potentially provide a more efficient and less costly technical operation than a mainframe platform.",
+        "ComponentCIODate": "2016-11-14T05:00:00Z",
+        "DOJCIORating": 3,
+        "DOJCIOColor": "Yellow",
+        "DOJCIOComment": "Bureau of Prisons (BOP)  Sentry has one active project in progress, on schedule and on budget. BOP Sentry met performance metrics for the month of July. The DIRC reviewed the BOP Sentry program on September 8, and determined Sentry requires a modernization plan with improved performance metrics and sufficient funding to replace its legacy applications.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1005
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1006)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1006)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "b98b2f06-7a96-497a-a34c-95cf70e3aba4",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "b09d28b8-6498-495e-ad11-07acc4d9c3b9",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 1006,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Designed to create an environment of innovation that sustains increased performance over time, the Firebird system continues to provide a robust network for the transmission of Sensitive But Unclassified (SBU) information in support of DEA mission-critical processes.  Focused on continuous technology refreshment and efficiency, the Firebird investment is in an O&amp;M phase with current initiatives involving modernization of the Web Farm Infrastructure, PIV Enabling Privileged Accounts, continued Workstation Technical Refreshment (25% of the enterprise per year), efficient network storage utilization, modernization of the network infrastructure, and extended secure remote access capabilities in support of an increasingly mobile user base of 15,600+ users across the globe.  All risks are under a sound mitigation plan, with any high impact risks being of a low or medium probability.   There are no high probability risks.  The majority of the performance metrics have been routinely met.  The implementation of a new backup strategy has greatly improved the reliability of our routine backup process.  The Service Desk response time is improving as the call volume subsides due to the modernization of the network, PIV enablement, increase staffing, and mobile computing architectures.  The First Call Resolution (FCR) rate are at 68% (October 2016).   By sustaining average operational readiness rates of 99.13% (October 2016) and an extremely high customer satisfaction rating (95.10% satisfaction rating reported in October 2016), the Firebird system routinely achieves its value proposition to enable investigative case management and all other SBU information systems (office automation and information management) that personnel use to support DEA mission-critical job functions.",
+        "ComponentCIODate": "2016-11-15T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Drug Enforcement Agency Firebird program is in operation and maintenance status with no active projects. Risks are under mitigation plans, including a high impact but medium probability risk of a funding reduction. Firebird met 10 out of 11 performance metrics, with service desk phone response time under target but improving due to network modernization.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1006
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1007)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1007)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "574ee051-fc0a-4cc3-8911-00f2976130bd",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "bacdbab7-e395-4bcb-8fa7-2757a3e44be2",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 1007,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "The Top Secret/Sensitive Compartmented Information Operational Network (SCION) has met operational performance targets as of October 2016, including SCION Deployment Approval, SCION User Satisfaction, and Help Desk tickets assisted.  In addition, the identified risks are rated low or medium.  There were 2 workstations completed as of October 2016 for FY 2017 deployment.  The FY 2017 goal is to deploy 300 new workstations.  In addition, SCINet currently maintains 100% JWICS availability.",
+        "ComponentCIODate": "2016-11-23T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Top Secret/Sensitive Compartmented Information Operational Network (SCION) met all operational  metrics in July. SCION has one active project, SCION FY16 Deployment, and as of  July, 2016, has deployed 289 new workstations.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1007
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1008)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1008)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "40d468ac-c371-4c63-907e-119e6fdf3dff",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "13a37f8c-88ca-4ed5-8f52-7f21df7d7292",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 1008,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "November 14, 2016 Update&#58;\nAll Operational metric identified are being met or exceeded.\nAll Operational risks identified are under solid mitigation plan.",
+        "ComponentCIODate": "2016-11-14T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "Bureau of Prisons (BOP) BOPNet approved a baseline change due to funding, and currently has no active projects. All operational metrics were met in July, and all operational risks are under mitigation plans.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1008
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1009)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1009)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "2e3e6874-413d-4771-9aea-274fbd16a35d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "e270ddc5-5023-4751-92e3-d1280ea33f06",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 1009,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "NDEx is in the Operations &amp; Maintenance (O&amp;M) phase.  Maintenance project schedule and costs are on target.  Slightly missed one performance metric.  NDEx staff are analyzing performance bottlenecks to resolve the issue.  All other performance metrics were met or exceeded the target.  Recommend a CIO rating of 4.",
+        "ComponentCIODate": "2016-11-23T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "Federal Bureau of Investigation (FBI) National Data Exchange Program (N-DEx) met both monthly metrics in July.  NDEX is managing moderate operational and project risks, and has  one active project. The Ingest &amp; Correlation/Resolution Services Scalability Project remains on budget and on schedule to complete by December, 2016.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1009
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1010)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1010)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "c41a97c4-ebfa-4996-ba3e-3dd333b0f009",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "32aa1b02-b938-4889-afcd-416bde66a11f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 1010,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Operational performance targets are met. Operations and maintenance continues to support over 500 TSC employees with a 24/7 Service Desk and activities for all TSC unclassified and classified networks.  Schedules and costs remain stable.  All performance targets are met.  Recommend a CIO rating of 4.",
+        "ComponentCIODate": "2016-11-23T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Terrorist Screening System (TSS) includes two active projects for planning and development, both currently on cost and on budget. TSS met its operational performance targets in July. TSS project and operational risks include a high risk of delays due to difficulty filling vacant positions, but mitigates these risks by identifying key personnel, developing a transition plan, and requiring training overlaps.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1010
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1011)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1011)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5eb78711-8fdb-4702-8c5c-42f1a1afb2a3",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "cc2c9cdb-afe2-48e9-8bb3-1290f037f146",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 1011,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "With no critical incidents and 100% availability, FBI Sentinel met all established targets, and maintained a &quot;green&quot; status for all metrics--except for trouble ticket backlog--which was 1 ticket out of a target of 300.  The time to awareness for IIRs has improved significantly with a decrease from a FY14 target of 45 days to a current 21 days.  Sentinel execution of quarterly priorities is proceeding on schedule and within budget and is reported with sufficient detail to clearly demonstrate progress.  Risks are well documented with sound mitigation plans and are understood by management.",
+        "ComponentCIODate": "2016-11-23T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "Federal Bureau of Investigation (FBI) Sentinel is managing two active development projects.  One project activity for Entity Resolution was started on 3/1/16 but the Sentinel team elected to bring in a subcontractor to conduct the work and therefore the project was delayed to a 10/1/16 start.  Sentinel met three of six performance metrics in Aug; Product releases caused three critical incidents and reduced system availability below targets. The Sentinel team corrected the issues and is evaluating its incident management process to find improvements. Sentinel risks are moderate and under mitigation plans.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1011
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1012)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1012)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "2ec44b01-dfe0-49e8-80bf-7bc3e6131340",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "31caeeaa-4799-4dd9-8558-cc36c8849e0c",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 1012,
+        "ComponentCIORating": 3,
+        "ComponentCIOColor": "Yellow",
+        "ComponentCIOComment": "EDAP needs to address all the applications that comprise the EDAP investment as reflected in the DIRC presentation.  \nThe main EDAP application, DIVS, is primarily in an Operation and Maintenance (O&amp;M) status for FY2016, has the ability to maintain the necessary resources to ensure the DIVS application is fully operational, and has the ability to ingest at least two new datasets that provide the most value to the field. There are several planned unfunded DME efforts including&#58; the development of a Unified User Interface (UUI) to enable the subsequent sunsetting and eventual retirement of stovepipe analytical tool interfaces, the design of a TS IC-compatible application interface, a production entity resolution capability, and a cross-domain data aggregation solution. \n\nThe EDAP investment remains a 3, Medium Risk (yellow), due to insufficient funding to fully realize FY16 &amp; FY17 DME efforts, which are essential to improve information sharing among intelligence community partners and to take full advantage of available technologies to correlate intelligence data.  \n",
+        "ComponentCIODate": "2016-11-22T05:00:00Z",
+        "DOJCIORating": 3,
+        "DOJCIOColor": "Yellow",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Enterprise Data Analytics Program (EDAP) met three out of four metrics in July. The primary EDAP application, Data Integration &amp; Visualization System (DIVS), met its target average search-time for queries after several months of missing that metric. EDAP missed the semi-annual target of DIVS storage capacity, due to infrastructure limitations. EDAP is in O&amp;M status and currently has no active projects. EDAP has a high operational risk of increasing hardware failures due to aging equipment.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1012
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1013)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'1c955dab-f0b5-4b83-a953-b4be7e29e41e')/Items(1013)",
+          "etag": "\"1\"",
+          "type": "SP.Data.CIORatingsListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "de5699ce-3f4b-40d5-b56b-76a991803b99",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003373",
+          "ShortName": "Guardian",
+          "InvestmentTitle": "FBI Guardian"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9d34fd5f-c6e4-4ad8-855c-92a7e31154ea",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Guardian"
+        },
+        "Id": 1013,
+        "ComponentCIORating": 4,
+        "ComponentCIOColor": "Green",
+        "ComponentCIOComment": "Guardian continues to meet all of its operational performance targets.  An agile development effort is in effect and the program maintains close control of requirements and deliverables in predictable quarterly releases.  The cost and schedule data show the program overall is progressing according to plan.",
+        "ComponentCIODate": "2016-11-22T05:00:00Z",
+        "DOJCIORating": 4,
+        "DOJCIOColor": "Green",
+        "DOJCIOComment": "The Federal Bureau of Investigation (FBI) Guardian program continues to meet all of its performance targets. Guardian has no active projects and its operational risks are low. Cost and schedule data show Guardian is progressing according to plan with cost variance well within 10 percent of the estimated cost.",
+        "DOJCIODate": "2016-10-18T04:00:00Z",
+        "ID": 1013
+      }
+    ]
+  }
+}

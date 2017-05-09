@@ -1,0 +1,106 @@
+text {
+    pointer-events: none;
+}
+
+.grandparent text {
+    font-weight: bold;
+}
+
+rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3px;
+}
+
+rect.parent {
+    /*stroke-width: 6px;*/
+}
+
+.grandparent rect {
+    fill: steelblue;
+    opacity: 1;
+}
+
+.grandparent:hover rect {
+    opacity: 0.6;
+}
+
+.grandparent>text {
+    fill: #fff;
+    font-size: 24px;
+    font-size: 2.5vmin;
+}
+
+.children rect.parent,
+.grandparent rect {
+    cursor: pointer;
+}
+
+.children rect.parent {
+    fill: #bbb;
+    fill-opacity: .5;
+}
+
+.children:hover rect.child {
+    fill: #bbb;
+}
+
+.textdiv {
+    /* text in the boxes */
+    font-size: small;
+    padding: 5px;
+    font-weight: bold;
+}
+
+svg {
+    overflow: hidden;
+}
+
+rect {
+    pointer-events: all;
+    cursor: pointer;
+    stroke: #EEEEEE;
+}
+
+.chart {
+    display: block;
+    margin: auto;
+}
+
+.parent .label {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.labelbody {
+    background: transparent;
+    margin-top: 5px;
+}
+
+.label {
+    margin: 5px;
+    font-size: 13px;
+    font-size: 1.25vmin;
+    line-height: 2;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+    -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.child .label {
+    white-space: pre-wrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.cell {
+    font-size: 16px;
+    font-size: 1.75vmin;
+    cursor: pointer
+}

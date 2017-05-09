@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--<%@ Page Language="C#" %>-->
+<!--<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<html>
+
+<head>
+        	<meta content="full" name="WebPartPageExpansion">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+	<!-- Title -->
+
+    <title>ISCA Summary</title>
+    <link rel="icon" type="image/png" href="../SiteAssets/img/favicon.ico" />
+    <!-- w3 Core CSS -->
+    <link rel="stylesheet" href="../SiteAssets/css/w3.min.css" />
+    <!-- DC Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/dc.min.css" />
+    <!-- Tooltip Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/tooltip.css" />
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/css/pe-icon-7-stroke.css" />
+    <!-- SharePoint Core JavaScript -->
+    <SharePoint:ScriptLink name="clienttemplates.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="clientforms.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="clientpeoplepicker.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink name="autofill.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
+    <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+    <script type="text/javascript" src="/_layouts/1033/init.js"></script>
+    <script type="text/javascript" src="/_layouts/15/core.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.core.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../SiteAssets/js/jquery.min.js"></script>
+    <!-- D3 -->
+    <script type="text/javascript" src="../SiteAssets/js/d3.v3.min.js" charset="utf-8"></script>
+    
+    <!-- D3 Queue -->
+    <script type="text/javascript" src="../SiteAssets/js/d3-queue.v2.min.js" charset="utf-8"></script>
+    
+    <!-- Crossfilter -->
+    <script type="text/javascript" src="../SiteAssets/js/crossfilter.min.js"></script>
+    
+    <!-- DC.js -->
+    <script type="text/javascript" src="../SiteAssets/js/dc.2.1.0-dev.min.js"></script>
+    
+    <!-- Datatables Core JavaScript -->
+    <script type="text/javascript" src="../SiteAssets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/dataTables.bootstrap.min.js"></script>
+    <!-- Moment.js -->
+    <script type="text/javascript" src="../SiteAssets/js/moment.min.js"></script>
+    <!-- SheetJS -->
+    <script type="text/javascript" src="../SiteAssets/js/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/Blob.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/FileSaver.js"></script>
+    <script type="text/javascript" src="../SiteAssets/js/Export2Excel.js"></script>
+    <!-- Spin.js -->
+    <script type="text/javascript" src="../SiteAssets/js/spin.min.js"></script>
+    <!-- Colorbrewer -->
+    <script type="text/JavaScript" src="../SiteAssets/js/colorbrewer.min.js"></script>
+    <!-- JavaScript Utilities -->
+    <script type="text/javascript" src="../SiteAssets/js/utils.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="../SiteAssets/js/isca.3.js"></script>
+    
+    <style>
+        table.dataTable th:nth-child(-n+2),
+        table.dataTable td:nth-child(-n+2), 
+        /*table.dataTable th:nth-child(5),*/
+        /*table.dataTable td:nth-child(5), */
+        /*table.dataTable th:nth-child(6),*/
+        /*table.dataTable td:nth-child(6), */
+        table.dataTable th:nth-child(n+9),
+        table.dataTable td:nth-child(n+9) {
+            display:none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- SharePoint security validation aspx controls -->
+    <!-- https://msdn.microsoft.com/en-us/library/office/ms472879%28v=office.14%29.aspx -->
+    <form id="Form1" method="post" runat="server">
+        <SharePoint:FormDigest ID="FormDigest1" runat="server"></SharePoint:FormDigest>
+
+        <!-- Collapsible Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-w3-container w3-card-4 w3-white-2 w3-animate-left w3-indigo" style="width:200px;" id="portSidebar">
+            <a href="index.aspx" class="w3-bar-item w3-button">
+                <h2>
+                    <i class="pe-7s-home" style="font-size:48px;padding-right:0px"></i>
+                </h2>
+            </a>
+            <a class="w3-bar-item w3-button w3-large w3-hide-large" href="javascript:w3_close()">Close &times;</a>
+            <a href="portfolio.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph"></i>
+                <p>Portfolio View</p>
+            </a>
+            <a href="investment.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph3"></i>
+                <p>IT Investment View</p>
+            </a>
+            <a href="itar.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph1"></i>
+                <p>IT Acquisition View</p>
+            </a>
+            <a href="savings.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph2"></i>
+                <p>IT Cost Savings &#38; Avoidance View</p>
+            </a>
+            <a href="systems.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph3"></i>
+                <p>IT Systems View</p>
+            </a>
+            <a target="_blank" href="MajorITInvestments.aspx" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph"></i>
+                <p>IT Major Investments View</p>
+            </a>
+        </div>
+        <!-- End Collapsible Sidebar -->
+
+        <!-- Main Content -->
+        <div class="w3-main" style="margin-left:200px">
+
+            <!-- Header -->
+            <header class="w3-padding-8">
+                <a class="w3-button w3-white w3-xlarge w3-hide-large" href="javascript:w3_open()">&#9776;</a>
+                <div class="w3-container w3-center">
+                    <!-- numerical displays -->
+                    <div id="header" class="w3-row-padding">
+                        <div class="w3-col l12">
+                            <div class="w3-row-padding" style="padding-bottom:3px">
+                                <div class="w3-col l2">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Component</h5>
+                                        <div id="components"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l2">
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l3">
+                                    <div>
+                                        <h5 class="w3-text-uppercase">Data generated</h5>
+                                        <div class="dc-chart">
+                                            <span id="dateHeader" class="w3-xxlarge"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-col l5">
+                                    <div>
+    									<h5 id="total-initiatives-header" class="w3-text-uppercase">Total Realized Initiatives</h5>
+    									<div id="total-initiatives"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.w3-row-padding -->
+                        </div>
+                        <!-- /.w3-col l12 -->
+                    </div>
+                    <!-- /.w3-row-padding -->
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Content Container -->
+            <div id="dashboard" class="w3-container">
+
+                <!-- Main Content Row -->
+                <div class="w3-row-padding">
+
+                    <!-- Main Content Container -->
+                    <div class="w3-container w3-padding-4">
+
+                        <!-- bar and ring charts -->
+                        <div class="w3-row-padding">
+                            <!-- Bar Chart -->
+                            <div class="w3-col l7 w3-padding-4">
+                                <div id="barChart" class="w3-container w3-card-4 w3-white">
+
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">IT Cost Savings and Avoidance (CSA) Initiatives</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <!--<div class="selectText">Initiatives<span class="filter"></span>-->
+                                    <!--    <a id="barChartReset" class="reset" style="display:none;">reset</a>-->
+                                    <!--</div>-->
+                                    <div id="chart-realized" class="dc-chart scaling-svg-container">
+                                    </div>
+                                    <!-- #chart-realized -->
+
+                                    <!-- Chart -->
+                                    <div id="chart-projected" class="dc-chart scaling-svg-container">
+                                    </div>
+                                    <!-- #chart-projected -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small">Total volume of projected and realized cost savings and avoidance initiatives in dollars.</span></div>
+                                        </div>
+                                    </footer>
+                                    <!-- End Footer -->
+
+                                </div>
+                                <!-- /.w3-container w3-card-4 w3-white -->
+                            </div>
+                            <!-- End Bar Chart -->
+                            
+                            <!-- Ring Chart -->
+                            <div class="w3-col l5 w3-padding-4">
+                                <div id="ringChart" class="w3-container w3-card-4 w3-white">
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">OMB Initiatives</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <!--<div class="selectText">Selected Initiatives: <span class="filter"></span>-->
+                                    <!--    <a id="ringChartReset" class="reset" style="display:none;">reset</a>-->
+                                    <!--</div>-->
+                                    <div id="chart-initiatives" class="dc-chart scaling-svg-container">
+                                    </div>
+                                    <!-- #chart-initiatives -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div><i class="fa fa-history"></i><span class="w3-small">Composition of OMB Initiatives.</span></div>
+                                    </footer>
+                                    <!-- End Footer -->
+                                </div>
+                            </div>
+                            <!-- End Row Chart -->
+
+                        </div>
+                        <!-- /.w3-row-padding -->
+
+                    </div>
+                    <!-- /.w3-container -->
+
+                    <!-- Main Content Container -->
+                    <div class="w3-container w3-padding-4">
+
+                        <!-- ring chart and data table -->
+                        <div class="w3-row-padding">
+
+                            <!-- Row Chart -->
+                            <div class="w3-col l5 w3-padding-4">
+                                <div id="rowChart" class="w3-container w3-card-4 w3-white">
+                                    <!-- Header -->
+                                    <header class="w3-padding-4">
+                                        <h4 class="title">IT Service Types</h4>
+                                        <p class="category">
+                                        </p>
+                                    </header>
+                                    <!-- End Header -->
+
+                                    <!-- Chart -->
+                                    <!--<div class="selectText">Selected Service Types: <span class="filter"></span>-->
+                                    <!--    <a id="rowChartReset" class="reset" style="display:none;">reset</a>-->
+                                    <!--</div>-->
+                                    <div id="chart-serviceTypes" class="dc-chart scaling-svg-container">
+                                    </div>
+                                    <!-- #chart-serviceTypes -->
+
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div><i class="fa fa-history"></i><span class="w3-small">Total volume of initiatives for top IT Service Types in dollars.</span></div>
+                                    </footer>
+                                    <!-- End Footer -->
+                                </div>
+                            </div>
+                            <!-- End Row Chart -->
+                            
+                            <!-- Data Table -->
+                            <div class="w3-col l7 w3-padding-4">
+                                <div id="tableChart" class="w3-container w3-card-4 w3-white ">
+                                    <!-- Header -->
+                                    <header>
+                                        <div class="w3-col l9">
+                                            <h4 class="title">Source Data</h4>
+                                            <p class="category"></p>
+                                        </div>
+                                        <div class="w3-col l3">
+                                            <div class="w3-right">
+                                                <input id="btnExports" class="w3-button" type="button" value="Export to Excel" onclick="exportTable()" style="text-align: left; margin: 10px 0px;">
+                                            </div>
+                                        </div>
+
+                                    </header>
+                                    <!-- End Header -->
+                                    
+                                    <!-- Chart -->
+                                    <div>
+                                        <table class="table table-condensed table-bordered table-responsive" id="data-table" cellpadding="0" cellspacing="0" border="0"></table>
+                                    </div>
+                                    <!-- End Chart -->
+                                    
+                                    <!-- Footer -->
+                                    <footer class="w3-padding-4">
+                                        <div><i class="fa fa-history"></i><span class="w3-small">Click on the strategy title to explore details of each initiative.  <em>Source</em>: <a target="_blank" href="https://itim.doj.gov/DOJCS/Lists/CSA%20Initiatives">IT Cost Savings & Avoidance site</a></span></div>
+                                    </footer>
+                                    <!-- End Footer -->
+                                </div>
+                            </div>
+                            <!-- End Data Table -->
+                        </div>
+                        <!-- /.w3-row-padding -->
+
+                    </div>
+                    <!-- /.w3-container -->
+
+
+                </div>
+                <!-- End Main Content Row -->
+
+            </div>
+            <!-- End Main Content Container -->
+            
+            <!-- Footer -->
+            <footer class="w3-padding-8"></footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Modal -->
+        <div class="w3-modal w3-animate-opacity" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="w3-modal-content w3-card-4">
+                
+                    <header class="w3-container"> 
+                        <span onclick="document.getElementById('itemModal').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+                        <div class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <h4 class="modal-title" id="modalLabel">Initiative Details</h4>
+                            </div>
+                        </div>
+                        <!-- /.w3-row-padding -->
+                    </header>
+                    <!-- /.modal-header -->
+                    <div class="w3-container">
+                        <div class="w3-row-padding">
+                            <div class="w3-col l12">
+                                <div id="tableDiv" style="margin-top:20px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-body -->
+                    <footer class="w3-container"></footer>
+                    <!-- /.modal-footer -->
+                </div>
+                <!-- /.w3-modal-content -->
+        </div>
+        <!-- End Modal -->
+        
+    </form>
+    <!-- #Form1 -->
+
+</body>
+
+</html>

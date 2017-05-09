@@ -1,0 +1,798 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(631)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(631)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "898cd6a9-5441-473d-86e7-4aaab68d7d1d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000001126",
+          "ShortName": "UFMS",
+          "InvestmentTitle": "JMD Unified Financial Management System (UFMS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "e7c39080-2d6a-4f2b-ace3-f585a76f10b0",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "JMD UFMS"
+        },
+        "Id": 631,
+        "LastDIRCReview": null,
+        "TotalITSpend": 60.29789,
+        "DME": 22.2566,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 631
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(632)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(632)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "f46d5920-baf9-40ea-8319-df1066a8abc6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002016",
+          "ShortName": "LEEP",
+          "InvestmentTitle": "FBI Law Enforcement Enterprise Portal (LEEP)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "fe118b08-501e-4eed-ab0b-0e3beefecf61",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI LEEP"
+        },
+        "Id": 632,
+        "LastDIRCReview": null,
+        "TotalITSpend": 21.6414,
+        "DME": 0.5283,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "ID": 632
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(633)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(633)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "1a5b9473-91bf-4d86-bcf3-5d75e4a7f1b2",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002501",
+          "ShortName": "CODIS",
+          "InvestmentTitle": "FBI Combined DNA Index System (CODIS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "21b57124-4d42-4b5f-87da-044c0acad6a1",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI CODIS"
+        },
+        "Id": 633,
+        "LastDIRCReview": null,
+        "TotalITSpend": 25.85585,
+        "DME": 13.19271,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "High",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 633
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(634)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(634)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "d2480812-ccf1-4bda-b47d-ff9d9e1bb5bc",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002502",
+          "ShortName": "NCIC",
+          "InvestmentTitle": "FBI National Crime Information Center (NCIC)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "60ce1f19-dd85-414e-90af-29c465f3c1d7",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NCIC"
+        },
+        "Id": 634,
+        "LastDIRCReview": null,
+        "TotalITSpend": 21.76165,
+        "DME": 1.58134,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (2)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 634
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(635)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(635)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "a3e7689b-ec1c-4156-9cd2-3daa754b8c59",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002503",
+          "ShortName": "Digital Collection",
+          "InvestmentTitle": "FBI Digital Collection"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "9571bdad-ae45-4993-ab0a-a15ee9861423",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Digital Collection"
+        },
+        "Id": 635,
+        "LastDIRCReview": null,
+        "TotalITSpend": 34.185,
+        "DME": 0,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 635
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(636)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(636)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4fc72f24-43d1-43ae-8096-7336c5ef6134",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002616",
+          "ShortName": "NICS",
+          "InvestmentTitle": "FBI National Instant Criminal Background Check System (NICS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d81d3690-82f2-4e70-adfb-6dc9968a7944",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NICS"
+        },
+        "Id": 636,
+        "LastDIRCReview": null,
+        "TotalITSpend": 26.41171,
+        "DME": 17.13724,
+        "CostColor": "Green",
+        "ScheduleColor": "Yellow",
+        "PerformanceMetric": "Not met (2)",
+        "SummaryRisk": "High",
+        "ComponentCIOColor": "Yellow",
+        "DOJCIOColor": "Yellow",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 636
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(637)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(637)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "bd4064b2-11a1-47ac-9f72-cae43c0080dc",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002705",
+          "ShortName": "SENTRY",
+          "InvestmentTitle": "BOP SENTRY"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f9be77aa-6a81-4eff-a766-be0712a62032",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP SENTRY"
+        },
+        "Id": 637,
+        "LastDIRCReview": null,
+        "TotalITSpend": 44.11148,
+        "DME": 2.3781,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Yellow",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 637
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(638)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(638)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "4ba3c30c-edda-438a-a5af-1248002a0738",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002901",
+          "ShortName": "Firebird",
+          "InvestmentTitle": "DEA Firebird"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "3c635982-1926-4996-b984-6e8c16665ae7",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DEA Firebird"
+        },
+        "Id": 638,
+        "LastDIRCReview": null,
+        "TotalITSpend": 52.855,
+        "DME": 0.204,
+        "CostColor": "No projects",
+        "ScheduleColor": "No projects",
+        "PerformanceMetric": "Not met (1)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": null,
+        "ID": 638
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(639)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(639)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "6a55ab4b-4efd-4269-be80-03751c896bd4",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002909",
+          "ShortName": "SCION",
+          "InvestmentTitle": "FBI Top Secret/Sensitive Compartmented Information Operational Network (SCION)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "f2a9ecd7-5e26-4788-9a13-e01d53c9f8e4",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI SCION"
+        },
+        "Id": 639,
+        "LastDIRCReview": null,
+        "TotalITSpend": 41.943,
+        "DME": 4.228,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (1)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 639
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(640)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(640)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "425af02f-a766-4b9c-930d-c67681bde488",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000002913",
+          "ShortName": "BOPNet",
+          "InvestmentTitle": "BOP BOPNet"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "efcafe28-5dff-41b9-9762-b099daed0b8f",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "BOP BOPNet"
+        },
+        "Id": 640,
+        "LastDIRCReview": null,
+        "TotalITSpend": 61.17791,
+        "DME": 0,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (2)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 640
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(641)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(641)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9a0e84a2-23a0-4781-981f-b5909d18c527",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003024",
+          "ShortName": "NDEX",
+          "InvestmentTitle": "FBI National Data Exchange Program (NDEX)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "881021a2-7b16-41bc-8586-15e6cc70d260",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NDEX"
+        },
+        "Id": 641,
+        "LastDIRCReview": null,
+        "TotalITSpend": 22.30567,
+        "DME": 1.39118,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (2)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 641
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(642)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(642)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7d0ed174-dfe7-40f5-b270-f5cebd45b6bd",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003177",
+          "ShortName": "TSS",
+          "InvestmentTitle": "FBI Terrorist Screening System (TSS)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "ed14ac8f-8eec-4eb7-ae3e-576cef7ac99d",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI TSS"
+        },
+        "Id": 642,
+        "LastDIRCReview": null,
+        "TotalITSpend": 40.23517,
+        "DME": 19.59188,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (1)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 642
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(643)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(643)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "5b03602b-310a-4970-be9d-a403c7246de7",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003211",
+          "ShortName": "Sentinel",
+          "InvestmentTitle": "FBI Sentinel"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "824c6a2d-4436-46cf-a710-4800f3d65808",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Sentinel"
+        },
+        "Id": 643,
+        "LastDIRCReview": null,
+        "TotalITSpend": 38.32567,
+        "DME": 6.42122,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 643
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(644)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(644)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "726e1225-80b4-4b55-bc37-1eea1fc5db5d",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003372",
+          "ShortName": "EDAP",
+          "InvestmentTitle": "FBI Enterprise Data Analytics Program (EDAP)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "c48b1c5d-a9e7-4858-81e7-831c1e9bc1d6",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI EDAP"
+        },
+        "Id": 644,
+        "LastDIRCReview": null,
+        "TotalITSpend": 58.75256,
+        "DME": 0.17036,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (1)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Yellow",
+        "DOJCIOColor": "Yellow",
+        "ReportDate": "2016-07-31T04:00:00Z",
+        "ID": 644
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(645)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(645)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "6241f2ff-8bf1-45d5-b2e2-a8b07fa8d6f1",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003373",
+          "ShortName": "Guardian",
+          "InvestmentTitle": "FBI Guardian"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "6a11c1c7-60ef-42b9-90af-8c69667885e5",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI Guardian"
+        },
+        "Id": 645,
+        "LastDIRCReview": null,
+        "TotalITSpend": 11.62619,
+        "DME": 1.85034,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (1)",
+        "SummaryRisk": "Low",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 645
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(646)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(646)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "6c3700ed-9736-442a-8bed-b1b2e54ca4f6",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003457",
+          "ShortName": "NGI",
+          "InvestmentTitle": "FBI Next Generation Identification (NGI)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "4cd44120-9e06-4e18-afba-31418adba850",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI NGI"
+        },
+        "Id": 646,
+        "LastDIRCReview": null,
+        "TotalITSpend": 119.98255,
+        "DME": 51.9016,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (1)",
+        "SummaryRisk": "High",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 646
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(647)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(647)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "e8e29701-ff7b-45b3-9a8f-93aec0a21f4b",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003533",
+          "ShortName": "ICAM",
+          "InvestmentTitle": "DOJ Identity, Credential, and Access Management (ICAM)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "5616e6be-c24e-4740-b1af-679657d2379e",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ ICAM"
+        },
+        "Id": 647,
+        "LastDIRCReview": null,
+        "TotalITSpend": 13.926948,
+        "DME": 0.702899,
+        "CostColor": "No projects",
+        "ScheduleColor": "No projects",
+        "PerformanceMetric": "Not met (2)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Yellow",
+        "DOJCIOColor": "Yellow",
+        "ReportDate": null,
+        "ID": 647
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(648)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(648)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "9e347092-e3b8-4728-be3c-a8ed59d08cef",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003560",
+          "ShortName": "DOJ Telecom",
+          "InvestmentTitle": "DOJ Telecom"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "91b0f672-b15b-4020-a33e-bff0c0da0718",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Telecom"
+        },
+        "Id": 648,
+        "LastDIRCReview": null,
+        "TotalITSpend": 331.702981,
+        "DME": 21.05139,
+        "CostColor": "No projects",
+        "ScheduleColor": "No projects",
+        "PerformanceMetric": "Met",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Yellow",
+        "ReportDate": null,
+        "ID": 648
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(649)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(649)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "7522e9e7-544b-4f42-83da-cb664b6e72d7",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003569",
+          "ShortName": "DCTI",
+          "InvestmentTitle": "DOJ Data Center Transformation Initiative (DCTI)"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "80148f9b-e55f-4272-b7b4-8e3f25e560ae",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ Data Centers"
+        },
+        "Id": 649,
+        "LastDIRCReview": null,
+        "TotalITSpend": 152.872163,
+        "DME": 14.191782,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (3)",
+        "SummaryRisk": "High",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Yellow",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 649
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(650)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(650)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "ca1bfe0e-28ad-4950-9bf3-cf5732698245",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003575",
+          "ShortName": "DOJ IT Security",
+          "InvestmentTitle": "DOJ IT Security"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d084c477-121c-44dc-8f42-8c5ee0ebad40",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "DOJ IT Security"
+        },
+        "Id": 650,
+        "LastDIRCReview": null,
+        "TotalITSpend": 111.5288,
+        "DME": 1.684328,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "Not met (2)",
+        "SummaryRisk": "Moderate",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 650
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(651)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(651)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "18048b6f-8d4e-4a73-a721-0822addad6e8",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003618",
+          "ShortName": "Capture",
+          "InvestmentTitle": "USMS Mission Modernization - Capture"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "d576331f-af22-4a6a-a733-8528a14dfcf7",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "USMS Capture"
+        },
+        "Id": 651,
+        "LastDIRCReview": null,
+        "TotalITSpend": 23.66227,
+        "DME": 17.31381,
+        "CostColor": "Green",
+        "ScheduleColor": "Green",
+        "PerformanceMetric": "No Metrics",
+        "SummaryRisk": "High",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": "2016-10-31T04:00:00Z",
+        "ID": 651
+      },
+      {
+        "__metadata": {
+          "id": "Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(652)",
+          "uri": "https://itim.doj.gov/_api/Web/Lists(guid'9edcd364-b946-4aa0-8ffc-367b61f9ce64')/Items(652)",
+          "etag": "\"1\"",
+          "type": "SP.Data.DIRCListItem"
+        },
+        "UII": {
+          "__metadata": {
+            "id": "1e476bde-6d30-408d-981d-a9e1eb0ad317",
+            "type": "SP.Data.InvestmentsListItem"
+          },
+          "UII": "011-000003627",
+          "ShortName": "IT Security",
+          "InvestmentTitle": "FBI IT Security"
+        },
+        "ComponentInvestment": {
+          "__metadata": {
+            "id": "7ee02488-ed75-493b-b474-90808a8e2d5a",
+            "type": "SP.Data.ComponentInvestmentsListItem"
+          },
+          "e0va": "FBI IT Security"
+        },
+        "Id": 652,
+        "LastDIRCReview": null,
+        "TotalITSpend": null,
+        "DME": 13.649,
+        "CostColor": "No projects",
+        "ScheduleColor": "No projects",
+        "PerformanceMetric": "No Metrics",
+        "SummaryRisk": "No Risks",
+        "ComponentCIOColor": "Green",
+        "DOJCIOColor": "Green",
+        "ReportDate": null,
+        "ID": 652
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+.tooltip {
+    top: 100px;
+    left: 100px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: #333;
+    opacity: .9;
+    color: white;
+    padding: 10px;
+    min-width: 375px;
+    min-width: 36.75vmin;
+    font-size: 2.25vmin;
+    line-height: 24pt;
+    font-weight: lighter;
+    visibility: visible;
+}
