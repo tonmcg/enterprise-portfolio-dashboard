@@ -1,7 +1,7 @@
 "use strict";
 
 // define data
-const columns = [{
+let columns = [{
     "label": "Strategy ID",
     "field": "Id",
     "format": function(d) { return d.Id; },
@@ -1321,15 +1321,15 @@ function getData() {
 
     }
 
-    // columns = "Id,StrategyID,Title,Component_x0020_Name,Details_x0020_of_x0020_Strategy,Primary_x0020_Point_x0020_of_x00,Details_x0020_of_x0020_Strategy,Date_x0020_of_x0020_Agency_x0020,OMB_x0020_Initiatives,Commodity_x0020_IT_x0020_Categor,AmountType,Related_x0020_Investment_x0020_U,Use_x0020_of_x0020_Savings_x002f0,ProjectedAvoidance2014,ProjectedAvoidance2015,ProjectedAvoidance2016,ProjectedAvoidance2017,ProjectedAvoidance2018,ProjectedAvoidance2019,ProjectedSavings2014,ProjectedSavings2015,ProjectedSavings2016,ProjectedSavings2017,ProjectedSavings2018,ProjectedSavings2019,RealizedAvoidance2012,RealizedAvoidance2013,RealizedAvoidance2014,RealizedAvoidance2015,RealizedAvoidance2016,RealizedAvoidanceQ12017,RealizedAvoidance2018,RealizedSavings2012,RealizedSavings2013,RealizedSavings2014,RealizedSavings2015,RealizedSavings2016,RealizedSavingsQ12017,RealizedSavings2018,ImplementationCosts2012,ImplementationCosts2013,ImplementationCosts2014,ImplementationCosts2015,ImplementationCosts2016,ImplementationCosts2017,ImplementationCosts2018,ImplementationCosts2019,NetOrGross2012,NetOrGross2013,NetOrGross2014,NetOrGross2015,NetOrGross2016,NetOrGross2017,NetOrGross2018,NetOrGross2019,Author/Title";
-    for (let i = 0;i<columns.length;i++) {
-        cols.push(columns[i].field);
-    }
+    cols = "Id,StrategyID,Title,Component_x0020_Name,Details_x0020_of_x0020_Strategy,Primary_x0020_Point_x0020_of_x00,Details_x0020_of_x0020_Strategy,Date_x0020_of_x0020_Agency_x0020,OMB_x0020_Initiatives,Commodity_x0020_IT_x0020_Categor,AmountType,Related_x0020_Investment_x0020_U,Use_x0020_of_x0020_Savings_x002f0,ProjectedAvoidance2014,ProjectedAvoidance2015,ProjectedAvoidance2016,ProjectedAvoidance2017,ProjectedAvoidance2018,ProjectedAvoidance2019,ProjectedSavings2014,ProjectedSavings2015,ProjectedSavings2016,ProjectedSavings2017,ProjectedSavings2018,ProjectedSavings2019,RealizedAvoidance2012,RealizedAvoidance2013,RealizedAvoidance2014,RealizedAvoidance2015,RealizedAvoidance2016,RealizedAvoidanceQ12017,RealizedAvoidance2018,RealizedSavings2012,RealizedSavings2013,RealizedSavings2014,RealizedSavings2015,RealizedSavings2016,RealizedSavingsQ12017,RealizedSavings2018,ImplementationCosts2012,ImplementationCosts2013,ImplementationCosts2014,ImplementationCosts2015,ImplementationCosts2016,ImplementationCosts2017,ImplementationCosts2018,ImplementationCosts2019,NetOrGross2012,NetOrGross2013,NetOrGross2014,NetOrGross2015,NetOrGross2016,NetOrGross2017,NetOrGross2018,NetOrGross2019,Author/Title";
+    //for (let i = 0;i<columns.length;i++) {
+    //    cols.push(columns[i].field);
+    //}
     expand = "Author";
     filter = "";
     top = 200;
 
-    let componentEndpoint = callData('https://itim.doj.gov/DOJCS','list','CSA Initiatives',cols.toString(),expand,filter,top);
+    let componentEndpoint = callData('https://itim.doj.gov/DOJCS','list','CSA Initiatives',cols,expand,filter,top);
 
     // Get the data
     componentEndpoint.get(function(error, data) {
