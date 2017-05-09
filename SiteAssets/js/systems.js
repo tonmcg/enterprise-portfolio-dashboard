@@ -16,7 +16,7 @@ const columns = [{
     "display": true,
     "sort": false
 }, {
-    "label": "System Name",
+    "label": "System or Application Name",
     "field": "SystemName",
     "format": function(d) { return "<a href=# onclick=document.getElementById(&#39;itemModal&#39;).style.display=&#39;block&#39;>" + d.SystemName + "</a>"; },
     "type": "string",
