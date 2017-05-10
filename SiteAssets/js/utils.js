@@ -155,8 +155,8 @@ function hideDetail() {
 // }
 
 function w3_open() {
-  document.getElementById("main").style.marginLeft = "10%";
-  document.getElementById("portSidebar").style.width = "10%";
+  document.getElementById("main").style.marginLeft = "11%";
+  document.getElementById("portSidebar").style.width = "11%";
   document.getElementById("portSidebar").style.display = "block";
   document.getElementById("openNav").style.display = 'none';
 }

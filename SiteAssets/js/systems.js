@@ -262,7 +262,7 @@ function createViz(error, data) {
         .on('renderlet', function(table) {
             $('th:nth-child(-n+'+displayCols+')').not('th:nth-child(' + sortColumn + ')').css('display', 'none'); // hide header column; assumes columns array groups invisible columns together
             $('td:nth-child(-n+'+displayCols+')').not('th:nth-child(' + sortColumn + ')').css('display', 'none'); // hide header column; assumes columns array groups invisible columns together
-            $('td:nth-child(n+'+numericCol+')').css('text-align', 'right'); // right align numerical data; assumes columns array groups double data type columns together
+            // $('td:nth-child(n+'+numericCol+')').css('text-align', 'right'); // right align numerical data; assumes columns array groups double data type columns together
 
             /**
              * Adapted from Datatables jquery.dataTables.js:5169-5436
