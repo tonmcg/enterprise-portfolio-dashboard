@@ -16,6 +16,8 @@
     <link href="../SiteAssets/css/w3.css" rel="stylesheet" type="text/css">
     <!-- DC Core CSS -->
     <link href="../SiteAssets/css/dc.min.css" rel="stylesheet" type="text/css">
+    <!-- Intro Core CSS -->
+    <link href="../SiteAssets/css/introjs.min.css" rel="stylesheet" type="text/css">
     <!-- Tooltip Core CSS -->
     <link href="../SiteAssets/css/tooltip.css" rel="stylesheet" type="text/css">
     <!-- Icons -->
@@ -40,6 +42,8 @@
     <script async src="../SiteAssets/js/Export2Excel.js" type="text/javascript"></script>
     <!-- Spin.js -->
     <script src="../SiteAssets/js/spin.min.js" type="text/javascript"></script>
+    <!-- Intro.js -->
+    <script src="../SiteAssets/js/intro.min.js" type="text/javascript"></script>
     <!-- Colorbrewer -->
     <script src="../SiteAssets/js/colorbrewer.min.js" type="text/javascript"></script>
     <!-- JavaScript utilities -->
@@ -58,33 +62,33 @@
         <!--<div class="w3-sidebar w3-bar-block w3-collapse w3-w3-container w3-card-4 w3-white-2 w3-animate-left w3-indigo" style="width:200px;" id="portSidebar">-->
         <div class="w3-sidebar w3-bar-block w3-card-2 w3-indigo w3-animate-left" style="width:11%" id="portSidebar">
             <a onclick="javascript:w3_close()" class="w3-bar-item w3-large">Close &times;</a>
-            <a href="index.aspx" class="w3-bar-item w3-button">
+            <a href="index.html" class="w3-bar-item w3-button">
                 <h2>
                     <i class="pe-7s-home" style="font-size:48px;padding-right:0px"></i>
                 </h2>
             </a>
             <!--<a class="w3-bar-item w3-button w3-large w3-hide-large" href="javascript:w3_close()">Close &times;</a>-->
-            <a href="portfolio.aspx" class="w3-bar-item w3-button">
+            <a href="portfolio.html" class="w3-bar-item w3-button">
                 <i class="pe-7s-graph"></i>
                 <p>IT Portfolio View</p>
             </a>
-            <a href="investment.aspx" class="w3-bar-item w3-button">
+            <a href="investment.html" class="w3-bar-item w3-button">
                 <i class="pe-7s-graph3"></i>
                 <p>IT Investment View</p>
             </a>
-            <a href="itar.aspx" class="w3-bar-item w3-button">
+            <a href="itar.html" class="w3-bar-item w3-button">
                 <i class="pe-7s-graph1"></i>
                 <p>IT Acquisition View</p>
             </a>
-            <a href="savings.aspx" class="w3-bar-item w3-button">
+            <a href="savings.html" class="w3-bar-item w3-button">
                 <i class="pe-7s-graph2"></i>
                 <p>IT Cost Savings &#38; Avoidance View</p>
             </a>
-            <a href="systems.aspx" class="w3-bar-item w3-button">
+            <a href="systems.html" class="w3-bar-item w3-button">
                 <i class="pe-7s-graph3"></i>
                 <p>IT Systems & Major Applications View</p>
             </a>
-            <a target="_blank" href="MajorITInvestments.aspx" class="w3-bar-item w3-button">
+            <a target="_blank" href="MajorITInvestments.html" class="w3-bar-item w3-button">
                 <i class="pe-7s-graph"></i>
                 <p>IT Major Investments View</p>
             </a>
@@ -102,7 +106,7 @@
                     <div class="w3-row-padding" id="header">
                         <div class="w3-col l12">
                             <div class="w3-row-padding" style="padding-bottom:3px">
-                                <div class="w3-col l2">
+                                <div class="w3-col l2" data-intro="You can choose a component to view its data">
                                     <div>
                                         <h5 class="w3-text-uppercase">Component</h5>
                                         <div id="components"></div>
@@ -153,7 +157,7 @@
                     <!-- Main Content Container -->
                     <div class="w3-container w3-padding-4">
                         <!-- bar chart -->
-                        <div class="w3-row-padding">
+                        <div class="w3-row-padding" data-intro="Click on a bar within this chart to further filter the data by fiscal year">
                             <!-- Bar Chart -->
                             <div class="w3-col l12 w3-padding-4">
                                 <div class="w3-container w3-card-4 w3-white" id="barChart">
@@ -195,7 +199,7 @@
                         <!-- row chart and data table -->
                         <div class="w3-row-padding">
                             <!-- Row Chart -->
-                            <div class="w3-col l5 w3-padding-4">
+                            <div class="w3-col l5 w3-padding-4" data-intro="Click on a bar within this chart to select individual investments">
                                 <div class="w3-container w3-card-4 w3-white" id="rowChart">
                                     <!-- Header -->
                                     <header class="w3-padding-4">
@@ -227,7 +231,7 @@
                             </div>
                             <!-- End Row Chart -->
                             <!-- Data Table -->
-                            <div class="w3-col l7 w3-padding-4" id="tableChart">
+                            <div class="w3-col l7 w3-padding-4" id="tableChart" data-intro="This table shows the results of any filtering">
                                 <div class="w3-container w3-card-4 w3-white">
                                     <!-- Header -->
                                     <header>

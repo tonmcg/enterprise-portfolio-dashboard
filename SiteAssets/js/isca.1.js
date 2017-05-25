@@ -1,538 +1,536 @@
-"use strict";
+// "use strict";
 
-// loader settings
-var opts = {
-    lines: 9, // The number of lines to draw
-    length: 9, // The length of each line
-    width: 5, // The line thickness
-    radius: 14, // The radius of the inner circle
-    color: '#c10e19', // #rgb or #rrggbb or array of colors
-    speed: 1.9, // Rounds per second
-    trail: 40, // Afterglow percentage
-    className: 'spinner', // The CSS class to assign to the spinner
-};
-
-var target = document.getElementById("dashboard");
-
+// create spinner
+let target = d3.select("#dashboard").node();
+// create tooltip
+let tooltip = d3.select("body").append("div").style({"position": "absolute","z-index": "10","visibility": "hidden"}).attr({"class": "tooltip"});
 // trigger loader
-var spinner = new Spinner(opts).spin(target);
+let spinner = new Spinner(opts).spin(target);
 
 // dimensions for the charts
-var margins = {
-    top: 25,
-    right: 10,
-    bottom: 40,
-    left: 10
-};
-
-// var size = getSize();
-// var height = size.height;
-// var width = size.width;
-
 var dashboardHeight = getSize().height;
 var headerHeight = document.querySelector('div.w3-main > header').offsetHeight;
 var footerHeight = document.querySelector('div.w3-main > footer').offsetHeight;
 
-var bubbleChartHeaderHeight = document.querySelector('#bubbleChart header').offsetHeight;
-var bubbleChartFooterHeight = document.querySelector('#bubbleChart footer').offsetHeight;
-var bubbleChartHeight = (dashboardHeight - headerHeight - footerHeight - bubbleChartHeaderHeight - bubbleChartFooterHeight) * 5/6;
-var bubbleChartWidth = document.querySelector('#bubbleChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
+var treeMapHeaderHeight = document.querySelector('#treeMap header').offsetHeight;
+var treeMapFooterHeight = document.querySelector('#treeMap footer').offsetHeight;
+var treeMapHeight = (dashboardHeight - headerHeight - footerHeight - treeMapHeaderHeight - treeMapFooterHeight) * 8/9;
 
-var tableHeaderHeight = document.querySelector('#tableChart header').offsetHeight;
-var tableFooterHeight = document.querySelector('#tableChart footer').offsetHeight;
-var tableHeight = (dashboardHeight - headerHeight - footerHeight - tableHeaderHeight - tableFooterHeight) * 1/3 * 0.85;
+// var treeMapWidth = document.querySelector('#treeMap footer').clientWidth; // does not include margin, padding, or scroll bar widths
+var treeMapWidth = document.querySelector('#treeMap footer').offsetWidth - 16;
 
-var tableWidth = document.querySelector('#tableChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
+// patterned after Bill White's treemap
+// http://www.billdwhite.com/wordpress/2012/12/16/d3-treemap-with-title-headers/
 
-// tick label and tooltip formats
-var sFormat = d3.format("s"),
-    dFormat = d3.format("d"),
-    iFormat = d3.format(",.0f"),
-    perFormat = d3.format(".1%"),
-    currFormat = d3.format("$,.0f");
+var chartWidth = treeMapWidth;
+var chartHeight = treeMapHeight;
+var xscale = d3.scale.linear().range([0, chartWidth]);
+var yscale = d3.scale.linear().range([0, chartHeight]);
+var color = d3.scale.category20();
+var headerHeight = 40;
+var headerColor = "#6E6E6E";
+var transitionDuration = 750;
+var root;
+var node;
+// var year = d3.select("#investment_year").property('value');
+var year = 'cy';
 
-// local formatting to get billions
-// https://github.com/d3/d3/issues/2241
-var formatNumber = d3.format(".1f"),
-    formatBillion = function(x) {
-        return '$' + formatNumber(x / 1e9) + "B";
-    },
-    formatMillion = function(x) {
-        return '$' + formatNumber(x / 1e6) + "M";
-    },
-    formatThousand = function(x) {
-        return '$' + formatNumber(x / 1e3) + "k";
-    };
+var margins = {
+    top: 25,
+    right: 10,
+    bottom: 20,
+    left: 10
+};
 
-// tooptip
-var tooltip = d3.select("body")
-    .append("div")
-    .style({
-        "position": "absolute",
-        "z-index": "10",
-        "visibility": "hidden"
+var treemap = d3.layout.treemap()
+    .round(false)
+    .size([chartWidth, chartHeight])
+    .sticky(true)
+    .sort(function(a, b) {
+        return a.value - b.value;
     })
-    .attr({
-        "class": "tooltip"
+    .value(function(d) {
+        return d['size_' + year];
     });
 
-// dc.js chart types
-var yearSelect = dc.selectMenu('#years');
-var componentSelect = dc.selectMenu('#components');
-// var compositionbubbleChart = dc.bubbleChart('#component');
-var compositionTreemapChart = dc.treemapChart('#component');
-var dataTable = dc.dataTable('#data-table');
+var chart = d3.select("#component")
+    .append("svg:svg")
+    .attr("width", chartWidth)
+    .attr("height", chartHeight)
+    .append("svg:g");
 
-// http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
-function getSize() {
-    var myWidth = 0,
-        myHeight = 0;
-    if (typeof(window.innerWidth) == 'number') {
-        //Non-IE
-        myWidth = window.innerWidth;
-        myHeight = window.innerHeight;
-    }
-    else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
-        //IE 6+ in 'standards compliant mode'
-        myWidth = document.documentElement.clientWidth;
-        myHeight = document.documentElement.clientHeight;
-    }
-    else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
-        //IE 4 compatible
-        myWidth = document.body.clientWidth;
-        myHeight = document.body.clientHeight;
-    }
-    return {
-        "height": myHeight,
-        "width": myWidth
-    };
-}
-
-function formatAbbreviation(x) {
-    var v = Math.abs(x);
-    return (v >= 0.9995e9 ? formatBillion :
-        v >= 0.9995e6 ? formatMillion :
-        formatThousand)(x);
-}
-
-function createViz(error, componentsData) {
+function createViz(error, data) {
 
     if (error) throw error;
 
     // stop spin.js loader
     spinner.stop();
 
-    var data = componentsData.value.filter(function(d) {
-        // Id,InvestmentNumber,Category,InvestmentName,Year,Total
-        d.Total = +d.Value * 1000;
+    var records = data.value.map(function(d) {
         d.Year = +d.Year;
-        return d.Total !== 0;
-    });
-
-    // set crossfilter
-    var ndx = crossfilter(data);
-
-    // define dimensions
-    var
-        componentDim = ndx.dimension(function(d) {
-            return d.Category;
-        }),
-        timeDim = ndx.dimension(function(d) {
-            return d.Year;
-        }),
-        component2Dim = ndx.dimension(function(d) {
-            return d.Component;
-        }),
-        idDim = ndx.dimension(function(d) {
-            return d.Category;
-        });
-
-    // group dimensions
-    var
-        all = ndx.groupAll(),
-        amountByYear = timeDim.group().reduceSum(function(d) {
-            return Math.round(d.Total);
-        }),
-        selectByComponent = component2Dim.group().reduceSum(function(d) {
-            return Math.round(d.Total);
-        }),
-        amountByComponent = componentDim.group().reduceSum(function(d) {
-            return Math.round(d.Total);
-        }),
-        // amountByComponent = componentDim.group().reduce(
-        //     function(p, v) {
-        //         ++p.count;
-        //         p.amount += Math.round(v.Total);
-        //         return p;
-        //     },
-        //     function(p, v) {
-        //         --p.count;
-        //         p.amount -= Math.round(v.Total);
-        //         return p;
-        //     },
-        //     function() {
-        //         return {
-        //             count: 0,
-        //             amount: 0
-        //         };
-        //     }
-        // ),
-        totalAmount = ndx.groupAll().reduceSum(function(d) {
-            return Math.round(d.Total);
-        });
-
-    var maxAmount = d3.max(amountByYear.top(Infinity),function(d) {
-        return d.value;
-    });
-    
-    // fiscal year menuselect
-    yearSelect
-        .dimension(timeDim)
-        .group(amountByYear)
-        // .filterDisplayed(function () {
-        //     return true;
-        // })
-        .multiple(false)
-        .numberVisible(null)
-        // .order(function (a,b) {
-        //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
-        // })
-        .title(function(d) {
-            return d.key;
-        })
-        // .promptText('2017')
-        .promptValue(2017);
-
-    yearSelect.on('pretransition', function(chart) {
-        // add Bootstrap styling to select input
-        d3.select('#years').classed('dc-chart', false);
-        chart.select('select').classed('w3-form', true);
-        var firstChild = chart.select('select').node().firstElementChild;
-        if (!firstChild.value) {
-            d3.select(chart.select('select').node().firstElementChild).remove();
+        if (d.Year === 2017) {
+            d.Value_CY = +d.Value * 1000;
+        } else if (d.Year === 2018) {
+            d.Value_BY = +d.Value * 1000;
+        } else if (d.Year === 2016) {
+            d.Value_PY = +d.Value * 1000;
         }
+        return d;
     });
     
-    yearSelect.filter(2017);
-
-    // fiscal year menuselect
-    componentSelect
-        .dimension(component2Dim)
-        .group(selectByComponent)
-        // .filterDisplayed(function () {
-        //     return true;
-        // })
-        .multiple(false)
-        .numberVisible(null)
-        // .order(function (a,b) {
-        //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
-        // })
-        .title(function(d) {
-            return d.key;
+    var nest = d3.nest()
+        .key(function(d) {
+            return d['Category'];
         })
-        .promptText('All Components')
-        .promptValue(null);
+        .key(function(d) {
+            return d['Service'];
+        })
+        .rollup(function(leaves) {
+            return {
+                "total_cy": d3.sum(leaves, function(d) {
+                    return d.Value_CY;
+                }),
+                "total_by": d3.sum(leaves, function(d) {
+                    return d.Value_BY;
+                }),
+                "total_py": d3.sum(leaves, function(d) {
+                    return d.Value_PY;
+                })
+            };
+        })
+        .entries(records);
 
-    componentSelect.on('pretransition', function(chart) {
-        // add Bootstrap styling to select input
-        d3.select('#components').classed('dc-chart', false);
-        chart.select('select').classed('w3-form', true);
-        // var select = chart.select('select')
-        // select
-        //     .classed('form-control', true)
-        //     .attr('multiple','multiple');
-        // var firstChild = chart.select('select').node().firstElementChild;
-        // if (!firstChild.value) {
-        //     d3.select(chart.select('select').node().firstElementChild).remove();
-        // }
-        // $('#components>select').multiselect({numberDisplayed: 0});
+    var children = nest.map(function(d) {
+        // var count = d.values.length;
+        var investments = d.values.map(function(g) {
+            return {
+                name: g.key,
+                // count: count,
+                count_cy: g.values.total_cy === 0 ? 0 : 1,
+                count_py: g.values.total_py === 0 ? 0 : 1,
+                count_by: g.values.total_by === 0 ? 0 : 1,
+                size_cy: g.values.total_cy,
+                size_py: g.values.total_py,
+                size_by: g.values.total_by
+            };
+        });
+        return {
+            name: d.key,
+            children: investments
+        };
+
     });
-    
-    // displays
-    dc.numberDisplay("#total-spend")
-        .formatNumber(dFormat)
-        .valueAccessor(function(d) {
-            return d;
-        })
-        .group(totalAmount)
-        .formatNumber(function(d) {
-            return formatAbbreviation(Math.abs(d));
+
+    var root = {
+        name: "Department of Justice",
+        children: children
+    };
+
+    node = root;
+    var nodes = treemap.nodes(root);
+
+    children = nodes.filter(function(d) {
+        return !d.children;
+    });
+    var parents = nodes.filter(function(d) {
+        return d.children;
+    });
+
+    // create parent cells
+    var parentCells = chart.selectAll("g.cell.parent")
+        .data(parents, function(d) {
+            return "p-" + d.name;
         });
 
-    dc.dataCount('#data-count')
-        .dimension(ndx)
-        .group(all);
-
-    // charts
-    // compositionbubbleChart
-    //     .width(bubbleChartWidth)
-    //     .height(bubbleChartHeight)
-    //     .dimension(componentDim)
-    //     .group(amountByComponent)
-    //     .ordinalColors(colorbrewer.Paired[9])
-    //     .keyAccessor(function(d) {
-    //         return d.value.amount;
-    //     })
-    //     .valueAccessor(function(d) {
-    //         return d.value.count;
-    //     })
-
-    //     .radiusValueAccessor(function (p) {
-    //         return p.value.count;
-    //     })
-    //     .y(d3.scale.linear().domain([0,100]))
-    //     .x(d3.scale.linear().domain([0,1500000000]))
-    //     .r(d3.scale.linear().domain([0,100]))
-    //     .minRadiusWithLabel(12)
-    //     .yAxisPadding(100)
-    //     .elasticX(false)
-    //     .elasticRadius(false)
-    //     .sortBubbleSize(true)
-    //     .xAxisPadding(200)
-    //     .maxBubbleRelativeSize(0.07)
-    //     .renderHorizontalGridLines(true)
-    //     .renderVerticalGridLines(true)
-    //     .margins({
-    //         top: margins.top,
-    //         right: margins.right,
-    //         bottom: margins.bottom,
-    //         left: margins.left + 50
-    //     })
-    //     .renderLabel(true)
-    //     .renderTitle(false  )
-    //     .elasticY(false);
-        
-    //     compositionbubbleChart
-    //     .yAxisLabel("Number of Investments per Component")
-    //     .yAxis().ticks(Math.max(bubbleChartWidth / 100, 2)).tickFormat(function(d) {
-    //         return d;
-    //     });
-    //     compositionbubbleChart
-    //     .xAxisLabel("Total IT Spend")
-    //     .xAxis().ticks(Math.max(bubbleChartWidth / 100, 2)).tickFormat(function(d) {
-    //         return formatAbbreviation(d);
-    //     })
-    //     ;
-
-    // compositionbubbleChart.on('pretransition', function(chart) {
-    //     var circles = d3.selectAll('circle');
-    //     circles.style('stroke-width','2px'); // make circle stroke bigger
-    //     circles.style('stroke',function(d) { return d3.rgb(d3.select(this).style('fill')).darker(1);} ); // add darker stroke to each circle
-    //     setResponsiveSVG(chart);
-    // });
-
-    compositionTreemapChart
-        .width(bubbleChartWidth)
-        .height(bubbleChartHeight)
-        .dimension(componentDim)
-        .group(amountByComponent)
-        // .ordinalColors(colorbrewer.Set3[9])
-        .keyAccessor(function(d) {
-            return d.key;
+    // var parentEnterTransition = parentCells.enter()
+    //     .append("g")
+    //     .attr("class", "cell parent")
+    var parentEnterTransition = parentCells.enter()
+        .append("g")
+        .attr("class", "cell parent")
+        .on("click", function(d) {
+            zoom(d);
         })
-        .valueAccessor(function(d) {
-            return d.value;
+        .append("svg")
+        .attr("class", "clip")
+        .attr("width", function(d) {
+            return Math.max(0.01, d.dx);
         })
-        .margins({
-            top: margins.top,
-            right: margins.right,
-            bottom: margins.bottom,
-            left: margins.left + 50
+        .attr("height", headerHeight)    
+        .on("click", function(d) {
+            zoom(d);
+        });
+
+    parentEnterTransition.append("rect")
+        .attr("width", function(d) {
+            return Math.max(0.01, d.dx);
         })
-        .renderTitle(false)
+        .attr("height", headerHeight)
+        .style("fill", headerColor);
+
+    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+    parentEnterTransition.append('text')
+        .attr("class", "label")
+        .attr("transform", "translate(3, 23)")
+        .attr("width", function(d) {
+            return Math.max(0.01, d.dx);
+        })
+        .attr("height", headerHeight)
+        .style("fill","#fff")
+        .text(function(d) {
+            var text = d.depth > 0 ? " Services, " + formatAbbreviation(d.value) : " Categories";
+            var count = d.depth > 0 ? d3.sum(d.children,function(g) { return g['count_'+year] }) : d.children.length;
+            return d.name + ": " + count + text;
+        })
+        ;    
+
+    // update transition
+    var parentUpdateTransition = parentCells.transition().duration(transitionDuration);
+    parentUpdateTransition.select(".cell")
+        .attr("transform", function(d) {
+            return "translate(" + d.dx + "," + d.y + ")";
+        });
+
+    parentUpdateTransition.select("rect")
+        .attr("width", function(d) {
+            return Math.max(0.01, d.dx);
+        })
+        .attr("height", headerHeight)
+        .style("fill", headerColor);
+
+    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+    parentUpdateTransition.select(".label")
+        .attr("transform", "translate(3, 23)")
+        .attr("width", function(d) {
+            return Math.max(0.01, d.dx);
+        })
+        .attr("height", headerHeight)
+        ;
+    // remove transition
+    parentCells.exit()
+        .remove();
+
+    // create children cells
+    var childrenCells = chart.selectAll("g.cell.child")
+        .data(children, function(d) {
+            return "c-" + d.name;
+        });
+    // enter transition
+    var childEnterTransition = childrenCells.enter()
+        .append("g")
+        .attr("class", "cell child")
+        .on("mouseover", function(d) {
+            var key = d.name;
+            var amount = formatAbbreviation(d['size_' + year]);
+            showDetail(key, amount, null, null);
+        }).on("mouseout", hideDetail)
+        .on("click", function(d) {
+            zoom(node === d.parent ? root : d.parent);
+        });
+    childEnterTransition.append("rect")
+        .classed("background", true)
+        .style("fill", function(d) {
+            return color(d.parent.name);
+        });
+
+    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+    childEnterTransition.append('text')
+        .attr("class", "label")
+        .attr('x', function(d) {
+            return d.dx / 2;
+        })
+        .attr('y', function(d) {
+            return d.dy / 2;
+        })
+        .attr("dy", ".35em")
+        .attr("text-anchor", "middle")
+        .style("display", "none")
+        .text(function(d) {
+            return d.name;
+        })
         ;
 
-    // map data headers to column headers
-    var cols = [{"label":"Year","column":"Year"},{"label":"Category","column":"Category"},{"label":"Investment Name","column":"InvestmentName"},{"label":"Total","column":"Total"}];
+    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+    childEnterTransition.selectAll(".label")
+        .style("display", "none")
+    ;
     
-    dataTable
-        .width(tableWidth)
-        .height(tableHeight)
-        .dimension(idDim)
-        .group(function (d) {
-            return d.Id;
+    // update transition
+    var childUpdateTransition = childrenCells.transition().duration(transitionDuration);
+    childUpdateTransition.select(".cell")
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+    childUpdateTransition.select("rect")
+        .attr("width", function(d) {
+            return Math.max(0.01, d.dx);
         })
-        .columns([
-            {
-                label: cols[0].label,
-                format: function(d) { return d[cols[0].column]; }
-            },
-            {
-                label: cols[1].label,
-                format: function(d) { return d[cols[1].column]; }
-            },
-            {
-                label: cols[2].label,
-                format: function(d) { return "<a href=# onclick=document.getElementById(&#39;itemModal&#39;).style.display=&#39;block&#39;>" + d[cols[2].column] + "</a>"; }
-            },
-            {
-                label: cols[3].label,
-                format: function(d) { return formatAbbreviation(d[cols[3].column]); }
-            }
-            ])
-        .sortBy(function (d) { return d.Category; })
-        .size(Infinity)
-        .order(d3.ascending)
-        .on('renderlet',function (table) {
-            table.selectAll(".dc-table-group").remove(); // remove dc.js default first row
-        });        
+        .attr("height", function(d) {
+            return d.dy;
+        })
+        .style("fill", function(d) {
+            return color(d.parent.name);
+        });
 
-    dc.renderAll();
+    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+    childUpdateTransition.select(".label")
+        .attr('x', function(d) {
+            return d.dx / 2;
+        })
+        .attr('y', function(d) {
+            return d.dy / 2;
+        })
+        .attr("dy", ".35em")
+        .attr("text-anchor", "middle")
+        .style("display", "none")
+        .text(function(d) {
+            return d.name;
+        })
+        ;
+        
+    // exit transition
+    childrenCells.exit()
+        .remove();
 
-    // define mouseover and mouseout events
-    function bindHover() {
-        // d3.selectAll('g.node').on("mouseover", function(d) {
-        //     var key = d.key;
-        //     var amount = currFormat(d.value.amount);
-        //     var count = d.value.count;
-        //     showDetail(key, amount, count, null)
-        // }).on("mouseout", hideDetail);
-        d3.selectAll('div.node').on("mouseover", function(d) {
-            var key = d.key;
-            var amount = currFormat(d.value);
-            // var count = currFormat(d.value.count);
-            showDetail(key, amount, null, null)
-        }).on("mouseout", hideDetail);
+    // Change the date header to reflect the date and time of the data
+    d3.select('#dateHeader').text(formatDate(new Date()));
+
+    d3.select("#investment_year").on("change", function() {
+        year = this.value;
+        treemap.value(size)
+            .nodes(root);
+        zoom(node);
+    });
+    
+    var treeChart = d3.select("#component")
+    var width = +treeChart.select('svg').attr('width');
+    var height = +treeChart.select('svg').attr('height');
+    var calcString = +(height / width) * 100 + "%";
+
+    var svgElement = treeChart.select('svg');
+    var svgParent = d3.select(treeChart.select('svg').node().parentNode);
+    
+    svgElement.attr({
+        'class':'scaling-svg',
+        'preserveAspectRatio':'xMinYMin',
+        'viewBox':'0 0 ' + width + ' ' + height,
+        'width':null,
+        'height':null
+    });
+    
+    svgParent.style('padding-bottom',calcString);
+    
+    
+    zoom(node);
+}
+
+function size(d) {
+    return d['size_' + year];
+}
+
+//and another one
+function textHeight(d) {
+    var ky = chartHeight / d.dy;
+    yscale.domain([d.y, d.y + d.dy]);
+    return (ky * d.dy) / headerHeight;
+}
+
+function getRGBComponents(color) {
+    var r = color.substring(1, 3);
+    var g = color.substring(3, 5);
+    var b = color.substring(5, 7);
+    return {
+        R: parseInt(r, 16),
+        G: parseInt(g, 16),
+        B: parseInt(b, 16)
+    };
+}
+
+function idealTextColor(bgColor) {
+    var nThreshold = 105;
+    var components = getRGBComponents(bgColor);
+    var bgDelta = (components.R * 0.299) + (components.G * 0.587) + (components.B * 0.114);
+    return ((255 - bgDelta) < nThreshold) ? "#000000" : "#ffffff";
+}
+
+function zoom(d) {
+    this.treemap
+        .padding([headerHeight / (chartHeight / d.dy), 0, 0, 0])
+        .nodes(d);
+
+    // moving the next two lines above treemap layout messes up padding of zoom result
+    var kx = chartWidth / d.dx;
+    var ky = chartHeight / d.dy;
+    var level = d;
+
+    xscale.domain([d.x, d.x + d.dx]);
+    yscale.domain([d.y, d.y + d.dy]);
+
+    if (node != level) {
+        // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+        chart.selectAll(".cell.child .label")
+            .style("display", "none")
+        ;
     }
 
-    bindHover();
-    
-    // Change the date header to reflect the date and time of the data
-    d3.select('#dateHeader').text(moment().format('LLL'));
-
-    // define reset mouseover event
-    d3.selectAll('.reset').on('mouseover', function(e) {
-        $(this).css('cursor', 'pointer');
-    });
-    
-    // define table column sort
-    d3.selectAll('#data-table th').on('click',function() {
-    //   console.log(d3.select(this));
-        // http://bl.ocks.org/AMDS/4a61497182b8fcb05906
-        var rows = d3.select(this.closest('table')).select('tbody').selectAll('tr');
-        var data = d3.select(this.closest('table').children[1]).data()[0].values;
-        debugger;
-        // console.log(data);
-        var sortAscending = true;
-        if (sortAscending) {
-            rows.sort(function(a, b) { 
-                return a.Category - b.Category;
-            });
-            sortAscending = false;
-            this.className = 'aes';
-        } else {
-            rows.sort(function(a, b) { 
-                return b.Category - a.Category;
-            });
-            sortAscending = true;
-            this.className = 'des';
-        }
-    });
-    
-    // define multichoice change event
-    d3.selectAll('li:not(.multiselect-group) input').on('change',function(e) {
-        var components = [];
-        d3.selectAll('li.dc-select-option input')[0].forEach(function(g) {
-            var checked = false;    
-            var name = g.value;
-            checked = d3.select(g).property('checked');
-            
-            if ((checked && !componentSelect.hasFilter(name)) || (!checked && componentSelect.hasFilter(name))) {
-                components.push(name);
+    var zoomTransition = chart.selectAll("g.cell").transition().duration(transitionDuration)
+        .attr("transform", function(d) {
+            return "translate(" + xscale(d.x) + "," + yscale(d.y) + ")";
+        })
+        .each("end", function(d, i) {
+            if (!i && (level !== self.root)) {
+                chart.selectAll(".cell.child")
+                    .filter(function(d) {
+                        return d.parent === self.node; // only get the children for selected group
+                    })
+                    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+                    .select(".label")
+                    .style("display", "")
+                    .style("fill", function(d) {
+                        return idealTextColor(color(d.parent.name));
+                    })
+                    
+                    .text(function(d) {
+                        return d.name;
+                    })
+                    .each(wordWrap)
+                    ;
+                chart.selectAll(".clip .label")
+                    .text(function(d) {
+                        var text = d.depth > 0 ? " Services, " + formatAbbreviation(d.value) : " Categories";
+                        var count = d.depth > 0 ? d3.sum(d.children,function(g) { return g['count_'+year] }) : d.children.length;
+                        return d.name + ": " + count + text;
+                    });
             }
         });
-            
-        if (!components.length > 0) {
-            componentSelect.filterAll();
-        } else {
-            componentSelect.filter([components]);
-        }
+
+    // use <text> tag instead of non-SVG compliant <foreignObject> tag, which also doesn't work in IE
+    zoomTransition.select(".clip")
+        .attr("width", function(d) {
+            return Math.max(0.01, (kx * d.dx));
+        })
+        .attr("height", function(d) {
+            return d.children ? headerHeight : Math.max(0.01, (ky * d.dy));
+        });
+
+    zoomTransition.select(".label")
+        .attr("width", function(d) {
+            return Math.max(0.01, (kx * d.dx));
+        })
+        .attr("height", function(d) {
+            return d.children ? headerHeight : Math.max(0.01, (ky * d.dy));
+        });
+
+    zoomTransition.select(".child .label")
+        .attr("x", function(d) {
+            return kx * d.dx / 2;
+        })
+        .attr("y", function(d) {
+            return ky * d.dy / 2;
+        });
+    // update the width/height of the rects
+    zoomTransition.select("rect")
+        .attr("width", function(d) {
+            return Math.max(0.01, kx * d.dx);
+        })
+        .attr("height", function(d) {
+            return d.children ? headerHeight : Math.max(0.01, ky * d.dy);
+        })
+        .style("fill", function(d) {
+            return d.children ? headerColor : color(d.parent.name);
+        });
+
+    node = d;
+
+    d3.select('#total_spend')
+        .text('')
+        .text(formatAbbreviation(d3.select('.parent').datum().value));
         
-        dc.redrawAll();
-    });
-
-    // define reset click events
-    // d3.select('#bubbleChartReset').on('click', function() {
-    //     compositionbubbleChart.filterAll();
-    //     dc.redrawAll();
-    // });
-
-    // add selected item information as table in modal
-    $('#data-table').on('click', 'tbody tr a', function(event) {
-        var thisTable = d3.select($(this).closest('table')[0]);
-        var thisRow = d3.select($(this).closest('tr')[0]);
-        var cells = thisRow.selectAll('td')[0].map(function(d) {
-            var text;
-            if (d.firstChild !== undefined && d.firstChild.textContent !== undefined) {
-                text = d.firstChild.textContent;
-            }
-            else {
-                text = d.textContent;
-            }
-            return text;
-        });
-        var headers = thisTable.selectAll('thead th')[0].map(function(d) {
-            return d.textContent;
-        });
-        var data = headers.map(function(d, i) {
-            var obj = {};
-            obj.key = d;
-            obj.value = cells[i];
-            return obj;
-        });
-
-        $('#tableDiv table').remove();
-        var table = d3.select('#tableDiv').append('table').attr({
-            'id': 'modal-table',
-            'class': 'table table-bordered table-condensed'
-        }).style({
-            'width': '100%',
-            'table-layout': 'fixed'
-        });
-        var tbody = table.append('tbody');
-
-        var rows = tbody.selectAll('tr')
-            .data(data);
-
-        rows.enter()
-            .append('tr');
-
-        rows.exit().remove();
-
-        rows.append('td').text(function(d) {
-            return d.key;
-        });
-        rows.append('td').text(function(d) {
-            return d.value;
-        });
-    });
-
-    // Many browsers -- IEparticularly -- will not auto-size inline SVG
-    // IE applies default width and height sizing
-    // padding-bottom hack on a container solves IE inconsistencies in size
-    // https://css-tricks.com/scale-svg/#article-header-id-10
-    function setResponsiveSVG(chart) {
-        var width = +chart.select('svg').attr('width');
-        var height = +chart.select('svg').attr('height');
-        var calcString = +(height / width) * 100 + "%";
-
-        var svgElement = chart.select('svg');
-        var svgParent = d3.select(chart.select('svg').node().parentNode);
-        
-        svgElement.attr({
-            'class':'scaling-svg',
-            'preserveAspectRatio':'xMinYMin',
-            'viewBox':'0 0 ' + width + ' ' + height,
-            'width':null,
-            'height':null
-        });
-        
-        svgParent.style('padding-bottom',calcString);
+    if (d3.event) {
+        d3.event.stopPropagation();
     }
 }
 
-function exportTable() {
-    export_table_to_excel('data-table', 'ISCA'); // parameters: 0, id of html table, 1, name of workbook
+// adapted from http://bl.ocks.org/mundhradevang/1387786
+function fontSize(d, i) {
+    var size = d.dx / 5;
+    var words = d.name.split(' ');
+    var word = words[0];
+    var width = d.dx;
+    var height = d.dy;
+    var length = 0;
+    d3.select(this).style("font-size", size + "px").text(word);
+    while (((this.getBBox().width >= width) || (this.getBBox().height >= height)) && (size > 12)) {
+        size--;
+        d3.select(this).style("font-size", size + "px");
+        this.firstChild.data = word;
+    }
+}
+
+// adapted from http://bl.ocks.org/mundhradevang/1387786
+function wordWrap(d, i) {
+    var words = d.name.split(' ');
+    var line = new Array();
+    var length = 0;
+    var text = "";
+    var strokeWidth = parseInt(d3.select(this.previousSibling).style('stroke-width')); // get stroke width to provide "padding" for text
+    var width = +this.previousSibling.getAttribute('width') - (strokeWidth * 2); // get the width of the <rect> svg since the d.dx data property reflects a non-zoomed in dimension 
+    var height = +this.previousSibling.getAttribute('height') - (strokeWidth * 2); // get the height of the <rect> svg since the d.dx data property reflects a non-zoomed in dimension 
+    var word;
+    do {
+        word = words.shift();
+        line.push(word);
+        if (words.length)
+            this.firstChild.data = line.join(' ') + " " + words[0];
+        else
+            this.firstChild.data = line.join(' ');
+        length = this.getBBox().width;
+        if (length < width && words.length) {
+        }
+        else {
+            text = line.join(' ');
+            this.firstChild.data = text;
+            if (this.getBBox().width > width) {
+                text = d3.select(this).select(function() {
+                    return this.lastChild;
+                }).text();
+                text = text + "...";
+                d3.select(this).select(function() {
+                    return this.lastChild;
+                }).text(text);
+                d3.select(this).classed("wordwrapped", true);
+                break;
+            }
+            else
+            ;
+
+            if (text != '') {
+                d3.select(this).append("tspan") // <tspan> tag should inherit x, y, and dy, properties of the <text> tag
+                    .text(text);
+                    
+            }
+            else
+            ;
+
+            if (this.getBBox().height > height && words.length) {
+                text = d3.select(this).select(function() {
+                    return this.lastChild;
+                }).text();
+                text = text + "...";
+                d3.select(this).select(function() {
+                    return this.lastChild;
+                }).text(text);
+                d3.select(this).classed("wordwrapped", true);
+
+                break;
+            }
+            else
+            ;
+
+            line = new Array();
+        }
+    } while (words.length);
+    this.firstChild.data = '';
 }
 
 // if this JavaScript source file resides on a SharePoint server
@@ -582,18 +580,19 @@ function getData() {
 
     }
 
-    columns = "Id,Component,Category,InvestmentName,Year,Value";
+    columns = "Id,Component,InvestmentName,Year,Total";
     expand = "";
-    filter = "(Value ne 0)";
-    top = 9000;
+    filter = "(InvestmentName ne null) and (Year gt 2015) and (Total ne 0)";
+    top = 3000;
 
-    var componentEndpoint = callData(siteUrl, 'ISCA', columns, expand, filter, top);
+    var componentEndpoint = callData(siteUrl, 'list','ISCA', columns, expand, filter, top);
 
     // Get the data
-    d3_queue.queue()
-        .defer(componentEndpoint.get)
-        .await(createViz);
+    componentEndpoint.get(function(error, data) {
+        createViz(error, data);
+    });
 
 }
-
-getData();
+$(document).ready(function() {
+getData();    
+});

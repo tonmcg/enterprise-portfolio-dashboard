@@ -94,6 +94,8 @@ const columns = [{
     "sort": false
 }];
 
+// create introduction
+let intro = introJs().start();
 // create spinner
 let target = d3.select("#dashboard").node();
 // create tooltip

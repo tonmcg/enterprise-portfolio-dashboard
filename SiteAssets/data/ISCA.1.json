@@ -1,0 +1,1722 @@
+{ "value": [{
+        "Investment Number": "1370",
+        "Investment Name": "ATF FICAM",
+        "Year": "2016",
+        "Service": "Other Government General",
+        "Value": "809",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "292",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "5112",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Other Government General",
+        "Value": "2458",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "608",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1474",
+        "Investment Name": "ATF Next Gen Case Management",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "591",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1191",
+        "Investment Name": "ATF Unified Financial Management System (UFMS)",
+        "Year": "2016",
+        "Service": "Central Fiscal Operations",
+        "Value": "4451",
+        "Component": "ATF",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "200",
+        "Investment Name": "BOP BOPNet",
+        "Year": "2016",
+        "Service": "Other Government General",
+        "Value": "27.859",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "200",
+        "Investment Name": "BOP BOPNet",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "6.39",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "200",
+        "Investment Name": "BOP BOPNet",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "19.86",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "200",
+        "Investment Name": "BOP BOPNet",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "38179.2",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "829",
+        "Investment Name": "BOP BOPNet Telecomm",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "1196.54",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "987",
+        "Investment Name": "BOP Electronic Medical Record (BEMR)",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "1273.38",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1375",
+        "Investment Name": "BOP FICAM",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "2375.92",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "210",
+        "Investment Name": "BOP HRM Automation - Recruitment",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "3884.63",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "210",
+        "Investment Name": "BOP HRM Automation - Recruitment",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "383.28",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "210",
+        "Investment Name": "BOP HRM Automation - Recruitment",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "202.98",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "212",
+        "Investment Name": "BOP Inmate Telephone System (TRUFONE)",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "28",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "213",
+        "Investment Name": "BOP SENTRY",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "6005.01",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1434",
+        "Investment Name": "BOP Security",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "895.873",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "214",
+        "Investment Name": "BOP TRUFACS (TRUNET)",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "21",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "214",
+        "Investment Name": "BOP TRUFACS (TRUNET)",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "9.5",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "214",
+        "Investment Name": "BOP TRUFACS (TRUNET)",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "11.5",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "214",
+        "Investment Name": "BOP TRUFACS (TRUNET)",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "51.5",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "568",
+        "Investment Name": "BOP Teleradiology",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "384.891",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1173",
+        "Investment Name": "BOP Unified Financial Management System (UFMS)",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "937.58",
+        "Component": "BOP",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "751",
+        "Investment Name": "CIV - Automated Records Tracking System (ARTS)",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "542",
+        "Component": "CIV",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1352",
+        "Investment Name": "CRM Automated Litigating Support (ALS)",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "1270.5",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1350",
+        "Investment Name": "CRM Customer Services",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "132.67",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1350",
+        "Investment Name": "CRM Customer Services",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "330.71",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1350",
+        "Investment Name": "CRM Customer Services",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "1804.19",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1349",
+        "Investment Name": "CRM End-user Equipment",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "625.18",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1347",
+        "Investment Name": "CRM Network Operation Center (NOC)",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "476.72",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1346",
+        "Investment Name": "CRM Software-Applications",
+        "Year": "2016",
+        "Service": "Central Fiscal Operations",
+        "Value": "1727.79",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1346",
+        "Investment Name": "CRM Software-Applications",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "109.08",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1346",
+        "Investment Name": "CRM Software-Applications",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "4760.24",
+        "Component": "CRM",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "400",
+        "Investment Name": "CRS IQ",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "86",
+        "Component": "CRS",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1441",
+        "Investment Name": "DEA Aviation Division Office Internet (ADOI)",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "363",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1418",
+        "Investment Name": "DEA Data Center",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "1",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1418",
+        "Investment Name": "DEA Data Center",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "10",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1473",
+        "Investment Name": "DEA E-GIS",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "500.33",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1473",
+        "Investment Name": "DEA E-GIS",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "278.14",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1473",
+        "Investment Name": "DEA E-GIS",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "79.17",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "277",
+        "Investment Name": "DEA EPIC Seizure System (ESS)",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "141",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "277",
+        "Investment Name": "DEA EPIC Seizure System (ESS)",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "4957",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "270",
+        "Investment Name": "DEA Firebird",
+        "Year": "2016",
+        "Service": "Central Fiscal Operations",
+        "Value": "359.45",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "270",
+        "Investment Name": "DEA Firebird",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "359.45",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "270",
+        "Investment Name": "DEA Firebird",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "979.94",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "270",
+        "Investment Name": "DEA Firebird",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "1224.56",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "270",
+        "Investment Name": "DEA Firebird",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "654.89",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "261",
+        "Investment Name": "DEA HR IT Portfolio",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "1797",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1176",
+        "Investment Name": "DEA Learning Technologies",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "2818",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "269",
+        "Investment Name": "DEA Merlin",
+        "Year": "2016",
+        "Service": "Central Fiscal Operations",
+        "Value": "53",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "269",
+        "Investment Name": "DEA Merlin",
+        "Year": "2016",
+        "Service": "General Property & Records Management",
+        "Value": "486",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "269",
+        "Investment Name": "DEA Merlin",
+        "Year": "2016",
+        "Service": "Central Personal Management",
+        "Value": "200",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "269",
+        "Investment Name": "DEA Merlin",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "32",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "269",
+        "Investment Name": "DEA Merlin",
+        "Year": "2016",
+        "Service": "Support Delivery of Federal Services",
+        "Value": "100",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "279",
+        "Investment Name": "DEA Modernization Office of Diversion (MOD)",
+        "Year": "2016",
+        "Service": "Central Fiscal Operations",
+        "Value": "351",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "279",
+        "Investment Name": "DEA Modernization Office of Diversion (MOD)",
+        "Year": "2016",
+        "Service": "Other Government General",
+        "Value": "9",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "279",
+        "Investment Name": "DEA Modernization Office of Diversion (MOD)",
+        "Year": "2016",
+        "Service": "Information Sharing",
+        "Value": "2694",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "279",
+        "Investment Name": "DEA Modernization Office of Diversion (MOD)",
+        "Year": "2016",
+        "Service": "Knowledge Management",
+        "Value": "37",
+        "Component": "DEA",
+        "Category": "Business Solutions",
+        "Business Area": "Solutions"
+    },
+{
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "2109",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "2449",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "174",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2016",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "3585",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "218",
+        "Investment Name": "ATF NIBIN",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "22708",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1474",
+        "Investment Name": "ATF Next Gen Case Management",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1764.5",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1474",
+        "Investment Name": "ATF Next Gen Case Management",
+        "Year": "2016",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "1764.5",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "452",
+        "Investment Name": "ATR Case Management Systems",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "777.38",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1411",
+        "Investment Name": "ATR Data Center",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "700.47",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1374",
+        "Investment Name": "ATR FICAM",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "82.88",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "989",
+        "Investment Name": "ATR IT Architecture Program",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "232",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "395",
+        "Investment Name": "ATR IT Security Program",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1646.88",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "380",
+        "Investment Name": "ATR IT-IRM Management",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "265.3",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "533",
+        "Investment Name": "ATR JCON Operations & Maintenance",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "369.2",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "444",
+        "Investment Name": "ATR Litigation Support Systems",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "6883.23",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "442",
+        "Investment Name": "ATR Other Management Information Systems",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1398.68",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "443",
+        "Investment Name": "ATR Specific Case Assistance",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "8108.26",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1124",
+        "Investment Name": "ATR Voice-Data Telecommunications",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "150.3",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "200",
+        "Investment Name": "BOP BOPNet",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "5380.16",
+        "Component": "BOP",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "987",
+        "Investment Name": "BOP Electronic Medical Record (BEMR)",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "2651.35",
+        "Component": "BOP",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "757",
+        "Investment Name": "CIV - Automated Litigation Support (ALS)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "2690",
+        "Component": "CIV",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "435",
+        "Investment Name": "CIV - Case Management (CASES)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "530",
+        "Component": "CIV",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "394",
+        "Investment Name": "CIV - Justice Consolidated Office Network (JCON)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1248.66",
+        "Component": "CIV",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1346",
+        "Investment Name": "CRM Software-Applications",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "4360.77",
+        "Component": "CRM",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "399",
+        "Investment Name": "CRT Automated Litigation Support",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "625.81",
+        "Component": "CRT",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "439",
+        "Investment Name": "CRT Geographic Information System",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1082",
+        "Component": "CRT",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "573",
+        "Investment Name": "DEA CONCORDE",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "11074.28",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1418",
+        "Investment Name": "DEA Data Center",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "10",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1418",
+        "Investment Name": "DEA Data Center",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1445",
+        "Investment Name": "DEA Document and Media Exploitation (DDOMEX)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "7422",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "270",
+        "Investment Name": "DEA Firebird",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "434",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "24",
+        "Investment Name": "DEA Integrated Software Development Initiative (ISDI)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1575.98",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "281",
+        "Investment Name": "DEA Laboratory Information Management System (LIMS)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "2268.38",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "279",
+        "Investment Name": "DEA Modernization Office of Diversion (MOD)",
+        "Year": "2016",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "129",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "278",
+        "Investment Name": "DEA Speedway",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1280",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "518",
+        "Investment Name": "EOIR Mission Critical Systems",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "8287.57",
+        "Component": "EOIR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "449",
+        "Investment Name": "EOUST Electronic Case Filing (ECF)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "711.377",
+        "Component": "EOUST",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "448",
+        "Investment Name": "EOUST Miscellaneous Initiatives",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "610",
+        "Component": "EOUST",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "305",
+        "Investment Name": "FBI Automated Messaging System (FAMS)",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1464.85",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1007",
+        "Investment Name": "FBI Combined DNA Index System (CODIS)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "21664.1",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "804",
+        "Investment Name": "FBI Delta",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1500",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "804",
+        "Investment Name": "FBI Delta",
+        "Year": "2016",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "1500",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1025",
+        "Investment Name": "FBI Digital Collection",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "19813",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1025",
+        "Investment Name": "FBI Digital Collection",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "13209",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "249",
+        "Investment Name": "FBI Document Conversion Laboratory (DocLab)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "9762.31",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1340",
+        "Investment Name": "FBI Electronic Laboratory (FBI eLAB)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "7786",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1300",
+        "Investment Name": "FBI Electronically Stored Information Discovery (ESID)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "500",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1044",
+        "Investment Name": "FBI Enterprise Data Analytics Program (EDAP)",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "38159.7",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1032",
+        "Investment Name": "FBI Guardian",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "2888.85",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1479",
+        "Investment Name": "FBI IC ITE",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1854.84",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1470",
+        "Investment Name": "FBI Innocence Lost Database Web Archival Tool (ILD WAT)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "3081",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1310",
+        "Investment Name": "FBI Intelligence Information Report Dissemination System (FIDS)",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1075",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1188",
+        "Investment Name": "FBI Intelligence Web Services",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1665",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1313",
+        "Investment Name": "FBI Language Services Automation and Human Language Technology Efforts",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1326.88",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "854",
+        "Investment Name": "FBI Multi-Media Workstations for Intelligence Career Service",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1356",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1060",
+        "Investment Name": "FBI National Instant Criminal Background Check System (NICS)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "17672.3",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1253",
+        "Investment Name": "FBI Next Generation Identification (NGI)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "84498.4",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "803",
+        "Investment Name": "FBI Operational Wide Area Network (OpWAN)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "5000",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1064",
+        "Investment Name": "FBI Sentinel",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "2404.87",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1362",
+        "Investment Name": "FBI Shared Land Mobile Radio (SLMR)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "70584",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1070",
+        "Investment Name": "FBI Terrorist Screening System (TSS)",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "37663.1",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "487",
+        "Investment Name": "FBI Translators Online Network Support (TONS) System",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "5875.57",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1471",
+        "Investment Name": "FBI Unclassified Geospatial Capability (UGC)",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1178",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "323",
+        "Investment Name": "FBI Violent Criminal Apprehension Program (ViCAP)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "101",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "433",
+        "Investment Name": "FBI iDomain",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "872",
+        "Component": "FBI",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "528",
+        "Investment Name": "JMD Consolidated Asset Tracking System (CATS)",
+        "Year": "2016",
+        "Service": "General Purpose Fiscal Assistance",
+        "Value": "12000",
+        "Component": "JMD",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1499",
+        "Investment Name": "JMD Law Enforcement and Legal Application Services",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "16092",
+        "Component": "JMD",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1465",
+        "Investment Name": "NSD Software Engineering",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "2496",
+        "Component": "NSD",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1447",
+        "Investment Name": "OCDETF Executive Office",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "100",
+        "Component": "OCDETF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1447",
+        "Investment Name": "OCDETF Executive Office",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "324",
+        "Component": "OCDETF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1447",
+        "Investment Name": "OCDETF Executive Office",
+        "Year": "2016",
+        "Service": "General Purpose Fiscal Assistance",
+        "Value": "167",
+        "Component": "OCDETF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1507",
+        "Investment Name": "OJP Mission Delivery Systems",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "4603.32",
+        "Component": "OJP",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1428",
+        "Investment Name": "TAX Data Center",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1.333",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1011",
+        "Investment Name": "TAX Division Administrative Systems",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "3.55",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1015",
+        "Investment Name": "TAX Division Case Management System",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "6.134",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1012",
+        "Investment Name": "TAX Division Human Resources System",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "2.233",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1017",
+        "Investment Name": "TAX Division Legal Databases and System Support",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "7.784",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1013",
+        "Investment Name": "TAX Division Office Automation",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "15.801",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "391",
+        "Investment Name": "TAX Division Telecommunications Systems",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "11.592",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1439",
+        "Investment Name": "TAX Security",
+        "Year": "2016",
+        "Service": "Intelligence Operations",
+        "Value": "1.875",
+        "Component": "TAX",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "719",
+        "Investment Name": "USA Applications Support Unit",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "2246.67",
+        "Component": "USA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "720",
+        "Investment Name": "USA DC Superior Court Applications Support",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1989.09",
+        "Component": "USA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1496",
+        "Investment Name": "USA Digital Discovery Investment",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "800",
+        "Component": "USA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "748",
+        "Investment Name": "USA Legacy Case Management Systems",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "5466.69",
+        "Component": "USA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1457",
+        "Investment Name": "USA Litigation Technology Service Center (LTSC)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "5741.55",
+        "Component": "USA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "407",
+        "Investment Name": "USA Victim Notification System (VNS)",
+        "Year": "2016",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "10954.5",
+        "Component": "USA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1062",
+        "Investment Name": "USMS Applications",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1217.08",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1062",
+        "Investment Name": "USMS Applications",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "443.186",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1062",
+        "Investment Name": "USMS Applications",
+        "Year": "2016",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "33.348",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1430",
+        "Investment Name": "USMS Data Center",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1674.27",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1430",
+        "Investment Name": "USMS Data Center",
+        "Year": "2016",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "239.122",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "695",
+        "Investment Name": "USMS Detainee Management",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "8969.06",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "29",
+        "Investment Name": "USMS IT Management",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "383.084",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "29",
+        "Investment Name": "USMS IT Management",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "680.326",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1137",
+        "Investment Name": "USMS Justice Detainee Information System (JDIS)",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1740.99",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1137",
+        "Investment Name": "USMS Justice Detainee Information System (JDIS)",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "2611.49",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1495",
+        "Investment Name": "USMS Mission Modernization - Capture",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1880.62",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1495",
+        "Investment Name": "USMS Mission Modernization - Capture",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "9235.02",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "836",
+        "Investment Name": "USMS Project 30 System",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "7686.33",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "838",
+        "Investment Name": "USMS Voice Communications",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "114.281",
+        "Component": "USMS",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "35",
+        "Investment Name": "USNCB Federal Local Information Sharing",
+        "Year": "2016",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "240.73",
+        "Component": "USNCB",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "456",
+        "Investment Name": "USPC Decision Recording & Monitoring (DRAM)",
+        "Year": "2016",
+        "Service": "Federal Correctional Activities",
+        "Value": "454.44",
+        "Component": "USPC",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2017",
+        "Service": "Intelligence Operations",
+        "Value": "2135",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2017",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "1968",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "31",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "220",
+        "Investment Name": "ATF Mission and Business Systems Support",
+        "Year": "2017",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "3615",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "218",
+        "Investment Name": "ATF NIBIN",
+        "Year": "2017",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "23777",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1474",
+        "Investment Name": "ATF Next Gen Case Management",
+        "Year": "2017",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "3532.5",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1474",
+        "Investment Name": "ATF Next Gen Case Management",
+        "Year": "2017",
+        "Service": "Regulatory Compliance & Enforcement",
+        "Value": "3532.5",
+        "Component": "ATF",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "452",
+        "Investment Name": "ATR Case Management Systems",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "793.12",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1411",
+        "Investment Name": "ATR Data Center",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "672.5",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1374",
+        "Investment Name": "ATR FICAM",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "39.6",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "989",
+        "Investment Name": "ATR IT Architecture Program",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "236.2",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "395",
+        "Investment Name": "ATR IT Security Program",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1612.57",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "380",
+        "Investment Name": "ATR IT-IRM Management",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "270.9",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "533",
+        "Investment Name": "ATR JCON Operations & Maintenance",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "376.8",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "444",
+        "Investment Name": "ATR Litigation Support Systems",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "7021.95",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "442",
+        "Investment Name": "ATR Other Management Information Systems",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "1426.27",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "443",
+        "Investment Name": "ATR Specific Case Assistance",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "8267.9",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1124",
+        "Investment Name": "ATR Voice-Data Telecommunications",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "140.8",
+        "Component": "ATR",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "200",
+        "Investment Name": "BOP BOPNet",
+        "Year": "2017",
+        "Service": "Federal Correctional Activities",
+        "Value": "4206.75",
+        "Component": "BOP",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "987",
+        "Investment Name": "BOP Electronic Medical Record (BEMR)",
+        "Year": "2017",
+        "Service": "Federal Correctional Activities",
+        "Value": "2836.95",
+        "Component": "BOP",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "757",
+        "Investment Name": "CIV - Automated Litigation Support (ALS)",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "2811",
+        "Component": "CIV",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "435",
+        "Investment Name": "CIV - Case Management (CASES)",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "2080",
+        "Component": "CIV",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "394",
+        "Investment Name": "CIV - Justice Consolidated Office Network (JCON)",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "2035.01",
+        "Component": "CIV",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1349",
+        "Investment Name": "CRM End-user Equipment",
+        "Year": "2017",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "239.068",
+        "Component": "CRM",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "1346",
+        "Investment Name": "CRM Software-Applications",
+        "Year": "2017",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "3357.43",
+        "Component": "CRM",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "399",
+        "Investment Name": "CRT Automated Litigation Support",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "710.287",
+        "Component": "CRT",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "439",
+        "Investment Name": "CRT Geographic Information System",
+        "Year": "2017",
+        "Service": "Litigation & Judicial Activities",
+        "Value": "799",
+        "Component": "CRT",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }, {
+        "Investment Number": "573",
+        "Investment Name": "DEA CONCORDE",
+        "Year": "2017",
+        "Service": "Investigation & Law Enforcement",
+        "Value": "13142.25",
+        "Component": "DEA",
+        "Category": "Mission Solutions",
+        "Business Area": "Solutions"
+    }    ]
+}

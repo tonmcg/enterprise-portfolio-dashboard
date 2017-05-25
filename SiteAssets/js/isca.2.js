@@ -1,150 +1,55 @@
 "use strict";
 
-// loader settings
-var opts = {
-    lines: 9, // The number of lines to draw
-    length: 9, // The length of each line
-    width: 5, // The line thickness
-    radius: 14, // The radius of the inner circle
-    color: '#c10e19', // #rgb or #rrggbb or array of colors
-    speed: 1.9, // Rounds per second
-    trail: 40, // Afterglow percentage
-    className: 'spinner', // The CSS class to assign to the spinner
-};
-
-var target = document.getElementById("dashboard");
-
+// create spinner
+let target = d3.select("#dashboard").node();
+// create tooltip
+let tooltip = d3.select("body").append("div").style({"position": "absolute","z-index": "10","visibility": "hidden"}).attr({"class": "tooltip"});
 // trigger loader
-var spinner = new Spinner(opts).spin(target);
+let spinner = new Spinner(opts).spin(target);
 
-// dimensions for the charts
-var margins = {
-    top: 10,
-    right: 10,
-    bottom: 10,
-    left: 10
-};
-
-// var size = getSize();
-// var height = size.height;
-// var width = size.width;
-
-var dashboardHeight = getSize().height;
-var headerHeight = document.querySelector('div.w3-main > header').offsetHeight;
-var footerHeight = document.querySelector('div.w3-main > footer').offsetHeight;
-
-var chartHeaderHeight = document.querySelector('#bubbleChart header').offsetHeight;
-var chartFooterHeight = document.querySelector('#bubbleChart footer').offsetHeight;
-var chartHeight = (dashboardHeight - headerHeight - footerHeight - chartHeaderHeight - chartFooterHeight) * 1/3;
-var chartWidth = document.querySelector('#bubbleChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
-
-var tableHeaderHeight = document.querySelector('#tableChart header').offsetHeight;
-var tableFooterHeight = document.querySelector('#tableChart footer').offsetHeight;
-var tableHeight = (dashboardHeight - headerHeight - footerHeight - tableHeaderHeight - tableFooterHeight) * 1/3 * 0.85;
-
-var tableWidth = document.querySelector('#tableChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
-
-// tick label and tooltip formats
-var sFormat = d3.format("s"),
-    dFormat = d3.format("d"),
-    iFormat = d3.format(",.0f"),
-    perFormat = d3.format(".1%"),
-    currFormat = d3.format("$,.0f");
-
-// local formatting to get billions
-// https://github.com/d3/d3/issues/2241
-var formatNumber = d3.format(".1f"),
-    formatBillion = function(x) {
-        return '$' + formatNumber(x / 1e9) + "B";
-    },
-    formatMillion = function(x) {
-        return '$' + formatNumber(x / 1e6) + "M";
-    },
-    formatThousand = function(x) {
-        return '$' + formatNumber(x / 1e3) + "k";
-    };
-
-// tooptip
-var tooltip = d3.select("body")
-    .append("div")
-    .style({
-        "position": "absolute",
-        "z-index": "10",
-        "visibility": "hidden"
-    })
-    .attr({
-        "class": "tooltip"
-    });
-
-// dc.js chart types
-var yearSelect = dc.selectMenu('#years');
-var componentSelect = dc.selectMenu('#components');
-// var compositionbubbleChart = dc.bubbleChart('#component');
-var compositionTreemapChart = dc.treeMap('#component');
-var dataTable = dc.dataTable('#data-table');
-
-// http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
-function getSize() {
-    var myWidth = 0,
-        myHeight = 0;
-    if (typeof(window.innerWidth) == 'number') {
-        //Non-IE
-        myWidth = window.innerWidth;
-        myHeight = window.innerHeight;
-    }
-    else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
-        //IE 6+ in 'standards compliant mode'
-        myWidth = document.documentElement.clientWidth;
-        myHeight = document.documentElement.clientHeight;
-    }
-    else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
-        //IE 4 compatible
-        myWidth = document.body.clientWidth;
-        myHeight = document.body.clientHeight;
-    }
-    return {
-        "height": myHeight,
-        "width": myWidth
-    };
-}
-
-function formatAbbreviation(x) {
-    var v = Math.abs(x);
-    return (v >= 0.9995e9 ? formatBillion :
-        v >= 0.9995e6 ? formatMillion :
-        formatThousand)(x);
-}
-
-function createViz(error, componentsData) {
+function createViz(error, data) {
 
     if (error) throw error;
 
     // stop spin.js loader
     spinner.stop();
 
-    var data = componentsData.value.filter(function(d) {
+    const dashboardHeight = getSize().height;
+    const headerHeight = document.querySelector('div.w3-main > header').offsetHeight;
+    const footerHeight = document.querySelector('div.w3-main > footer').offsetHeight;
+
+    var chartHeaderHeight = document.querySelector('#bubbleChart header').offsetHeight;
+    var chartFooterHeight = document.querySelector('#bubbleChart footer').offsetHeight;
+    var chartHeight = (dashboardHeight - headerHeight - footerHeight - chartHeaderHeight - chartFooterHeight) * 5/6;
+    var chartWidth = document.querySelector('#bubbleChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
+    
+    const margins = {
+        top: 25,
+        right: 10,
+        bottom: 20,
+        left: 10
+    };
+    
+    var results = data.value.map(function(d) {
         // Id,InvestmentNumber,Category,InvestmentName,Year,Total
         d.Total = +d.Value * 1000;
         d.Year = +d.Year;
-        return d.Total !== 0;
+        return d;
     });
 
     // set crossfilter
-    var ndx = crossfilter(data);
+    var ndx = crossfilter(results);
 
     // define dimensions
     var
         treemapDim = ndx.dimension(function(d) {
-            return [d.InvestmentName, d.Category];
+            return [d.Service, d.Category,d['Business Area']];
         }),
         timeDim = ndx.dimension(function(d) {
             return d.Year;
         }),
         component2Dim = ndx.dimension(function(d) {
             return d.Component;
-        }),
-        idDim = ndx.dimension(function(d) {
-            return d.Category;
         });
 
     // group dimensions
@@ -184,6 +89,12 @@ function createViz(error, componentsData) {
     var maxAmount = d3.max(amountByYear.top(Infinity),function(d) {
         return d.value;
     });
+    
+    // dc.js chart types
+    var yearSelect = dc.selectMenu('#years');
+    var componentSelect = dc.selectMenu('#components');
+    // var compositionbubbleChart = dc.bubbleChart('#component');
+    var compositionTreemapChart = dc.treeMap('#component');
     
     // fiscal year menuselect
     yearSelect
@@ -273,6 +184,9 @@ function createViz(error, componentsData) {
         .ordinalColors(colorbrewer.Set3[9])
         .keyAccessor([
             function(d) {
+                return d.key[2];
+            },
+            function(d) {
                 return d.key[1];
             },
             function(d) {
@@ -297,45 +211,6 @@ function createViz(error, componentsData) {
         // setResponsiveSVG(chart);
     });
 
-    // map data headers to column headers
-    var cols = [{"label":"UII","column":"UII"},{"label":"Year","column":"Year"},{"label":"Category","column":"Category"},{"label":"Investment Name","column":"InvestmentName"},{"label":"Total","column":"Total"}];
-    
-    dataTable
-        .width(tableWidth)
-        .height(tableHeight)
-        .dimension(idDim)
-        .group(function (d) {
-            return d.Id;
-        })
-        .columns([
-            {
-                label: cols[0].label,
-                format: function(d) { return d[cols[0].column]; }
-            },
-            {
-                label: cols[1].label,
-                format: function(d) { return d[cols[1].column]; }
-            },
-            {
-                label: cols[2].label,
-                format: function(d) { return d[cols[2].column]; }
-            },
-            {
-                label: cols[3].label,
-                format: function(d) { return "<a href=# onclick=document.getElementById(&#39;itemModal&#39;).style.display=&#39;block&#39;>" + d[cols[3].column] + "</a>"; }
-            },
-            {
-                label: cols[4].label,
-                format: function(d) { return formatAbbreviation(d[cols[4].column]); }
-            }
-            ])
-        .sortBy(function (d) { return d.Category; })
-        .size(Infinity)
-        .order(d3.ascending)
-        .on('renderlet',function (table) {
-            table.selectAll(".dc-table-group").remove(); // remove dc.js default first row
-        });        
-
     dc.renderAll();
 
     // define mouseover and mouseout events
@@ -346,7 +221,7 @@ function createViz(error, componentsData) {
         //     var count = d.value.count;
         //     showDetail(key, amount, count, null)
         // }).on("mouseout", hideDetail);
-        // d3.selectAll('g.children').on("mouseover", function(d) {
+        // d3.selectAll('g.children rect.parent').on("mouseover", function(d) {
         //     var key = d.key;
         //     var amount = currFormat(d.value);
         //     // var count = currFormat(d.value.count);
@@ -357,114 +232,7 @@ function createViz(error, componentsData) {
     bindHover();
     
     // Change the date header to reflect the date and time of the data
-    d3.select('#dateHeader').text(moment().format('LLL'));
-
-    // define reset mouseover event
-    d3.selectAll('.reset').on('mouseover', function(e) {
-        $(this).css('cursor', 'pointer');
-    });
-    
-    // define table column sort
-    d3.selectAll('#data-table th').on('click',function() {
-    //   console.log(d3.select(this));
-        // http://bl.ocks.org/AMDS/4a61497182b8fcb05906
-        var rows = d3.select(this.closest('table')).select('tbody').selectAll('tr');
-        var data = d3.select(this.closest('table').children[1]).data()[0].values;
-        debugger;
-        // console.log(data);
-        var sortAscending = true;
-        if (sortAscending) {
-            rows.sort(function(a, b) { 
-                return a.Category - b.Category;
-            });
-            sortAscending = false;
-            this.className = 'aes';
-        } else {
-            rows.sort(function(a, b) { 
-                return b.Category - a.Category;
-            });
-            sortAscending = true;
-            this.className = 'des';
-        }
-    });
-    
-    // define multichoice change event
-    d3.selectAll('li:not(.multiselect-group) input').on('change',function(e) {
-        var components = [];
-        d3.selectAll('li.dc-select-option input')[0].forEach(function(g) {
-            var checked = false;    
-            var name = g.value;
-            checked = d3.select(g).property('checked');
-            
-            if ((checked && !componentSelect.hasFilter(name)) || (!checked && componentSelect.hasFilter(name))) {
-                components.push(name);
-            }
-        });
-            
-        if (!components.length > 0) {
-            componentSelect.filterAll();
-        } else {
-            componentSelect.filter([components]);
-        }
-        
-        dc.redrawAll();
-    });
-
-    // define reset click events
-    // d3.select('#bubbleChartReset').on('click', function() {
-    //     compositionbubbleChart.filterAll();
-    //     dc.redrawAll();
-    // });
-
-    // add selected item information as table in modal
-    $('#data-table').on('click', 'tbody tr a', function(event) {
-        var thisTable = d3.select($(this).closest('table')[0]);
-        var thisRow = d3.select($(this).closest('tr')[0]);
-        var cells = thisRow.selectAll('td')[0].map(function(d) {
-            var text;
-            if (d.firstChild !== undefined && d.firstChild.textContent !== undefined) {
-                text = d.firstChild.textContent;
-            }
-            else {
-                text = d.textContent;
-            }
-            return text;
-        });
-        var headers = thisTable.selectAll('thead th')[0].map(function(d) {
-            return d.textContent;
-        });
-        var data = headers.map(function(d, i) {
-            var obj = {};
-            obj.key = d;
-            obj.value = cells[i];
-            return obj;
-        });
-
-        $('#tableDiv table').remove();
-        var table = d3.select('#tableDiv').append('table').attr({
-            'id': 'modal-table',
-            'class': 'table table-bordered table-condensed'
-        }).style({
-            'width': '100%',
-            'table-layout': 'fixed'
-        });
-        var tbody = table.append('tbody');
-
-        var rows = tbody.selectAll('tr')
-            .data(data);
-
-        rows.enter()
-            .append('tr');
-
-        rows.exit().remove();
-
-        rows.append('td').text(function(d) {
-            return d.key;
-        });
-        rows.append('td').text(function(d) {
-            return d.value;
-        });
-    });
+    d3.select('#dateHeader').text(formatDate(new Date()));
 
     // Many browsers -- IEparticularly -- will not auto-size inline SVG
     // IE applies default width and height sizing
@@ -489,10 +257,6 @@ function createViz(error, componentsData) {
         svgParent.style('padding-bottom',calcString);
     }
 
-}
-
-function exportTable() {
-    export_table_to_excel('data-table', 'ISCA'); // parameters: 0, id of html table, 1, name of workbook
 }
 
 // if this JavaScript source file resides on a SharePoint server
@@ -547,7 +311,7 @@ function getData() {
     filter = "";
     top = 9000;
 
-    var componentEndpoint = callData(siteUrl, 'ISCA', columns, expand, filter, top);
+    var componentEndpoint = callData(siteUrl, 'list', 'ISCA', columns, expand, filter, top);
 
     // Get the data
     d3_queue.queue()
