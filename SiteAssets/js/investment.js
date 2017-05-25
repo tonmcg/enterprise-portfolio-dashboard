@@ -95,7 +95,7 @@ const columns = [{
 }];
 
 // create introduction
-let intro = introJs().start();
+// let intro = introJs().start();
 // create spinner
 let target = d3.select("#dashboard").node();
 // create tooltip
@@ -1194,8 +1194,6 @@ function createViz(error, data) {
 
     bindHover();
     
-    d3.select()
-
     // Change the date header to reflect the date and time of the data
     d3.select('#dateHeader').text(formatDate(new Date()));
 
