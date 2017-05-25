@@ -1193,6 +1193,8 @@ function createViz(error, data) {
     }
 
     bindHover();
+    
+    d3.select()
 
     // Change the date header to reflect the date and time of the data
     d3.select('#dateHeader').text(formatDate(new Date()));
