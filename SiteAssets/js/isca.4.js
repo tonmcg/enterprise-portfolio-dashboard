@@ -151,10 +151,10 @@ d3.json("../SiteAssets/data/Sankey.json", function(error, graph) {
         .style("stroke-width", function(d) {
             return Math.max(1, d.dy);
         })
-        .style("stroke", function(d,i) { 
-          return d.source.color = color(d.source.name.replace(/ .*/, ""));
-          // return color[i];
-        })
+        // .style("stroke", function(d,i) { 
+        //   return d.source.color = color(d.source.name.replace(/ .*/, ""));
+        //   // return color[i];
+        // })
         .sort(function(a, b) {
             return b.dy - a.dy;
         });
@@ -182,9 +182,9 @@ d3.json("../SiteAssets/data/Sankey.json", function(error, graph) {
                 this.parentNode.appendChild(this);
             })
             .on("drag", dragmove))
-        // //http://bl.ocks.org/frischmilch/7667996
-        // .on("mouseover", fade(0.1))
-        // .on("mouseout", fade(1))
+        //http://bl.ocks.org/frischmilch/7667996
+        .on("mouseover", fade(0.4))
+        .on("mouseout", fade(1))
         ;
 
     // add the rectangles for the nodes
