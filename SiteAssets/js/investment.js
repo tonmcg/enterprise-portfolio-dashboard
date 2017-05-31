@@ -1,7 +1,15 @@
 "use strict";
 
 // define data
-const columns = [{
+const columns = [
+{
+    "label": "Budget Call",
+    "field": "BudgetCall",
+    "format": function(d) { return d.BudgetCall; },
+    "type": "string",
+    "display": false,
+    "sort": false
+}, {
     "label": "Id",
     "field": "Id",
     "format": function(d) { return d.Id; },
@@ -166,6 +174,9 @@ function createViz(error, data) {
         componentDim = ndx.dimension(function(d) {
             return d.Component;
         }),
+        // budgetDim = ndx.dimension(function(d) {
+        //     return d.BudgetCall;
+        // }),
         timeDim = ndx.dimension(function(d) {
             return d.Year;
         }),
@@ -179,6 +190,9 @@ function createViz(error, data) {
     // group dimensions
     var
         all = ndx.groupAll(),
+        // amountByBudget = budgetDim.group().reduceSum(function(d) {
+        //     return Math.round(d.Total);
+        // }),
         amountByComponent = componentDim.group().reduceSum(function(d) {
             return Math.round(d.Total);
         }),
@@ -258,15 +272,17 @@ function createViz(error, data) {
         });
 
     timeDim.filter(2017);
+    // budgetDim.filter('Passback');
 
     // dc.js chart types
-    let select = dc.selectMenu('#components');
+    // let budgetSelect = dc.selectMenu('#budgets');
+    let investmentSelect = dc.selectMenu('#components');
     let topTen = dc.rowChart('#top-investments');
     let compositionBarChart = dc.barChart('#chart-amount');
     let dataTable = dc.dataTable('#data-table');
 
     // menuselect
-    select
+    investmentSelect
         .dimension(componentDim)
         .group(amountByComponent)
         // .filterDisplayed(function () {
@@ -283,11 +299,36 @@ function createViz(error, data) {
         .promptText('All Components')
         .promptValue(null);
 
-    select.on('pretransition', function(chart) {
+    investmentSelect.on('pretransition', function(chart) {
         // add styling to select input
         d3.select('#components').classed('dc-chart', false);
         chart.select('select').classed('w3-form', true);
     });
+
+    // budgetSelect
+    //     .dimension(budgetDim)
+    //     .group(amountByBudget)
+    //     // .filterDisplayed(function () {
+    //     //     return true;
+    //     // })
+    //     .multiple(false)
+    //     .numberVisible(null)
+    //     // .order(function (a,b) {
+    //     //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
+    //     // })
+    //     .title(function(d) {
+    //         return d.key;
+    //     })
+    //     .promptText(null)
+    //     .promptValue(null);
+
+    // budgetSelect.on('pretransition', function(chart) {
+    //     // add styling to select input
+    //     d3.select('#budgets').classed('dc-chart', false);
+    //     chart.select('select').classed('w3-form', true);
+    // });
+    
+    // budgetSelect.filter('Passback');
 
     // displays
     dc.numberDisplay("#total-spend")
@@ -1196,7 +1237,7 @@ function createViz(error, data) {
     
     // Change the date header to reflect the date and time of the data
     d3.select('#dateHeader').text(formatDate(new Date()));
-
+    
     // enable sort on data table
     $('.dc-data-tables_scrollHead table > thead > tr').on('click', 'th', function() {
         // http://stackoverflow.com/questions/21113513/reorder-datatable-by-column#answer-30946896
@@ -1338,7 +1379,7 @@ function getData() {
         cols.push(columns[i].field);
     }
     expand = "";
-    filter = "(InvestmentName ne null) and (Year gt 2013) and (Total ne 0)";
+    filter = "(InvestmentName ne null) and (Year gt 2013) and (Total ne 0) and (BudgetCall eq 'Passback')";
     top = 3000;
 
     let componentEndpoint = callData(siteUrl, 'list', 'AnnualBudgetData', cols.toString(), expand, filter, top);

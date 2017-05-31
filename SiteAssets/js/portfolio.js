@@ -582,7 +582,7 @@ function getData() {
 
     columns = "Id,Component,InvestmentName,Year,Total";
     expand = "";
-    filter = "(InvestmentName ne null) and (Year gt 2015) and (Total ne 0)";
+    filter = "(InvestmentName ne null) and (Year gt 2015) and (Total ne 0) and (BudgetCall eq 'Passback')";
     top = 3000;
 
     var componentEndpoint = callData(siteUrl, 'list','AnnualBudgetData', columns, expand, filter, top);
