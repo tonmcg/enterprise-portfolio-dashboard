@@ -1,3 +1,14 @@
+/*--------*/
+/* Layout */
+/*--------*/
+
+div#content
+{
+	background-color: white;
+	padding: 0px 0px 0px 5px;
+	margin: 0;
+}
+
 /*---------------------------*/
 /* Flow Visualization Layout */
 /*---------------------------*/
