@@ -55,6 +55,13 @@ var path = sankey.link();
 // load the data
 // d3.json("../SiteAssets/data/ISCA.json", function(error, data) {
 d3.json("../SiteAssets/data/Sankey.json", function(error, graph) {
+    
+    // patterned after Customized Paraset
+    // http://bl.ocks.org/mydu/67692343b28ea5069177
+    
+    
+    // TODO: implement a renderSandkey function with enter and exit pattern
+    // https://bl.ocks.org/austinczarnecki/cc6371af0b726e61b9ab
 
     if (error) throw error;
 
@@ -203,24 +210,37 @@ d3.json("../SiteAssets/data/Sankey.json", function(error, graph) {
         .text(function(d) {
             return d.name + "\n" + formatAbbreviation(d.value);
         });
+        
+    var valueRange = node.data().map(function(d) {
+        return d.value;
+    });
+    
+    valueRange.sort();
+    
+    var quantile = d3.quantile(valueRange,0.9);
+    console.log(quantile);
 
     // // add in the title for the nodes
-    // node.append("text")
-    //     .attr("x", -6)
-    //     .attr("y", function(d) {
-    //         return d.dy / 2;
-    //     })
-    //     .attr("dy", ".35em")
-    //     .attr("text-anchor", "end")
-    //     .attr("transform", null)
-    //     .text(function(d) {
-    //         return d.name;
-    //     })
-    //     .filter(function(d) {
-    //         return d.x < width / 2;
-    //     })
-    //     .attr("x", 6 + sankey.nodeWidth())
-    //     .attr("text-anchor", "start");
+    node.append("text")
+        .attr("x", -6)
+        .attr("y", function(d) {
+            return d.dy / 2;
+        })
+        .attr("dy", ".35em")
+        .attr("text-anchor", "end")
+        .attr("transform", null)
+        .text(function(d) {
+            if (d.value > quantile) {
+                return d.name;
+            } else {
+                return null;
+            }
+        })
+        .filter(function(d) {
+            return d.x < width / 2;
+        })
+        .attr("x", 6 + sankey.nodeWidth())
+        .attr("text-anchor", "start");
 
     setResponsiveSVG(d3);
 

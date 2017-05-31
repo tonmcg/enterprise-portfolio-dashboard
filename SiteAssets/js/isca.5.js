@@ -310,7 +310,7 @@ function loadFlows() {
 
 function initializeFlow() {
     var svg_width = $('body').width() - $('#navigation').width() - (CURRENT_DIM_POS_X * 2.0) - 100,
-        svg_height = 1600;
+        svg_height = height;
 
     d3.select('#component')
         .append('svg')

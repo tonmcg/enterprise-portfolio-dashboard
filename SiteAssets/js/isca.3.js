@@ -229,6 +229,9 @@ function createViz(error, data) {
         .centerBar(true)
         .dimension(categoryDim)
         .group(infrastructureBy2016, "2016")
+        .keyAccessor(function(d) {
+            return d.key;
+        })
         .valueAccessor(function(d) {
             return d.value;
         })

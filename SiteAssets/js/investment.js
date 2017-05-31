@@ -174,9 +174,9 @@ function createViz(error, data) {
         componentDim = ndx.dimension(function(d) {
             return d.Component;
         }),
-        // budgetDim = ndx.dimension(function(d) {
-        //     return d.BudgetCall;
-        // }),
+        budgetDim = ndx.dimension(function(d) {
+            return d.BudgetCall;
+        }),
         timeDim = ndx.dimension(function(d) {
             return d.Year;
         }),
@@ -190,9 +190,9 @@ function createViz(error, data) {
     // group dimensions
     var
         all = ndx.groupAll(),
-        // amountByBudget = budgetDim.group().reduceSum(function(d) {
-        //     return Math.round(d.Total);
-        // }),
+        amountByBudget = budgetDim.group().reduceSum(function(d) {
+            return Math.round(d.Total);
+        }),
         amountByComponent = componentDim.group().reduceSum(function(d) {
             return Math.round(d.Total);
         }),
@@ -272,10 +272,10 @@ function createViz(error, data) {
         });
 
     timeDim.filter(2017);
-    // budgetDim.filter('Passback');
+    budgetDim.filter('Passback');
 
     // dc.js chart types
-    // let budgetSelect = dc.selectMenu('#budgets');
+    let budgetSelect = dc.selectMenu('#budgets');
     let investmentSelect = dc.selectMenu('#components');
     let topTen = dc.rowChart('#top-investments');
     let compositionBarChart = dc.barChart('#chart-amount');
@@ -305,30 +305,30 @@ function createViz(error, data) {
         chart.select('select').classed('w3-form', true);
     });
 
-    // budgetSelect
-    //     .dimension(budgetDim)
-    //     .group(amountByBudget)
-    //     // .filterDisplayed(function () {
-    //     //     return true;
-    //     // })
-    //     .multiple(false)
-    //     .numberVisible(null)
-    //     // .order(function (a,b) {
-    //     //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
-    //     // })
-    //     .title(function(d) {
-    //         return d.key;
-    //     })
-    //     .promptText(null)
-    //     .promptValue(null);
+    budgetSelect
+        .dimension(budgetDim)
+        .group(amountByBudget)
+        // .filterDisplayed(function () {
+        //     return true;
+        // })
+        .multiple(false)
+        .numberVisible(null)
+        // .order(function (a,b) {
+        //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
+        // })
+        .title(function(d) {
+            return d.key;
+        })
+        .promptText(null)
+        .promptValue(null);
 
-    // budgetSelect.on('pretransition', function(chart) {
-    //     // add styling to select input
-    //     d3.select('#budgets').classed('dc-chart', false);
-    //     chart.select('select').classed('w3-form', true);
-    // });
+    budgetSelect.on('pretransition', function(chart) {
+        // add styling to select input
+        d3.select('#budgets').classed('dc-chart', false);
+        chart.select('select').classed('w3-form', true);
+    });
     
-    // budgetSelect.filter('Passback');
+    budgetSelect.filter('Passback');
 
     // displays
     dc.numberDisplay("#total-spend")
