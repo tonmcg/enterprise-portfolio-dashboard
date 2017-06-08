@@ -4,12 +4,12 @@
 <html>
 
 <head>
-	<meta content="full" name="WebPartPageExpansion">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-type">
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
-	<!-- Title -->
-	<title>ISCA Summary</title>
+    <meta content="full" name="WebPartPageExpansion">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+    <!-- Title -->
+    <title>ISCA Summary</title>
     <!-- Favicon -->
     <link href="../SiteAssets/img/favicon.ico" rel="icon" type="image/png">
     <!-- w3 Core CSS -->
@@ -39,29 +39,28 @@
     <!-- Custom JavaScript -->
     <script defer src="../SiteAssets/js/isca.4.js" type="text/javascript"></script>
     <style type="text/css">
-.node rect {
-  cursor: move;
-  fill-opacity: .9;
-  shape-rendering: crispEdges;
-}
-
-.node text {
-  pointer-events: none;
-  /*text-shadow: 0 1px 0 #fff;*/
-}
-
-.link {
-  fill: none;
-  stroke: #000;
-  stroke-opacity: .2;
-}
-
-.link:hover {
-  stroke-opacity: .5;
-}
-
-</style>
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
         
+        .node text {
+            pointer-events: none;
+            /*text-shadow: 0 1px 0 #fff;*/
+        }
+        
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .2;
+        }
+        
+        .link:hover {
+            stroke-opacity: .5;
+        }
+    </style>
+
     </style>
 </head>
 
@@ -101,6 +100,10 @@
                 <i class="pe-7s-graph3"></i>
                 <p>IT Systems & Major Applications View</p>
             </a>
+            <a href="isca.4.html" class="w3-bar-item w3-button">
+                <i class="pe-7s-graph1"></i>
+                <p>ISCA View</p>
+            </a>
             <!--<a target="_blank" href="MajorITInvestments.html" class="w3-bar-item w3-button">-->
             <!--    <i class="pe-7s-graph"></i>-->
             <!--    <p>IT Major Investments View</p>-->
@@ -110,7 +113,7 @@
 
         <!-- Main Content -->
         <div id="main" class="w3-main" style="margin-left:200px">
-        <!--<div class="w3-main" style="margin-left:200px">-->
+            <!--<div class="w3-main" style="margin-left:200px">-->
 
             <!-- Header -->
             <header class="w3-padding-8">
@@ -122,32 +125,21 @@
                         <div class="w3-col l12">
                             <div class="w3-row-padding" style="padding-bottom:3px">
                                 <div class="w3-col l2">
-                                        <h5 class="w3-text-uppercase">Component</h5>
-                                        <div id="components"></div>
+                                    <h5 class="w3-text-uppercase">Component</h5>
+                                    <div id="components"></div>
                                 </div>
                                 <div class="w3-col l2">
-                                        <h5 class="w3-text-uppercase">Fiscal Years</h5>
-                                        <div id="years"></div>
-                                </div>
-                                <div class="w3-col l3">
-                                    <div>
-                                        <h5 class="w3-text-uppercase">Data generated</h5>
-                                        <div class="dc-chart">
-                                            <span id="dateHeader" class="w3-xxlarge"></span>
-                                        </div>
-                                    </div>
+                                    <h5 class="w3-text-uppercase">Fiscal Year</h5>
+                                    <div id="years"></div>
                                 </div>
                                 <div class="w3-col l2">
-                                    <div>
-                                        <!--<h5 id="total-spend-header" class="w3-text-uppercase">Total IT Spend</h5>-->
-                                        <!--<div id="total_spend" class="w3-x/xlarge"></div>-->
-                                    </div>
+                                    <h5 class="w3-text-uppercase">Business Area</h5>
+                                    <div id="businessAreas"></div>
                                 </div>
-                                <div class="w3-col l3">
-                                    <div>
-                                    </div>
+                                <div class="w3-col l2">
+                                    <h5 class="w3-text-uppercase">Category</h5>
+                                    <div id="categories"></div>
                                 </div>
-                                <!-- .w3-col l3 -->
                             </div>
                             <!-- /.row -->
                         </div>
@@ -183,7 +175,7 @@
                                     <!-- Chart -->
                                     <div id="component" class="scaling-svg-container"></div>
                                     <!-- #component -->
-                                    
+
                                     <!-- Footer -->
                                     <footer class="w3-padding-4">
                                         <div><i class="fa fa-history"></i><span class="w3-small">Total amount of yearly IT spend in dollars. Click on a box to filter by a component. Click on the box again to reset the chart. <em>Source</em>: Electronic Capital Planningand Investment Control (eCPIC)</span></div>
@@ -205,11 +197,11 @@
 
             </div>
             <!-- /.wrapper -->
-            
+
             <!-- Footer -->
             <footer class="w3-padding-8"></footer>
             <!-- End Footer -->
-            
+
         </div>
         <!-- End Main Content -->
 
