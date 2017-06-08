@@ -115,7 +115,7 @@ var path = sankey.link();
 var linksGroup = svg.append("g");
         
 // define the node group
-var nodeGroup = svg.append("g");
+var nodesGroup = svg.append("g");
 
 // load the data
 function createViz(error, data) {
@@ -359,7 +359,7 @@ function renderSankey(graph) {
         return a - b;
     });
 
-    var quantile = d3.quantile(valueRange, 0.65);
+    var quantile = d3.quantile(valueRange, 0.6);
     console.log("The quantile value is: " + quantile);
 
     sankey
@@ -377,10 +377,15 @@ function renderSankey(graph) {
         .attr("class", "link");
         
     // Enter + Update
-    links.attr("d", path)
+    links
+        .transition()
+        .duration(1000)
+        .attr("d", path)
         .style("stroke-width", function(d) {
             return Math.max(1, d.dy);
         })
+        .transition()
+        .duration(250)
         .style("stroke", function(d,i) { 
           return d.source.color = color(d.source.name.replace(/ .*/, ""));
           // return color[i];
@@ -400,29 +405,30 @@ function renderSankey(graph) {
     links.exit().remove();
         
     // add in the nodes
-    var nodes = nodeGroup.selectAll(".node")
+    var nodes = nodesGroup.selectAll(".node")
         .data(graph.nodes);
     
     // Enter
-    var enterNodes = nodes.enter().append("g")
+    var enterNodes = nodes.enter()
+        .append("g")
         .attr("class", "node");
         
     enterNodes.append("rect")
         .attr("width", sankey.nodeWidth())
-        .append("title");
+        .append("title")
+        ;
         
     enterNodes.append("text")
         .attr("dy", ".35em")
         .attr("transform", null);        
         
     // Enter + Update
-    nodes.attr("transform", function(d) {
+    nodes
+        .transition()
+        .duration(1000)
+        .attr("transform", function(d) {
             return "translate(" + d.x + "," + d.y + ")";
         });
-
-    //http://bl.ocks.org/frischmilch/7667996
-    nodes.on("mouseover", fade(0.4))
-        .on("mouseout", fade(1));
         
     // add the rectangles for the nodes
     nodes.select("rect")
@@ -446,6 +452,8 @@ function renderSankey(graph) {
     nodes.select('text')
         .attr("x", -6)
         .attr("text-anchor", "end")
+        .transition()
+        .duration(1000)
         .attr('y', function (d) {
           return d.dy / 2;
         })
@@ -461,10 +469,15 @@ function renderSankey(graph) {
             return d.x < width / 3;
         })
         .attr("x", 6 + sankey.nodeWidth())
-        .attr("text-anchor", "start");        
+        .attr("text-anchor", "start");
+        
 
     nodes.exit().remove();
     
+    //http://bl.ocks.org/frischmilch/7667996
+    nodes.on("mouseover", fade(0.4))
+        .on("mouseout", fade(1));
+        
     return sankey;
 }
 
