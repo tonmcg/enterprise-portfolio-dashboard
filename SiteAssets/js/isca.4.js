@@ -508,9 +508,9 @@ function renderSankey(graph) {
         .style("stroke-width", (d) => {
             return Math.max(1, d.dy);
         })
-        .style("stroke", (d, i) => {
-            return d.source.color = color(d.source.name.replace(/ .*/, ""));
-        })
+        // .style("stroke", (d, i) => {
+        //     return d.source.color = color(d.source.name.replace(/ .*/, ""));
+        // })
         .sort((a, b) => {
             return b.dy - a.dy;
         });
@@ -545,11 +545,13 @@ function renderSankey(graph) {
 
     // add the rectangles for the nodes
     nodes.select("rect")
-        .attr("height", (d) => {
-            return d.dy;
-        })
         .style("fill", (d, i) => {
             return d.color = color(d.name.replace(/ .*/, ""));
+        })
+        .transition()
+        .duration(750)
+        .attr("height", (d) => {
+            return d.dy;
         })
         .style("stroke", (d) => {
             return d3.rgb(d.color).darker(2);
