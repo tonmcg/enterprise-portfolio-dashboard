@@ -146,25 +146,25 @@ function hideDetail() {
 }
 
 // open and close sidebar on browser resize
-// function w3_open() {
-//     document.getElementById('portSidebar').style.display = 'block';
-// }
-
-// function w3_close() {
-//     document.getElementById('portSidebar').style.display = 'none';
-// }
-
 function w3_open() {
-  document.getElementById("main").style.marginLeft = "11%";
-  document.getElementById("portSidebar").style.width = "11%";
-  document.getElementById("portSidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
+    document.getElementById('portSidebar').style.display = 'block';
 }
+
 function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("portSidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
+    document.getElementById('portSidebar').style.display = 'none';
 }
+
+// function w3_open() {
+//   document.getElementById("main").style.marginLeft = "200px";
+//   document.getElementById("portSidebar").style.width = "200px";
+//   document.getElementById("portSidebar").style.display = "block";
+//   document.getElementById("openNav").style.display = 'none';
+// }
+// function w3_close() {
+//   document.getElementById("main").style.marginLeft = "0%";
+//   document.getElementById("portSidebar").style.display = "none";
+//   document.getElementById("openNav").style.display = "inline-block";
+// }
 
 function exportTable(wbName) {
     export_table_to_excel('data-table', wbName); // parameters: 0, id of html table, 1, name of workbook

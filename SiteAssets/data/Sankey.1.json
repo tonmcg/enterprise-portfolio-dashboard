@@ -1,0 +1,415 @@
+{
+    "nodes": [{
+        "name": "Infrastructure",
+        "group": "Business Area"
+    }, {
+        "name": "IT Practices and Management",
+        "group": "Business Area"
+    }, {
+        "name": "Security",
+        "group": "Business Area"
+    }, {
+        "name": "Solutions",
+        "group": "Business Area"
+    }, {
+        "name": "Business Solutions",
+        "group": "Category"
+    }, {
+        "name": "Computing & Facilities  Service Apportionment",
+        "group": "Category"
+    }, {
+        "name": "End-User Service Apportionment",
+        "group": "Category"
+    }, {
+        "name": "IT Practices and Management",
+        "group": "Category"
+    }, {
+        "name": "Mission Solutions",
+        "group": "Category"
+    }, {
+        "name": "Network Service Apportionment",
+        "group": "Category"
+    }, {
+        "name": "Security",
+        "group": "Category"
+    }, {
+        "name": "Audit Trail Capture & Analysis",
+        "group": "Service"
+    }, {
+        "name": "Central Fiscal Operations",
+        "group": "Service"
+    }, {
+        "name": "Central Personal Management",
+        "group": "Service"
+    }, {
+        "name": "Certification & Accreditation",
+        "group": "Service"
+    }, {
+        "name": "Collaboration Tools",
+        "group": "Service"
+    }, {
+        "name": "Computing Facilities",
+        "group": "Service"
+    }, {
+        "name": "Continuity of Operations",
+        "group": "Service"
+    }, {
+        "name": "Continuous Monitoring",
+        "group": "Service"
+    }, {
+        "name": "Cryptography",
+        "group": "Service"
+    }, {
+        "name": "Data Center Enterprise Licenses & Software",
+        "group": "Service"
+    }, {
+        "name": "Data Integrity & Privacy Management",
+        "group": "Service"
+    }, {
+        "name": "Email",
+        "group": "Service"
+    }, {
+        "name": "End User Licenses & Software",
+        "group": "Service"
+    }, {
+        "name": "Enterprise Architecture",
+        "group": "Service"
+    }, {
+        "name": "Federal Correctional Activities",
+        "group": "Service"
+    }, {
+        "name": "General Property & Records Management",
+        "group": "Service"
+    }, {
+        "name": "General Purpose Fiscal Assistance",
+        "group": "Service"
+    }, {
+        "name": "IaaS",
+        "group": "Service"
+    }, {
+        "name": "Identification & Authentication",
+        "group": "Service"
+    }, {
+        "name": "Incident Response",
+        "group": "Service"
+    }, {
+        "name": "Information Exchange & Transformation",
+        "group": "Service"
+    }, {
+        "name": "Information Sharing",
+        "group": "Service"
+    }, {
+        "name": "Intelligence Operations",
+        "group": "Service"
+    }, {
+        "name": "Investigation & Law Enforcement",
+        "group": "Service"
+    }, {
+        "name": "Issue Tracking & Help Desk Support",
+        "group": "Service"
+    }, {
+        "name": "IT Strategy Innovation",
+        "group": "Service"
+    }, {
+        "name": "Knowledge Management",
+        "group": "Service"
+    }, {
+        "name": "LAN Data Communications",
+        "group": "Service"
+    }, {
+        "name": "Land Mobile Radio",
+        "group": "Service"
+    }, {
+        "name": "Litigation & Judicial Activities",
+        "group": "Service"
+    }, {
+        "name": "Mainframe & Servers",
+        "group": "Service"
+    }, {
+        "name": "Mobile Compute Devices",
+        "group": "Service"
+    }, {
+        "name": "Network Services Licenses & Software",
+        "group": "Service"
+    }, {
+        "name": "Other Government General",
+        "group": "Service"
+    }, {
+        "name": "PaaS",
+        "group": "Service"
+    }, {
+        "name": "Personal Computing Services",
+        "group": "Service"
+    }, {
+        "name": "Portfolio Management & Capital Planning",
+        "group": "Service"
+    }, {
+        "name": "Printer & Multi-Function Devices",
+        "group": "Service"
+    }, {
+        "name": "Program Project Management Other Overhead",
+        "group": "Service"
+    }, {
+        "name": "Regulatory Compliance & Enforcement",
+        "group": "Service"
+    }, {
+        "name": "Rule Publication",
+        "group": "Service"
+    }, {
+        "name": "Storage",
+        "group": "Service"
+    }, {
+        "name": "Strategic Planning",
+        "group": "Service"
+    }, {
+        "name": "Support Delivery of Federal Services",
+        "group": "Service"
+    }, {
+        "name": "Treat & Vulnerability Management",
+        "group": "Service"
+    }, {
+        "name": "Voice Communications",
+        "group": "Service"
+    }, {
+        "name": "VTC",
+        "group": "Service"
+    }, {
+        "name": "WAN Data Communications",
+        "group": "Service"
+    }, {
+        "name": "Web Housing, Infrastructure, & Content",
+        "group": "Service"
+    }, {
+        "name": "Wireless Communications",
+        "group": "Service"
+    }],
+    "links": [{
+        "source": 3,
+        "target": 4,
+        "value": 619
+    }, {
+        "source": 3,
+        "target": 8,
+        "value": 311
+    }, {
+        "source": 2,
+        "target": 10,
+        "value": 850
+    }, {
+        "source": 0,
+        "target": 6,
+        "value": 967
+    }, {
+        "source": 0,
+        "target": 5,
+        "value": 886
+    }, {
+        "source": 0,
+        "target": 9,
+        "value": 495
+    }, {
+        "source": 1,
+        "target": 7,
+        "value": 576
+    }, {
+        "source": 4,
+        "target": 13,
+        "value": 98
+    }, {
+        "source": 4,
+        "target": 26,
+        "value": 68
+    }, {
+        "source": 4,
+        "target": 12,
+        "value": 80
+    }, {
+        "source": 4,
+        "target": 32,
+        "value": 104
+    }, {
+        "source": 4,
+        "target": 54,
+        "value": 169
+    }, {
+        "source": 4,
+        "target": 37,
+        "value": 57
+    }, {
+        "source": 4,
+        "target": 44,
+        "value": 43
+    }, {
+        "source": 10,
+        "target": 11,
+        "value": 72
+    }, {
+        "source": 10,
+        "target": 55,
+        "value": 161
+    }, {
+        "source": 10,
+        "target": 14,
+        "value": 155
+    }, {
+        "source": 10,
+        "target": 21,
+        "value": 106
+    }, {
+        "source": 10,
+        "target": 18,
+        "value": 140
+    }, {
+        "source": 10,
+        "target": 30,
+        "value": 68
+    }, {
+        "source": 10,
+        "target": 29,
+        "value": 118
+    }, {
+        "source": 10,
+        "target": 19,
+        "value": 30
+    }, {
+        "source": 6,
+        "target": 42,
+        "value": 118
+    }, {
+        "source": 6,
+        "target": 15,
+        "value": 74
+    }, {
+        "source": 6,
+        "target": 35,
+        "value": 165
+    }, {
+        "source": 6,
+        "target": 59,
+        "value": 73
+    }, {
+        "source": 6,
+        "target": 23,
+        "value": 197
+    }, {
+        "source": 6,
+        "target": 46,
+        "value": 139
+    }, {
+        "source": 6,
+        "target": 48,
+        "value": 87
+    }, {
+        "source": 6,
+        "target": 22,
+        "value": 68
+    }, {
+        "source": 6,
+        "target": 57,
+        "value": 46
+    }, {
+        "source": 8,
+        "target": 34,
+        "value": 102
+    }, {
+        "source": 8,
+        "target": 25,
+        "value": 22
+    }, {
+        "source": 8,
+        "target": 40,
+        "value": 85
+    }, {
+        "source": 8,
+        "target": 50,
+        "value": 18
+    }, {
+        "source": 8,
+        "target": 33,
+        "value": 78
+    }, {
+        "source": 8,
+        "target": 27,
+        "value": 6
+    }, {
+        "source": 7,
+        "target": 49,
+        "value": 300
+    }, {
+        "source": 7,
+        "target": 36,
+        "value": 40
+    }, {
+        "source": 7,
+        "target": 24,
+        "value": 59
+    }, {
+        "source": 7,
+        "target": 17,
+        "value": 65
+    }, {
+        "source": 7,
+        "target": 47,
+        "value": 53
+    }, {
+        "source": 7,
+        "target": 53,
+        "value": 50
+    }, {
+        "source": 7,
+        "target": 51,
+        "value": 6
+    }, {
+        "source": 7,
+        "target": 31,
+        "value": 3
+    }, {
+        "source": 5,
+        "target": 20,
+        "value": 175
+    }, {
+        "source": 5,
+        "target": 41,
+        "value": 272
+    }, {
+        "source": 5,
+        "target": 16,
+        "value": 142
+    }, {
+        "source": 5,
+        "target": 52,
+        "value": 205
+    }, {
+        "source": 5,
+        "target": 45,
+        "value": 27
+    }, {
+        "source": 5,
+        "target": 28,
+        "value": 65
+    }, {
+        "source": 9,
+        "target": 60,
+        "value": 60
+    }, {
+        "source": 9,
+        "target": 38,
+        "value": 86
+    }, {
+        "source": 9,
+        "target": 58,
+        "value": 123
+    }, {
+        "source": 9,
+        "target": 43,
+        "value": 102
+    }, {
+        "source": 9,
+        "target": 56,
+        "value": 109
+    }, {
+        "source": 9,
+        "target": 39,
+        "value": 15
+    }]
+}

@@ -85,6 +85,9 @@ function createViz(error, data) {
             d.ITServiceType = 'IT Prac. & Mngmt';
         }
         d.ApprovalStatus = d.ApprovalStatus.Title;
+        
+        // randomize results for public viewing
+        d.ProcurementActionValue = Math.random()*1000;
 
         d.dd = moment(d.Created)._d; // dc.js round months to beginning of month
         d.month = d3.time.month(d.dd); // pre-calculate month for better performance
