@@ -101,9 +101,6 @@ let height = (dashboardHeight - headerHeight - footerHeight - sankeyHeaderHeight
 
 width = document.querySelector('#sankey footer').offsetWidth - 16;
 
-
-// let color = d3.scale.category10();
-
 let margins = {
     top: 25,
     right: 10,
@@ -115,6 +112,9 @@ let margins = {
 // Define p as an arbitrary number between [0,1]
 let p = 0.7;
 
+// Define the hierarchical categories of the sankey
+let steps = ["Business Area", "Category", "Service"];
+
 // append the svg canvas to the page
 let svg = d3.select("#component").append("svg")
     .attr("width", width + margins.left + margins.right)
@@ -125,11 +125,53 @@ let svg = d3.select("#component").append("svg")
 
 // Set the sankey diagram properties
 let sankey = d3.sankey()
-    .nodeWidth(36)
+    .nodeWidth(24)
     .nodePadding(2)
     .size([width, height]);
 
 let path = sankey.link();
+
+// create rect elements to store category labels
+let bars = svg.selectAll('.label')
+    .data(steps,(d,i) => {
+        return i;
+    });
+    
+    // Enter
+    bars
+        .enter()
+        .append('g')
+        .attr('class','label');
+    
+    // Enter + Update
+    bars
+        .append('rect')
+        .attr('class','bar')
+        .attr('height',(d) => {
+            return height;
+        })
+        .attr('width',(d,i) => {
+            return width / 3;
+        })
+        .attr('x',(d,i) => {
+            return width / 3 * i;
+        })
+        .style('fill','white');
+    
+    bars
+        .append("text")
+        .attr("dy", ".35em")
+        .attr("transform", null)
+        .attr('y',-margins.top+6) // 6 seems to be a good number for font size
+        .attr('x',(d,i) => {
+            return width / 3 * i + (width / 3)/2;
+        })
+        .attr("text-anchor", "middle")
+        .style('font-weight','bold')
+        .text((d) => {
+           return d;
+        });
+
 
 // define the links group
 let linksGroup = svg.append("g");
@@ -319,7 +361,7 @@ function createViz(error, data) {
         renderSankey(datum);
         bindHover();
     });
-
+    
     dc.renderAll();
 
     renderSankey(graph);
@@ -351,9 +393,6 @@ function createViz(error, data) {
 // inspired by DensityDesign Lab raw.js functions by Giorgio Caviglia, Michele Mauri, Giorgio Uboldi, Matteo Azzi
 // http://app.rawgraphs.io/
 function transformToGraph(data) {
-    let steps = [];
-
-    steps.push("Business Area", "Category", "Service");
 
     let d = {
         nodes: [],
@@ -479,6 +518,7 @@ function renderSankey(graph) {
     let nodeNames = graph.nodes.map((d) => {
         return d.name;
     });
+
     // http://jonathansoma.com/tutorials/d3/color-scale-examples/
     let color = d3.scale.ordinal().domain(nodeNames).range(colorbrewer.Dark2[8]);
     let quantile = d3.quantile(valueRange, p);
@@ -494,23 +534,24 @@ function renderSankey(graph) {
         .data(graph.links);
 
     // Enter
-    links.enter()
+    links
+        .enter()
         .append("path")
         .attr("class", "link");
 
     // Enter + Update
     links
-        .transition()
-        .duration(1000)
         .attr("d", path);
 
     links
-        .style("stroke-width", (d) => {
-            return Math.max(1, d.dy);
-        })
         // .style("stroke", (d, i) => {
         //     return d.source.color = color(d.source.name.replace(/ .*/, ""));
         // })
+        .transition()
+        // .duration(1000)
+        .style("stroke-width", (d) => {
+            return Math.max(1, d.dy);
+        })
         .sort((a, b) => {
             return b.dy - a.dy;
         });
@@ -523,15 +564,15 @@ function renderSankey(graph) {
         .data(graph.nodes);
 
     // Enter
-    let enterNodes = nodes.enter()
+    nodes.enter()
         .append("g")
         .attr("class", "node");
 
-    enterNodes.append("rect")
+    nodes.append("rect")
         .attr("width", sankey.nodeWidth())
         .append("title");
 
-    enterNodes.append("text")
+    nodes.append("text")
         .attr("dy", ".35em")
         .attr("transform", null);
 
@@ -545,13 +586,13 @@ function renderSankey(graph) {
 
     // add the rectangles for the nodes
     nodes.select("rect")
-        .style("fill", (d, i) => {
-            return d.color = color(d.name.replace(/ .*/, ""));
-        })
-        .transition()
-        .duration(750)
         .attr("height", (d) => {
             return d.dy;
+        })
+        .transition()
+        .duration(1000)
+        .style("fill", (d, i) => {
+            return d.color = color(d.name.replace(/ .*/, ""));
         })
         .style("stroke", (d) => {
             return d3.rgb(d.color).darker(2);
