@@ -165,7 +165,7 @@ function createViz(error, data) {
         .valueAccessor(function(d) {
             return d.value;
         })
-        // .ordinalColors(pieColors)
+        .drawPaths(false)
         .legend(dc.legend().y(0))
         .label(function(d) {
             if (fismaChart.hasFilter() && !fismaChart.hasFilter(d.key)) {
@@ -180,7 +180,6 @@ function createViz(error, data) {
             return label;
         })
         .renderTitle(false)
-        // .externalRadiusPadding(ringChartWidth / 12)
         .innerRadius(d3.min([ringChartWidth, ringChartHeight]) / 4);
         
     fismaChart.on('pretransition',function(chart) {
@@ -197,7 +196,7 @@ function createViz(error, data) {
         .valueAccessor(function(d) {
             return d.value;
         })
-        // .ordinalColors(pieColors)
+        .drawPaths(false)
         .legend(dc.legend().y(0))
         .label(function(d) {
             if (mesChart.hasFilter() && !mesChart.hasFilter(d.key)) {
@@ -212,7 +211,6 @@ function createViz(error, data) {
             return label;
         })
         .renderTitle(false)
-        // .externalRadiusPadding(ringChartWidth / 12)
         .innerRadius(d3.min([ringChartWidth, ringChartHeight]) / 4);
         
     mesChart.on('pretransition',function(chart) {
