@@ -687,7 +687,7 @@ ul.w3-ul li:last-child {
     margin: 0;
     line-height: 30px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 992;
     text-transform: uppercase;
     margin-left: 45px
 }
@@ -763,7 +763,7 @@ ul.w3-ul li:last-child {
     position: relative;
     padding: 0;
     outline: 0;
-    width: 600px
+    width: 992px
 }
 
 .w3-closebtn {
@@ -1086,7 +1086,7 @@ input[type=radio].w3-radio:disabled+.w3-validate {
     width: 99.99999%
 }
 
-@media (min-width:601px) {
+@media (min-width:993px) {
     .w3-col.m1 {
         width: 8.33333%
     }
@@ -1130,7 +1130,7 @@ input[type=radio].w3-radio:disabled+.w3-validate {
     }
 }
 
-@media (min-width:993px) {
+@media (min-width:1025px) {
     .w3-col.l1 {
         width: 8.33333%
     }
@@ -1227,7 +1227,7 @@ input[type=radio].w3-radio:disabled+.w3-validate {
     display: inline-block!important
 }
 
-@media (max-width:600px) {
+@media (max-width:992px) {
     .w3-modal-content {
         margin: 0 10px;
         width: auto!important
@@ -1288,7 +1288,7 @@ input[type=radio].w3-radio:disabled+.w3-validate {
     }
 }
 
-@media (min-width:993px) {
+@media (min-width:1025px) {
     .w3-modal-content {
         width: 900px
     }
@@ -1301,13 +1301,13 @@ input[type=radio].w3-radio:disabled+.w3-validate {
     }
 }
 
-@media (max-width:992px) and (min-width:601px) {
+@media (max-width:1024px) and (min-width:993px) {
     .w3-hide-medium {
         display: none!important
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:1024px) {
     .w3-sidenav.w3-collapse,
     .w3-sidebar.w3-collapse {
         display: none
