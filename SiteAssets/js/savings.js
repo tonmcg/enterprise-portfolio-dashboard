@@ -1129,32 +1129,40 @@ function createViz(error, data) {
 
     // define mouseover and mouseout events
     function bindHover() {
-        d3.selectAll('g.row').on("mouseover", function(d) {
-            let key = d.key;
-            let amount = currFormat(d.value.amount);
-            let count = d.value.count;
-            let percent = perFormat(d.value.percent);
-            showDetail( key, amount, count, percent )
-        }).on("mouseout", hideDetail);
-        d3.selectAll('g.pie-slice').on("mouseover", function(d) {
-            let key = d.data.key;
-            let amount = currFormat(d.data.value.amount);
-            let count = d.data.value.count;
-            // let percent = perFormat(d.data.value.percent);
-            showDetail( key, amount, count, null )
-        }).on("mouseout", hideDetail);
-        d3.selectAll('#chart-realized g.stack rect.bar').on("mouseover", function(d) {
-            let key = d.layer;
-            let amount = currFormat(d.data.value.amount);
-            let percent = perFormat(d.data.value.percent);
-            showDetail( key, amount, null, percent )
-        }).on("mouseout", hideDetail);
-        d3.selectAll('#chart-projected g.stack rect.bar').on("mouseover", function(d) {
-            let key = d.layer;
-            let amount = currFormat(d.data.value.amount);
-            // let percent = perFormat(d.data.value.percent);
-            showDetail( key, amount, null, null )
-        }).on("mouseout", hideDetail);
+        
+        document.body.addEventListener('mouseover',function( e ) {
+            if (e.target.parentElement.classList.contains('row')) {
+                var d = d3.select(e.target).data()[0];
+                let key = d.key;
+                let amount = currFormat(d.value.amount);
+                let count = d.value.count;
+                let percent = perFormat(d.value.percent);
+                showDetail(e, key, amount, count, percent)
+            } else if (e.target.nodeName == 'rect' && e.target.classList.contains('bar') && $(e.target).closest('div')[0].id == 'chart-realized') {
+                let d = d3.select(e.target).data()[0];
+                let key = d.layer;
+                let percent = perFormat(d.data.value.percent);
+                let amount = currFormat(d.data.value.amount);
+                showDetail(e, key, amount, null, percent)
+            } else if (e.target.nodeName == 'rect' && e.target.classList.contains('bar')) {
+                let d = d3.select(e.target).data()[0];
+                let key = d.layer;
+                let amount = currFormat(d.data.value.amount);
+                showDetail(e, key, amount, null, null)
+            } else if (e.target.parentElement.classList.contains('pie-slice') || e.target.classList.contains('pie-label')) {
+                var d = d3.select(e.target).data()[0].data;
+                let key = d.key;
+                let amount = currFormat(d.value.amount);
+                let count = d.value.count;
+                let percent = perFormat(d.value.percent);
+                showDetail(e, key, amount, count, percent)
+            }
+        });
+        
+        document.body.addEventListener('mouseout',function( e ) {
+            if (e.target.parentElement.classList.contains('row') || e.target.nodeName == 'rect' || e.target.parentElement.classList.contains('pie-slice')  || e.target.classList.contains('pie-label')) hideDetail();
+        });
+        
     }
 
     bindHover();

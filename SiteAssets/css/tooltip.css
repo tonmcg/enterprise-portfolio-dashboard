@@ -3,7 +3,7 @@
     left: 100px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 2px solid #000;
+    /*border: 2px solid #000;*/
     background: #333;
     opacity: .9;
     color: white;
@@ -14,4 +14,24 @@
     line-height: 24pt;
     font-weight: lighter;
     visibility: visible;
+    
+}
+
+.tooltip :before{
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+
+    opacity: .9;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    /*left:-8px;*/
+    /*border-right:8px solid #333;*/
+
+    border-left:8px solid #333;
+    right:-8px;
+    
+    top:35px; /* arbitrarily set */
 }

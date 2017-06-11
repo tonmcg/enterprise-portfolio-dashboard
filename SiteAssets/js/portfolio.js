@@ -219,11 +219,6 @@ function createViz(error, data) {
     var childEnterTransition = childrenCells.enter()
         .append("g")
         .attr("class", "cell child")
-        .on("mouseover", function(d) {
-            var key = d.name;
-            var amount = formatAbbreviation(d['size_' + year]);
-            showDetail(key, amount, null, null);
-        }).on("mouseout", hideDetail)
         .on("click", function(d) {
             zoom(node === d.parent ? root : d.parent);
         });
@@ -320,8 +315,26 @@ function createViz(error, data) {
     
     svgParent.style('padding-bottom',calcString);
     
-    
     zoom(node);
+    
+    // define mouseover and mouseout events
+    function bindHover() {
+        document.body.addEventListener('mouseover',function( e ) {
+            if ((e.target.nodeName == 'rect' && e.target.classList.contains('background'))) {
+                var d = d3.select(e.target).data()[0];
+                var key = d.name;
+                var amount = formatAbbreviation(d['size_' + year]);
+                showDetail(e, key, amount, null, null);
+            }
+        });
+        
+        document.body.addEventListener('mouseout',function( e ) {
+            if ((e.target.nodeName == 'rect' && e.target.classList.contains('background'))) hideDetail();
+        });
+    }
+
+    bindHover();
+
 }
 
 function size(d) {

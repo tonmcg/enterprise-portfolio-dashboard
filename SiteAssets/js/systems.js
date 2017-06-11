@@ -995,12 +995,21 @@ function createViz(error, data) {
 
     // define mouseover and mouseout events
     function bindHover() {
-        d3.selectAll('g.pie-slice').on("mouseover", function(d) {
-            let key = d.data.key;
-            let count = d.data.value;
-            let percent = perFormat(d.data.percent);
-            showDetail( key, null, count, percent )
-        }).on("mouseout", hideDetail);
+        document.body.addEventListener('mouseover',function( e ) {
+
+            if (e.target.parentElement.classList.contains('pie-slice') || e.target.classList.contains('pie-label')) {
+                var d = d3.select(e.target).data()[0].data;
+                let key = d.key;
+                let amount = currFormat(d.value.amount);
+                let count = d.value;
+                let percent = perFormat(d.percent);
+                showDetail(e, key, null, count, percent)
+            }
+        });
+        
+        document.body.addEventListener('mouseout',function( e ) {
+            if (e.target.parentElement.classList.contains('pie-slice')) hideDetail();
+        });
     }
 
     bindHover();

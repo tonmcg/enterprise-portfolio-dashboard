@@ -113,7 +113,7 @@ function formatAbbreviation(x) {
 }
 
 // Show tooltip on hover
-function showDetail(key, amount, count, percent) {
+function showDetail(event, key, amount, count, percent) {
 
     // show tooltip with information from the __data__ property of the element
     var x_hover = 0;
