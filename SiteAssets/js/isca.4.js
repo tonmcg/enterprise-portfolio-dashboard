@@ -565,8 +565,11 @@ let tooltip = d3.select("body").append("div").style({
         //     return d.source.color = color(d.source.name.replace(/ .*/, ""));
         // })
             .transition('pathDraw') // assign a name to the transition to prevent other transitions from interfering
-            .duration(1000)
+            .delay(750)
+            .duration(750)
             .attr("d", path)
+            .transition('strokeWidth') // assign a name to the transition to prevent other transitions from interfering
+            .duration(250)
             .style("stroke-width", (d) => {
                 return Math.max(1, d.dy);
             });
@@ -586,20 +589,22 @@ let tooltip = d3.select("body").append("div").style({
         // Enter
         nodes.enter()
             .append("g")
-            .attr("class", "node");
+            .attr("class", "node")
 
         nodes.append("rect")
             .attr("width", sankey.nodeWidth())
+            .style('fill','#ccc')
             .append("title");
 
         nodes.append("text")
             .attr("dy", ".35em")
+            .style('fill','#e5e5e5')
             .attr("transform", null);
 
         // Enter + Update
         nodes
             .transition('nodeTransform') // assign a name to the transition to prevent other transitions from interfering
-            .duration(1000)
+            .duration(750)
             .attr("transform", (d) => {
                 return "translate(" + d.x + "," + d.y + ")";
             });
@@ -610,7 +615,8 @@ let tooltip = d3.select("body").append("div").style({
                 return d.dy;
             })
             .transition('rectFill') // assign a name to the transition to prevent other transitions from interfering
-            .duration(1000)
+            .delay(500)
+            .duration(750)
             .style("fill", (d, i) => {
                 return d.color = color(d.name.replace(/ .*/, ""));
             })
@@ -638,10 +644,12 @@ let tooltip = d3.select("body").append("div").style({
                 }
             })
             .transition('yTextPosition') // assign a name to the transition to prevent other transitions from interfering
-            .duration(1000)
+            .delay(250)
+            .duration(750)
             .attr('y', function(d) {
                 return d.dy / 2;
             })
+            .style('fill','#000000')
             .text((d) => {
                 if (d.value > quantile || (d.x < width / 2)) {
                     return d.name;

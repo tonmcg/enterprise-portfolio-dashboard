@@ -127,10 +127,24 @@ function showDetail(event, key, amount, count, percent) {
 
     var tooltipWidth = parseInt(tooltip.style('width'));
     var tooltipHeight = parseInt(tooltip.style('height'));
-    x_hover = (event.pageX > document.body.clientWidth / 2) ? tooltipWidth + 30 : -30;
+    var classed,notClassed;
+    
+    if (event.pageX > document.body.clientWidth / 2) {
+        x_hover = tooltipWidth + 30;
+        classed = 'right';
+        notClassed = 'left';
+    } else {
+        x_hover = -30;
+        classed = 'left';
+        notClassed = 'right';
+    }
+    
     y_hover = (document.body.clientHeight - event.pageY < (tooltipHeight + 4)) ? event.pageY - (tooltipHeight + 4) : event.pageY - tooltipHeight / 2;
 
-    return tooltip.style({
+    return tooltip
+        .classed(classed,true)
+        .classed(notClassed,false)
+        .style({
             "visibility": "visible",
             "top": y_hover + "px",
             "left": (event.pageX - x_hover) + "px"

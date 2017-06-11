@@ -16,10 +16,13 @@ function showDetail( key, amount, count, percent ) {
     x_hover = (event.pageX > document.body.clientWidth / 2) ? tooltipWidth + 30 : -30;
     y_hover = (document.body.clientHeight - event.pageY < (tooltipHeight + 4)) ? event.pageY-(tooltipHeight + 4) : event.pageY - tooltipHeight/2;
 
-    return tooltip.style({
+    return tooltip
+        .classed('right',true)
+        .style({
             "visibility": "visible",
             "top": y_hover + "px",
             "left": (event.pageX - x_hover) + "px"
+
         })
         .html(content);
 }
