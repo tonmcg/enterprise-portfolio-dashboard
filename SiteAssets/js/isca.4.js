@@ -167,7 +167,7 @@ let tooltip = d3.select("body").append("div").style({
         .attr('x', (d, i) => {
             return width / steps.length * i + (width / steps.length) / 2;
         })
-        .attr("text-anchor", "start")
+        .attr("text-anchor", "middle")
         .style('font-weight', 'bold')
         .text((d) => {
             return d;
