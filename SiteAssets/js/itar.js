@@ -27,19 +27,19 @@ function createViz(error, data) {
 
     const areaChartHeaderHeight = document.querySelector('#areaChart header').offsetHeight;
     const areaChartFooterHeight = document.querySelector('#areaChart footer').offsetHeight;
-    const areaChartHeight = (dashboardHeight - headerHeight - footerHeight - areaChartHeaderHeight - areaChartFooterHeight) * 1 / 3;
+    const areaChartHeight = (dashboardHeight - headerHeight - footerHeight - areaChartHeaderHeight - areaChartFooterHeight) * 1 / 4;
 
     const ringChartHeaderHeight = document.querySelector('#ringChart header').offsetHeight;
     const ringChartFooterHeight = document.querySelector('#ringChart footer').offsetHeight;
-    const ringChartHeight = (dashboardHeight - headerHeight - footerHeight - ringChartHeaderHeight - ringChartFooterHeight) * 1 / 3;
+    const ringChartHeight = (dashboardHeight - headerHeight - footerHeight - ringChartHeaderHeight - ringChartFooterHeight) * 1 / 4;
 
     const rowChartHeaderHeight = document.querySelector('#rowChart header').offsetHeight;
     const rowChartFooterHeight = document.querySelector('#rowChart footer').offsetHeight;
-    const rowChartHeight = (dashboardHeight - headerHeight - footerHeight - rowChartHeaderHeight - rowChartFooterHeight) * 5 / 12;
+    const rowChartHeight = (dashboardHeight - headerHeight - footerHeight - rowChartHeaderHeight - rowChartFooterHeight) * 1 / 2;
 
     const tableHeaderHeight = document.querySelector('#tableChart header').offsetHeight;
     const tableFooterHeight = document.querySelector('#tableChart footer').offsetHeight;
-    const tableHeight = (dashboardHeight - headerHeight - footerHeight - tableHeaderHeight - tableFooterHeight) * 5 / 12 * 0.8;
+    const tableHeight = (dashboardHeight - headerHeight - footerHeight - tableHeaderHeight - tableFooterHeight) * 1 / 2 * 0.8;
 
     const areaChartWidth = document.querySelector('#areaChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
     const ringChartWidth = document.querySelector('#ringChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
@@ -87,7 +87,7 @@ function createViz(error, data) {
         d.ApprovalStatus = d.ApprovalStatus.Title;
         
         // randomize results for public viewing
-        d.ProcurementActionValue = Math.random()*1000;
+        d.ProcurementActionValue = Math.random()*1000000;
 
         d.dd = moment(d.Created)._d; // dc.js round months to beginning of month
         d.month = d3.time.month(d.dd); // pre-calculate month for better performance
@@ -363,8 +363,8 @@ function createViz(error, data) {
         .width(ringChartWidth)
         .height(ringChartHeight)
         .radius(d3.min([ringChartWidth, ringChartHeight]) / 2)
-        .externalLabels(d3.min([ringChartWidth, ringChartHeight]) / 8)
-        .externalRadiusPadding(d3.min([ringChartWidth, ringChartHeight]) / 8)
+        // .externalLabels(d3.min([ringChartWidth, ringChartHeight]) / 8)
+        // .externalRadiusPadding(d3.min([ringChartWidth, ringChartHeight]) / 8)
         .dimension(serviceTypeDim)
         .group(amountByServiceType)
         .ordinalColors(colorbrewer.PuOr[6])
@@ -372,21 +372,21 @@ function createViz(error, data) {
             return d.value.amount;
         })
         .drawPaths(false)
-        // .legend(dc.legend().y(0))
-        // .label(function(d) {
-        //     if (serviceTypesChart.hasFilter() && !serviceTypesChart.hasFilter(d.key)) {
-        //         return d.key + ' (0%)';
-        //     }
-        //     let label = '';
-        //     if (all.value()) {
-        //         // label += ' (' + Math.round(d.value.amount / totalAmount.value() * 100) + '%)';
-        //         d.value.percent = d.value.amount / totalAmount.value();
-        //         label += d.key + ' (' + perFormat(d.value.percent) + ')';
-        //     }
-        //     return label;
-        // })
+        .legend(dc.legend().y(0))
+        .label(function(d) {
+            if (serviceTypesChart.hasFilter() && !serviceTypesChart.hasFilter(d.key)) {
+                return '0%';
+            }
+            let label = '';
+            if (all.value()) {
+                // label += ' (' + Math.round(d.value.amount / totalAmount.value() * 100) + '%)';
+                d.value.percent = d.value.amount / totalAmount.value();
+                label += perFormat(d.value.percent);
+            }
+            return label;
+        })
         .renderTitle(false)
-        .innerRadius(d3.min([ringChartWidth, ringChartHeight]) / 5);
+        .innerRadius(d3.min([ringChartWidth, ringChartHeight]) / 4);
 
     serviceTypesChart.on('pretransition', function(chart) {
         setResponsiveSVG(chart);
@@ -409,7 +409,7 @@ function createViz(error, data) {
             if (all.value()) {
                 // label += ' (' + Math.round(d.value.amount / totalAmount.value() * 100) + '%)';
                 d.value.percent = d.value.amount / totalAmount.value();
-                label += ' (' + perFormat(d.value.percent) + ')';
+                label += d.key + ' (' + perFormat(d.value.percent) + ')';
             }
             return label;
         })
@@ -465,8 +465,8 @@ function createViz(error, data) {
                 let key = d.key;
                 let amount = currFormat(d.value.amount);
                 let count = d.value.count;
-                // let percent = perFormat(d.value.percent);
-                showDetail(e, key, amount, count, null)
+                let percent = perFormat(d.value.percent);
+                showDetail(e, key, amount, count, percent)
             }
         });
         

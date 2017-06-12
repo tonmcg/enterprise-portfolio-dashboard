@@ -115,20 +115,20 @@ function createViz(error, data) {
     const barChartHeaderHeight = document.querySelector('#barChart header').offsetHeight;
     const barChartFooterHeight = document.querySelector('#barChart footer').offsetHeight;
     
-    const stackChartHeight = (dashboardHeight - headerHeight - footerHeight - barChartHeaderHeight - barChartFooterHeight) * 1/6;
-    const groupChartHeight = (dashboardHeight - headerHeight - footerHeight - barChartHeaderHeight - barChartFooterHeight) * 1/6;
+    const stackChartHeight = (dashboardHeight - headerHeight - footerHeight - barChartHeaderHeight - barChartFooterHeight) * 1/8;
+    const groupChartHeight = (dashboardHeight - headerHeight - footerHeight - barChartHeaderHeight - barChartFooterHeight) * 1/8;
     
     const ringChartHeaderHeight = document.querySelector('#ringChart header').offsetHeight;
     const ringChartFooterHeight = document.querySelector('#ringChart footer').offsetHeight;
-    const ringChartHeight = (dashboardHeight - headerHeight - footerHeight - ringChartHeaderHeight - ringChartFooterHeight) * 1 / 3;
+    const ringChartHeight = (dashboardHeight - headerHeight - footerHeight - ringChartHeaderHeight - ringChartFooterHeight) * 1 / 4;
     
     const rowChartHeaderHeight = document.querySelector('#rowChart header').offsetHeight;
     const rowChartFooterHeight = document.querySelector('#rowChart footer').offsetHeight;
-    const rowChartHeight = (dashboardHeight - headerHeight - footerHeight - rowChartHeaderHeight - rowChartFooterHeight) * 5 / 12;
+    const rowChartHeight = (dashboardHeight - headerHeight - footerHeight - rowChartHeaderHeight - rowChartFooterHeight) * 1 / 2;
     
     const tableHeaderHeight = document.querySelector('#tableChart header').offsetHeight;
     const tableFooterHeight = document.querySelector('#tableChart footer').offsetHeight;
-    const tableHeight = (dashboardHeight - headerHeight - footerHeight - tableHeaderHeight - tableFooterHeight) * 5 / 12 * 0.5;
+    const tableHeight = (dashboardHeight - headerHeight - footerHeight - tableHeaderHeight - tableFooterHeight) * 1 / 2 * 0.5;
     
     const tableWidth = document.querySelector('#tableChart footer').clientWidth; // does not include margin, padding, or scroll bar widths
     
@@ -522,8 +522,8 @@ function createViz(error, data) {
         .width(ringChartWidth)
         .height(ringChartHeight)
         .radius(d3.min([ringChartWidth, ringChartHeight]) / 2)
-        .externalLabels(d3.min([ringChartWidth, ringChartHeight]) / 8)
-        .externalRadiusPadding(d3.min([ringChartWidth, ringChartHeight]) / 8)
+        // .externalLabels(d3.min([ringChartWidth, ringChartHeight]) / 8)
+        // .externalRadiusPadding(d3.min([ringChartWidth, ringChartHeight]) / 8)
         .dimension(initiativeDim)
         .group(amountByInitiative)
         .ordinalColors(colorbrewer.PuOr[6])
@@ -531,21 +531,21 @@ function createViz(error, data) {
             return d.value.amount;
         })
         .drawPaths(false)
-        // .legend(dc.legend().y(0))
-        // .label(function(d) {
-        //     if (initiativesChart.hasFilter() && !initiativesChart.hasFilter(d.key)) {
-        //         return '0%';
-        //     }
-        //     let label = '';
-        //     if (all.value()) {
-        //         // label += ' (' + Math.round(d.value.amount / totalAmount.value() * 100) + '%)';
-        //         d.value.percent = d.value.amount / totalAmount.value();
-        //         label += perFormat(d.value.percent);
-        //     }
-        //     return label;
-        // })
+        .legend(dc.legend().y(0))
+        .label(function(d) {
+            if (initiativesChart.hasFilter() && !initiativesChart.hasFilter(d.key)) {
+                return '0%';
+            }
+            let label = '';
+            if (all.value()) {
+                // label += ' (' + Math.round(d.value.amount / totalAmount.value() * 100) + '%)';
+                d.value.percent = d.value.amount / totalAmount.value();
+                label += perFormat(d.value.percent);
+            }
+            return label;
+        })
         .renderTitle(false)
-        .innerRadius(d3.min([ringChartWidth, ringChartHeight]) / 5);
+        .innerRadius(d3.min([ringChartWidth, ringChartHeight]) / 4);
 
     initiativesChart.on('pretransition',function(chart) {
         setResponsiveSVG(chart);
