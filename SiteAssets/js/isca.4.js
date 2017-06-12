@@ -16,7 +16,7 @@ let tooltip = d3.select("body").append("div").style({
     // define data
     const columns = [{
         "label": "Investment Number",
-        "field": "Investment%5Fx0020%5FNumber",
+        "field": "InvestmentNumber",
         "format": function(d) {
             return d['Investment Number'];
         },
@@ -43,7 +43,7 @@ let tooltip = d3.select("body").append("div").style({
         "sort": false
     }, {
         "label": "Investment Name",
-        "field": "Investment%5Fx0020%5FName",
+        "field": "InvestmentName",
         "format": function(d) {
             return "<a href=# onclick=document.getElementById(&#39;itemModal&#39;).style.display=&#39;block&#39;>" + d['InvestmentName'] + "</a>";
         },
@@ -52,7 +52,7 @@ let tooltip = d3.select("body").append("div").style({
         "sort": true
     }, {
         "label": "Service",
-        "field": "Title",
+        "field": "Service",
         "format": function(d) {
             return d.Service;
         },
@@ -70,7 +70,7 @@ let tooltip = d3.select("body").append("div").style({
         "sort": false
     }, {
         "label": "Business Area",
-        "field": "Business%5Fx0020%5FArea",
+        "field": "BusinessArea",
         "format": function(d) {
             return d['Business Area'];
         },
@@ -114,7 +114,7 @@ let tooltip = d3.select("body").append("div").style({
     let p = 0.8;
 
     // Define the hierarchical categories of the sankey
-    let steps = ["Business Area", "Category", "Service"];
+    let steps = ["BusinessArea", "Category", "Service"];
 
     // append the svg canvas to the page
     let svg = d3.select("#component").append("svg")
@@ -134,7 +134,7 @@ let tooltip = d3.select("body").append("div").style({
 
     // create rect elements to store category labels
     let bars = svg.selectAll('.label')
-        .data(steps, (d, i) => {
+        .data(steps, function(d,i) {
             return i;
         });
 
@@ -148,13 +148,13 @@ let tooltip = d3.select("body").append("div").style({
     bars
         .append('rect')
         .attr('class', 'bar')
-        .attr('height', (d) => {
+        .attr('height', function(d) {
             return height;
         })
-        .attr('width', (d, i) => {
+        .attr('width', function(d,i) {
             return width / steps.length;
         })
-        .attr('x', (d, i) => {
+        .attr('x', function(d,i) {
             return width / steps.length * i;
         })
         .style('fill', 'white');
@@ -164,12 +164,12 @@ let tooltip = d3.select("body").append("div").style({
         .attr("dy", ".35em")
         .attr("transform", null)
         .attr('y', -margins.top + 6) // 6 seems to be a good number for font size
-        .attr('x', (d, i) => {
+        .attr('x', function(d,i) {
             return width / steps.length * i + (width / steps.length) / 2;
         })
         .attr("text-anchor", "middle")
         .style('font-weight', 'bold')
-        .text((d) => {
+        .text(function(d) {
             return d;
         });
 
@@ -186,17 +186,13 @@ let tooltip = d3.select("body").append("div").style({
         // patterned after Customized Paraset
         // http://bl.ocks.org/mydu/67692343b28ea5069177
 
-
-        // TODO: implement a renderSandkey function with enter and exit pattern
-        // https://bl.ocks.org/austinczarnecki/cc6371af0b726e61b9ab
-
         if (error) throw error;
 
         // stop spin.js loader
         spinner.stop();
 
         // process data
-        let results = data.value.map((d) => {
+        let results = data.value.map(function(d) {
             d.Year = d.Year.toString();
             d.Value = d.Value * 1000;
             return d;
@@ -210,31 +206,31 @@ let tooltip = d3.select("body").append("div").style({
 
         // define dimensions
         var
-            componentDim = ndx.dimension((d) => {
+            componentDim = ndx.dimension(function(d) {
                 return d.Component;
             }),
-            yearDim = ndx.dimension((d) => {
+            yearDim = ndx.dimension(function(d) {
                 return d.Year;
             }),
-            businessDim = ndx.dimension((d) => {
-                return d['Business Area'];
+            businessDim = ndx.dimension(function(d) {
+                return d.BusinessArea;
             }),
-            categoryDim = ndx.dimension((d) => {
+            categoryDim = ndx.dimension(function(d) {
                 return d.Category;
             });
 
         // group dimensions
         var
-            amountByComponent = componentDim.group().reduceSum((d) => {
+            amountByComponent = componentDim.group().reduceSum(function(d) {
                 return Math.round(+d.Value);
             }),
-            amountByyear = yearDim.group().reduceSum((d) => {
+            amountByyear = yearDim.group().reduceSum(function(d) {
                 return Math.round(+d.Value);
             }),
-            amountByBusinessArea = businessDim.group().reduceSum((d) => {
+            amountByBusinessArea = businessDim.group().reduceSum(function(d) {
                 return Math.round(+d.Value);
             }),
-            amountByCategory = categoryDim.group().reduceSum((d) => {
+            amountByCategory = categoryDim.group().reduceSum(function(d) {
                 return Math.round(+d.Value);
             });
 
@@ -256,19 +252,19 @@ let tooltip = d3.select("body").append("div").style({
             // .order(function (a,b) {
             //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
             // })
-            .title((d) => {
+            .title(function(d) {
                 return d.key;
             })
             .promptText('All Components')
             .promptValue(null);
 
-        componentSelect.on('pretransition', (chart) => {
+        componentSelect.on('pretransition', function(chart) {
             // add styling to select input
             d3.select('#components').classed('dc-chart', false);
             chart.select('select').classed('w3-form', true);
         });
 
-        componentSelect.on('filtered', (chart, filter) => {
+        componentSelect.on('filtered', function(chart,filter) {
             let datum = transformToGraph(componentDim.top(Infinity));
             renderSankey(datum);
             bindHover();
@@ -286,19 +282,19 @@ let tooltip = d3.select("body").append("div").style({
             // .order(function (a,b) {
             //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
             // })
-            .title((d) => {
+            .title(function(d) {
                 return d.key;
             })
             .promptText('All Years')
             .promptValue(null);
 
-        yearSelect.on('pretransition', (chart) => {
+        yearSelect.on('pretransition', function(chart) {
             // add styling to select input
             d3.select('#years').classed('dc-chart', false);
             chart.select('select').classed('w3-form', true);
         });
 
-        yearSelect.on('filtered', (chart, filter) => {
+        yearSelect.on('filtered', function(chart,filter) {
             let datum = transformToGraph(yearDim.top(Infinity));
             renderSankey(datum);
             bindHover();
@@ -316,19 +312,19 @@ let tooltip = d3.select("body").append("div").style({
             // .order(function (a,b) {
             //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
             // })
-            .title((d) => {
+            .title(function(d) {
                 return d.key;
             })
             .promptText('All Categories')
             .promptValue(null);
 
-        categorySelect.on('pretransition', (chart) => {
+        categorySelect.on('pretransition', function(chart) {
             // add styling to select input
             d3.select('#categories').classed('dc-chart', false);
             chart.select('select').classed('w3-form', true);
         });
 
-        categorySelect.on('filtered', (chart, filter) => {
+        categorySelect.on('filtered', function(chart,filter) {
             let datum = transformToGraph(categoryDim.top(Infinity));
             renderSankey(datum);
             bindHover();
@@ -346,19 +342,19 @@ let tooltip = d3.select("body").append("div").style({
             // .order(function (a,b) {
             //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
             // })
-            .title((d) => {
+            .title(function(d) {
                 return d.key;
             })
             .promptText('All Business Areas')
             .promptValue(null);
 
-        businessSelect.on('pretransition', (chart) => {
+        businessSelect.on('pretransition', function(chart) {
             // add styling to select input
             d3.select('#businessAreas').classed('dc-chart', false);
             chart.select('select').classed('w3-form', true);
         });
 
-        businessSelect.on('filtered', (chart, filter) => {
+        businessSelect.on('filtered', function(chart,filter) {
             let datum = transformToGraph(businessDim.top(Infinity));
             renderSankey(datum);
             bindHover();
@@ -371,12 +367,12 @@ let tooltip = d3.select("body").append("div").style({
         // define mouseover and mouseout events
         function bindHover() {
             document.body.addEventListener('mousemove', function(e) {
-                if (e.target.classList.contains('link')) {
+                if (e.target.className.animVal == 'link') {
                     var d = d3.select(e.target).data()[0];
                     let key = d.source.name + " → " + d.target.name;
                     let amount = formatAbbreviation(d.value);
                     showDetail(e, key, amount, null, null)
-                } else if (e.target.nodeName == ('rect') && !e.target.classList.contains('bar')) {
+                } else if (e.target.nodeName == 'rect' && e.target.className.animVal != 'bar') {
                     var d = d3.select(e.target).data()[0];
                     let key = d.name;
                     let amount = formatAbbreviation(d.value);
@@ -385,7 +381,7 @@ let tooltip = d3.select("body").append("div").style({
             });
 
             document.body.addEventListener('mouseout', function(e) {
-                if (e.target.classList.contains('link') || e.target.nodeName == ('rect')) hideDetail();
+                if (e.target.className.animVal == 'link' || e.target.nodeName == 'rect') hideDetail();
             });
         }
 
@@ -419,15 +415,15 @@ let tooltip = d3.select("body").append("div").style({
             let sg = steps[i];
             let tg = steps[i + 1];
             let relations = d3.nest()
-                .key((d) => {
+                .key(function(d) {
                     return d[sg];
                 })
-                .key((d) => {
+                .key(function(d) {
                     return d[tg];
                 })
                 .entries(data);
 
-            relations.forEach((s) => {
+            relations.forEach(function(s) {
                 si = getNodeIndex(n, s.key, sg);
 
                 if (si == -1) {
@@ -438,7 +434,7 @@ let tooltip = d3.select("body").append("div").style({
                     si = n.length - 1;
                 }
 
-                s.values.forEach((t) => {
+                s.values.forEach(function(t) {
                     ti = getNodeIndex(n, t.key, tg);
                     if (ti == -1) {
                         n.push({
@@ -447,7 +443,7 @@ let tooltip = d3.select("body").append("div").style({
                         });
                         ti = n.length - 1;
                     }
-                    let value = d3.sum(t.values, (d) => {
+                    let value = d3.sum(t.values, function(d) {
                         return d.Value;
                     });
                     let link = {
@@ -460,7 +456,7 @@ let tooltip = d3.select("body").append("div").style({
             });
         }
         d.nodes = n.sort(customSort);
-        l.forEach((d) => {
+        l.forEach(function(d) {
             d.source = n.indexOf(d.source);
             d.target = n.indexOf(d.target);
         });
@@ -496,10 +492,10 @@ let tooltip = d3.select("body").append("div").style({
         // Returns an event handler for fading a given chord group.
         // http://bl.ocks.org/mbostock/4062006
         function fade(opacity) {
-            return (g, i) => {
+            return function(g,i) {
                 let nodes = svg.selectAll(".node");
 
-                let siblingNodes = nodes.filter((d) => {
+                let siblingNodes = nodes.filter(function(d) {
                     return d.name != graph.nodes[i].name;
                 });
                 siblingNodes
@@ -508,13 +504,13 @@ let tooltip = d3.select("body").append("div").style({
 
                 let links = svg.selectAll(".link");
 
-                // let selectedLinks = links.filter((d) => {
+                // let selectedLinks = links.filter(function(d) {
                 //     return d.source.name == graph.nodes[i].name || d.target.name == graph.nodes[i].name;
                 // });
                 // selectedLinks.transition() // assign a name to the transition to prevent other transitions from interfering
                 //     .style("fill", "black");
 
-                let siblingLinks = links.filter((d) => {
+                let siblingLinks = links.filter(function(d) {
                     return d.source.name != graph.nodes[i].name && d.target.name != graph.nodes[i].name;
                 });
                 siblingLinks
@@ -526,15 +522,15 @@ let tooltip = d3.select("body").append("div").style({
         // certain text will overlap due to the number of nodes at the lowest level of the graph
         // show text for the nodes that are within the top x% by value
         // construct an array of values from the graph to determine quantiles
-        let valueRange = graph.links.map((d) => {
+        let valueRange = graph.links.map(function(d) {
             return d.value;
         });
 
-        valueRange.sort((a, b) => {
+        valueRange.sort(function(a,b) {
             return a - b;
         });
 
-        let nodeNames = graph.nodes.map((d) => {
+        let nodeNames = graph.nodes.map(function(d) {
             return d.name;
         });
 
@@ -560,7 +556,7 @@ let tooltip = d3.select("body").append("div").style({
 
         // Enter + Update
         links
-        // .style("stroke", (d, i) => {
+        // .style("stroke", function(d,i) {
         //     return d.source.color = color(d.source.name.replace(/ .*/, ""));
         // })
             .transition('pathDraw') // assign a name to the transition to prevent other transitions from interfering
@@ -569,12 +565,12 @@ let tooltip = d3.select("body").append("div").style({
             .attr("d", path)
             // .transition('strokeWidth') // assign a name to the transition to prevent other transitions from interfering
             // .duration(250)
-            .style("stroke-width", (d) => {
+            .style("stroke-width", function(d) {
                 return Math.max(1, d.dy);
             });
 
         links
-            .sort((a, b) => {
+            .sort(function(a,b) {
                 return b.dy - a.dy;
             });
 
@@ -604,29 +600,29 @@ let tooltip = d3.select("body").append("div").style({
         nodes
             .transition('nodeTransform') // assign a name to the transition to prevent other transitions from interfering
             .duration(750)
-            .attr("transform", (d) => {
+            .attr("transform", function(d) {
                 return "translate(" + d.x + "," + d.y + ")";
             });
 
         // add the rectangles for the nodes
         nodes.select("rect")
-            .attr("height", (d) => {
+            .attr("height", function(d) {
                 return d.dy;
             })
             .transition('rectFill') // assign a name to the transition to prevent other transitions from interfering
             .delay(500)
             .duration(750)
-            .style("fill", (d, i) => {
+            .style("fill", function(d,i) {
                 return d.color = color(d.name.replace(/ .*/, ""));
             })
-            .style("stroke", (d) => {
+            .style("stroke", function(d) {
                 return d3.rgb(d.color).darker(2);
             });
 
         nodes.select('text')
             // .transition() // assign a name to the transition to prevent other transitions from interfering
             // .duration(250)
-            .attr("x", (d) => {
+            .attr("x", function(d) {
                 if (d.x < width / 2) {
                     return 6 + sankey.nodeWidth();
                 }
@@ -634,7 +630,7 @@ let tooltip = d3.select("body").append("div").style({
                     return -6;
                 }
             })
-            .attr("text-anchor", (d) => {
+            .attr("text-anchor", function(d) {
                 if (d.x < width / 2) {
                     return "start";
                 }
@@ -649,7 +645,7 @@ let tooltip = d3.select("body").append("div").style({
                 return d.dy / 2;
             })
             .style('fill','#000000')
-            .text((d) => {
+            .text(function(d) {
                 if (d.value > quantile || (d.x < width / 2)) {
                     return d.name;
                 }
@@ -725,7 +721,7 @@ let tooltip = d3.select("body").append("div").style({
         let componentEndpoint = callData(siteUrl, 'list', 'ISCA', cols.toString(), expand, filter, top);
 
         // Get the data
-        componentEndpoint.get((error, data) => {
+        componentEndpoint.get(function(error,data) {
             createViz(error, data);
         });
 
