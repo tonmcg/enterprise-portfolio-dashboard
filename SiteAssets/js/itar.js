@@ -447,7 +447,7 @@ function createViz(error, data) {
     // define mouseover and mouseout events
     function bindHover() {
         
-        document.body.addEventListener('mouseover',function( e ) {
+        document.body.addEventListener('mousemove',function( e ) {
             if (e.target.parentElement.classList.contains('row')) {
                 var d = d3.select(e.target).data()[0];
                 let key = d.key;
@@ -465,8 +465,8 @@ function createViz(error, data) {
                 let key = d.key;
                 let amount = currFormat(d.value.amount);
                 let count = d.value.count;
-                let percent = perFormat(d.value.percent);
-                showDetail(e, key, amount, count, percent)
+                // let percent = perFormat(d.value.percent);
+                showDetail(e, key, amount, count, null)
             }
         });
         

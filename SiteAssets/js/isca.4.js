@@ -111,7 +111,7 @@ let tooltip = d3.select("body").append("div").style({
 
     // Return only 1 - p quantile to reduce possibility of overlapping text
     // Define p as an arbitrary number between [0,1]
-    let p = 0.7;
+    let p = 0.8;
 
     // Define the hierarchical categories of the sankey
     let steps = ["Business Area", "Category", "Service"];
@@ -126,7 +126,7 @@ let tooltip = d3.select("body").append("div").style({
 
     // Set the sankey diagram properties
     let sankey = d3.sankey()
-        .nodeWidth(24)
+        .nodeWidth(12)
         .nodePadding(2)
         .size([width, height]);
 
@@ -152,10 +152,10 @@ let tooltip = d3.select("body").append("div").style({
             return height;
         })
         .attr('width', (d, i) => {
-            return width / 3;
+            return width / steps.length;
         })
         .attr('x', (d, i) => {
-            return width / 3 * i;
+            return width / steps.length * i;
         })
         .style('fill', 'white');
 
@@ -165,9 +165,9 @@ let tooltip = d3.select("body").append("div").style({
         .attr("transform", null)
         .attr('y', -margins.top + 6) // 6 seems to be a good number for font size
         .attr('x', (d, i) => {
-            return width / 3 * i + (width / 3) / 2;
+            return width / steps.length * i + (width / steps.length) / 2;
         })
-        .attr("text-anchor", "middle")
+        .attr("text-anchor", "start")
         .style('font-weight', 'bold')
         .text((d) => {
             return d;
@@ -370,14 +370,13 @@ let tooltip = d3.select("body").append("div").style({
 
         // define mouseover and mouseout events
         function bindHover() {
-            document.body.addEventListener('mouseover', function(e) {
+            document.body.addEventListener('mousemove', function(e) {
                 if (e.target.classList.contains('link')) {
                     var d = d3.select(e.target).data()[0];
                     let key = d.source.name + " → " + d.target.name;
                     let amount = formatAbbreviation(d.value);
                     showDetail(e, key, amount, null, null)
-                }
-                else if (e.target.nodeName == ('rect') && !e.target.classList.contains('bar')) {
+                } else if (e.target.nodeName == ('rect') && !e.target.classList.contains('bar')) {
                     var d = d3.select(e.target).data()[0];
                     let key = d.name;
                     let amount = formatAbbreviation(d.value);
@@ -565,11 +564,11 @@ let tooltip = d3.select("body").append("div").style({
         //     return d.source.color = color(d.source.name.replace(/ .*/, ""));
         // })
             .transition('pathDraw') // assign a name to the transition to prevent other transitions from interfering
-            .delay(750)
+            // .delay(750)
             .duration(750)
             .attr("d", path)
-            .transition('strokeWidth') // assign a name to the transition to prevent other transitions from interfering
-            .duration(250)
+            // .transition('strokeWidth') // assign a name to the transition to prevent other transitions from interfering
+            // .duration(250)
             .style("stroke-width", (d) => {
                 return Math.max(1, d.dy);
             });
@@ -589,7 +588,7 @@ let tooltip = d3.select("body").append("div").style({
         // Enter
         nodes.enter()
             .append("g")
-            .attr("class", "node")
+            .attr("class", "node");
 
         nodes.append("rect")
             .attr("width", sankey.nodeWidth())

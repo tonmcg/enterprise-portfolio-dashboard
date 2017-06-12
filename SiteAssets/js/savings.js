@@ -1131,7 +1131,7 @@ function createViz(error, data) {
     // define mouseover and mouseout events
     function bindHover() {
         
-        document.body.addEventListener('mouseover',function( e ) {
+        document.body.addEventListener('mousemove',function( e ) {
             if (e.target.parentElement.classList.contains('row')) {
                 var d = d3.select(e.target).data()[0];
                 let key = d.key;

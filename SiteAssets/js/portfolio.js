@@ -319,7 +319,7 @@ function createViz(error, data) {
     
     // define mouseover and mouseout events
     function bindHover() {
-        document.body.addEventListener('mouseover',function( e ) {
+        document.body.addEventListener('mousemove',function( e ) {
             if ((e.target.nodeName == 'rect' && e.target.classList.contains('background'))) {
                 var d = d3.select(e.target).data()[0];
                 var key = d.name;
