@@ -12,7 +12,7 @@ const opts = {
     className: 'spinner', // The CSS class to assign to the spinner
 };
 
-// Many browsers -- IEparticularly -- will not auto-size inline SVG
+// Many browsers -- IE particularly -- will not auto-size inline SVG
 // IE applies default width and height sizing
 // padding-bottom hack on a container solves IE inconsistencies in size
 // https://css-tricks.com/scale-svg/#article-header-id-10

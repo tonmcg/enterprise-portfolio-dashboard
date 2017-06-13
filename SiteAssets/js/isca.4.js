@@ -15,15 +15,6 @@ let tooltip = d3.select("body").append("div").style({
 
     // define data
     const columns = [{
-        "label": "Investment Number",
-        "field": "InvestmentNumber",
-        "format": function(d) {
-            return d['Investment Number'];
-        },
-        "type": "string",
-        "display": false,
-        "sort": false
-    }, {
         "label": "Year",
         "field": "Year",
         "format": function(d) {
@@ -131,48 +122,9 @@ let tooltip = d3.select("body").append("div").style({
         .size([width, height]);
 
     let path = sankey.link();
-
-    // create rect elements to store category labels
-    let bars = svg.selectAll('.label')
-        .data(steps, function(d,i) {
-            return i;
-        });
-
-    // Enter
-    bars
-        .enter()
-        .append('g')
-        .attr('class', 'label');
-
-    // Enter + Update
-    bars
-        .append('rect')
-        .attr('class', 'bar')
-        .attr('height', function(d) {
-            return height;
-        })
-        .attr('width', function(d,i) {
-            return width / steps.length;
-        })
-        .attr('x', function(d,i) {
-            return width / steps.length * i;
-        })
-        .style('fill', 'white');
-
-    bars
-        .append("text")
-        .attr("dy", ".35em")
-        .attr("transform", null)
-        .attr('y', -margins.top + 6) // 6 seems to be a good number for font size
-        .attr('x', function(d,i) {
-            return width / steps.length * i + (width / steps.length) / 2;
-        })
-        .attr("text-anchor", "middle")
-        .style('font-weight', 'bold')
-        .text(function(d) {
-            return d;
-        });
-
+    
+    // define the bars group
+    let barsGroup = svg.append("g");
 
     // define the links group
     let linksGroup = svg.append("g");
@@ -182,6 +134,28 @@ let tooltip = d3.select("body").append("div").style({
 
     // load the data
     function createViz(error, data) {
+    
+        // define mouseover and mouseout events
+        function bindHover() {
+            document.body.addEventListener('mousemove', function(e) {
+                if (e.target.className.animVal == 'link') {
+                    var d = d3.select(e.target).data()[0];
+                    let key = d.source.name + " → " + d.target.name;
+                    let amount = formatAbbreviation(d.value);
+                    showDetail(e, key, amount, null, null)
+                }
+                // else if (e.target.nodeName == 'rect' && e.target.className.animVal != 'bar') {
+                //     var d = d3.select(e.target).data()[0];
+                //     let key = d.name;
+                //     let amount = formatAbbreviation(d.value);
+                //     showDetail(e, key, amount, null, null)
+                // }
+            });
+    
+            document.body.addEventListener('mouseout', function(e) {
+                if (e.target.className.animVal == 'link' || e.target.nodeName == 'rect') hideDetail();
+            });
+        }
 
         // patterned after Customized Paraset
         // http://bl.ocks.org/mydu/67692343b28ea5069177
@@ -226,19 +200,11 @@ let tooltip = d3.select("body").append("div").style({
             }),
             amountByyear = yearDim.group().reduceSum(function(d) {
                 return Math.round(+d.Value);
-            }),
-            amountByBusinessArea = businessDim.group().reduceSum(function(d) {
-                return Math.round(+d.Value);
-            }),
-            amountByCategory = categoryDim.group().reduceSum(function(d) {
-                return Math.round(+d.Value);
             });
 
         // dc.js chart types
         let componentSelect = dc.selectMenu('#components');
         let yearSelect = dc.selectMenu('#years');
-        let businessSelect = dc.selectMenu('#businessAreas');
-        let categorySelect = dc.selectMenu('#categories');
 
         // menuselect
         componentSelect
@@ -265,9 +231,17 @@ let tooltip = d3.select("body").append("div").style({
         });
 
         componentSelect.on('filtered', function(chart,filter) {
+            if (filter != null && steps.length < 4) {
+                steps.push('InvestmentName');
+                p = 0.85;
+            } else if (filter == null) {
+                steps.pop();
+                p = 0.75;
+            }
             let datum = transformToGraph(componentDim.top(Infinity));
             renderSankey(datum);
             bindHover();
+            renderLabels();
         });
 
         // menuselect
@@ -300,96 +274,10 @@ let tooltip = d3.select("body").append("div").style({
             bindHover();
         });
 
-        // menuselect
-        categorySelect
-            .dimension(categoryDim)
-            .group(amountByCategory)
-            // .filterDisplayed(function () {
-            //     return true;
-            // })
-            .multiple(false)
-            .numberVisible(null)
-            // .order(function (a,b) {
-            //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
-            // })
-            .title(function(d) {
-                return d.key;
-            })
-            .promptText('All Categories')
-            .promptValue(null);
-
-        categorySelect.on('pretransition', function(chart) {
-            // add styling to select input
-            d3.select('#categories').classed('dc-chart', false);
-            chart.select('select').classed('w3-form', true);
-        });
-
-        categorySelect.on('filtered', function(chart,filter) {
-            let datum = transformToGraph(categoryDim.top(Infinity));
-            renderSankey(datum);
-            bindHover();
-        });
-
-        // menuselect
-        businessSelect
-            .dimension(businessDim)
-            .group(amountByBusinessArea)
-            // .filterDisplayed(function () {
-            //     return true;
-            // })
-            .multiple(false)
-            .numberVisible(null)
-            // .order(function (a,b) {
-            //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
-            // })
-            .title(function(d) {
-                return d.key;
-            })
-            .promptText('All Business Areas')
-            .promptValue(null);
-
-        businessSelect.on('pretransition', function(chart) {
-            // add styling to select input
-            d3.select('#businessAreas').classed('dc-chart', false);
-            chart.select('select').classed('w3-form', true);
-        });
-
-        businessSelect.on('filtered', function(chart,filter) {
-            let datum = transformToGraph(businessDim.top(Infinity));
-            renderSankey(datum);
-            bindHover();
-        });
-
         dc.renderAll();
-
         renderSankey(graph);
-
-        // define mouseover and mouseout events
-        function bindHover() {
-            document.body.addEventListener('mousemove', function(e) {
-                if (e.target.className.animVal == 'link') {
-                    var d = d3.select(e.target).data()[0];
-                    let key = d.source.name + " → " + d.target.name;
-                    let amount = formatAbbreviation(d.value);
-                    showDetail(e, key, amount, null, null)
-                } else if (e.target.nodeName == 'rect' && e.target.className.animVal != 'bar') {
-                    var d = d3.select(e.target).data()[0];
-                    let key = d.name;
-                    let amount = formatAbbreviation(d.value);
-                    showDetail(e, key, amount, null, null)
-                }
-            });
-
-            document.body.addEventListener('mouseout', function(e) {
-                if (e.target.className.animVal == 'link' || e.target.nodeName == 'rect') hideDetail();
-            });
-        }
-
         bindHover();
-
-        // Change the date header to reflect the date and time of the data
-        d3.select('#dateHeader').text(formatDate(new Date()));
-
+        renderLabels();
         setResponsiveSVG(d3);
 
     }
@@ -487,28 +375,98 @@ let tooltip = d3.select("body").append("div").style({
 
     }
 
-    function renderSankey(graph) {
+    function renderLabels() {
 
+        // create rect elements to store category labels
+        let bars = barsGroup.selectAll('.label')
+            .data(steps);
+
+        // Enter
+        bars
+            .enter()
+            .append('g')
+            .attr('class', 'label');
+    
+        bars
+            .append('rect')
+            .attr('class', 'bar')
+            .attr('height', function(d) {
+                return height;
+            });
+    
+        bars
+            .append("text")
+            .attr("dy", ".35em")
+            .attr("transform", null);
+            
+        // Enter + Update
+        bars
+            .select('.bar')
+            .style('fill', 'white')
+            .transition()
+            .duration(750)
+            .attr('width', function(d,i) {
+                return width / steps.length;
+            })
+            .attr('x', function(d,i) {
+                return width / steps.length * i;
+            });
+            
+        bars
+            .select('text')
+            .transition()
+            .duration(750)
+            .attr('y', -margins.top + 6) // 6 seems to be a good number for font size
+            .attr('x', function(d,i) {
+                return width / steps.length * i + (width / steps.length) / 2;
+            })
+            .attr("text-anchor", function(d,i) {
+                if (steps.length < 4) {
+                    return "middle";
+                } else {
+                    return "end";
+                }
+            })
+            .style('font-weight', 'bold')
+            .text(function(d) {
+                return d;
+            });
+        
+        // Exit
+        bars.exit().remove();
+            
+        return bars;
+
+    }
+    
+    function renderSankey(graph) {
+        
         // Returns an event handler for fading a given chord group.
         // http://bl.ocks.org/mbostock/4062006
         function fade(opacity) {
-            return function(g,i) {
+            return function(selectedNode,i) {
+                // loop through target links of the selected node and push to array
+                let targetLinks = selectedNode.targetLinks.map(function(d) {
+                    return d.source.name;
+                });
+                
+                // loop through source links of the selected node and push to array
+                let sourceLinks = selectedNode.sourceLinks.map(function(d) {
+                    return d.target.name;
+                });
+
+                // get an array of nodes
                 let nodes = svg.selectAll(".node");
 
-                let siblingNodes = nodes.filter(function(d) {
-                    return d.name != graph.nodes[i].name;
+                // filter an array of nodes that are not contained in targetLinks or sourceLinks
+                let nonSiblingNodes = nodes.filter(function(node) {
+                    return node.name != graph.nodes[i].name && targetLinks.indexOf(node.name) < 0 && sourceLinks.indexOf(node.name) < 0;
                 });
-                siblingNodes
+                nonSiblingNodes
                     .transition('nodeFade') // assign a name to the transition to prevent other transitions from interfering
                     .style("opacity", opacity);
 
                 let links = svg.selectAll(".link");
-
-                // let selectedLinks = links.filter(function(d) {
-                //     return d.source.name == graph.nodes[i].name || d.target.name == graph.nodes[i].name;
-                // });
-                // selectedLinks.transition() // assign a name to the transition to prevent other transitions from interfering
-                //     .style("fill", "black");
 
                 let siblingLinks = links.filter(function(d) {
                     return d.source.name != graph.nodes[i].name && d.target.name != graph.nodes[i].name;
@@ -516,7 +474,10 @@ let tooltip = d3.select("body").append("div").style({
                 siblingLinks
                     .transition('linkFade') // assign a name to the transition to prevent other transitions from interfering
                     .style("opacity", opacity);
+                    
+                
             };
+
         }
 
         // certain text will overlap due to the number of nodes at the lowest level of the graph
@@ -538,7 +499,7 @@ let tooltip = d3.select("body").append("div").style({
         let color = d3.scale.ordinal().domain(nodeNames).range(colorbrewer.Dark2[8]);
         let quantile = d3.quantile(valueRange, p);
         console.log("The " + p + " quantile value is: " + quantile);
-
+        
         sankey
             .nodes(graph.nodes)
             .links(graph.links)
@@ -556,9 +517,9 @@ let tooltip = d3.select("body").append("div").style({
 
         // Enter + Update
         links
-        // .style("stroke", function(d,i) {
-        //     return d.source.color = color(d.source.name.replace(/ .*/, ""));
-        // })
+            .sort(function(a,b) {
+                return b.dy - a.dy;
+            })
             .transition('pathDraw') // assign a name to the transition to prevent other transitions from interfering
             // .delay(750)
             .duration(750)
@@ -567,11 +528,6 @@ let tooltip = d3.select("body").append("div").style({
             // .duration(250)
             .style("stroke-width", function(d) {
                 return Math.max(1, d.dy);
-            });
-
-        links
-            .sort(function(a,b) {
-                return b.dy - a.dy;
             });
 
         // Exit
@@ -657,7 +613,8 @@ let tooltip = d3.select("body").append("div").style({
         nodes.exit().remove();
 
         //http://bl.ocks.org/frischmilch/7667996
-        nodes.on("click", fade(0.1))
+        nodes
+            .on("mouseover",fade(0.1))
             .on("mouseout", fade(1));
 
         return sankey;
