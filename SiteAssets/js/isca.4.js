@@ -105,7 +105,7 @@ let tooltip = d3.select("body").append("div").style({
     let p = 0.8;
 
     // Define the hierarchical categories of the sankey
-    let steps = ["BusinessArea", "Category", "Service"];
+    let steps = [{ "name": "BusinessArea", "label": "Business Area"}, { "name": "Category", "label": "Category" }, { "name": "Service", "label": "Service"  }];
 
     // append the svg canvas to the page
     let svg = d3.select("#component").append("svg")
@@ -139,17 +139,17 @@ let tooltip = d3.select("body").append("div").style({
         function bindHover() {
             document.body.addEventListener('mousemove', function(e) {
                 if (e.target.className.animVal == 'link') {
-                    var d = d3.select(e.target).data()[0];
+                    let d = d3.select(e.target).data()[0];
                     let key = d.source.name + " → " + d.target.name;
                     let amount = formatAbbreviation(d.value);
                     showDetail(e, key, amount, null, null)
                 }
-                // else if (e.target.nodeName == 'rect' && e.target.className.animVal != 'bar') {
-                //     var d = d3.select(e.target).data()[0];
-                //     let key = d.name;
-                //     let amount = formatAbbreviation(d.value);
-                //     showDetail(e, key, amount, null, null)
-                // }
+                else if (e.target.nodeName == 'rect' && e.target.className.animVal != 'bar') {
+                    let d = d3.select(e.target).data()[0];
+                    let key = d.name;
+                    let amount = formatAbbreviation(d.value);
+                    showDetail(e, key, amount, null, null)
+                }
             });
     
             document.body.addEventListener('mouseout', function(e) {
@@ -179,7 +179,7 @@ let tooltip = d3.select("body").append("div").style({
         let ndx = crossfilter(results);
 
         // define dimensions
-        var
+        let
             componentDim = ndx.dimension(function(d) {
                 return d.Component;
             }),
@@ -194,7 +194,7 @@ let tooltip = d3.select("body").append("div").style({
             });
 
         // group dimensions
-        var
+        let
             amountByComponent = componentDim.group().reduceSum(function(d) {
                 return Math.round(+d.Value);
             }),
@@ -232,7 +232,7 @@ let tooltip = d3.select("body").append("div").style({
 
         componentSelect.on('filtered', function(chart,filter) {
             if (filter != null && steps.length < 4) {
-                steps.push('InvestmentName');
+                steps.push( { "name": "InvestmentName", "label": "Investment Name" } );
                 p = 0.85;
             } else if (filter == null) {
                 steps.pop();
@@ -300,8 +300,8 @@ let tooltip = d3.select("body").append("div").style({
 
         for (let i = 0; i < steps.length - 1; i++) {
 
-            let sg = steps[i];
-            let tg = steps[i + 1];
+            let sg = steps[i].name;
+            let tg = steps[i + 1].name;
             let relations = d3.nest()
                 .key(function(d) {
                     return d[sg];
@@ -429,7 +429,7 @@ let tooltip = d3.select("body").append("div").style({
             })
             .style('font-weight', 'bold')
             .text(function(d) {
-                return d;
+                return d.label;
             });
         
         // Exit

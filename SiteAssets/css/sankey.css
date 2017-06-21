@@ -1,5 +1,5 @@
 .node rect {
-    cursor: pointer;
+    /*cursor: pointer;*/
     fill-opacity: .9;
     shape-rendering: crispEdges;
 }
