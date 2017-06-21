@@ -1,3 +1,7 @@
+"use strct";
+
+const fiscalYear = 2017; // default year for sankey
+
 let width;
 // create spinner
 let target = d3.select("#dashboard").node();
@@ -119,7 +123,8 @@ let tooltip = d3.select("body").append("div").style({
     let sankey = d3.sankey()
         .nodeWidth(12)
         .nodePadding(2)
-        .size([width, height]);
+        .size([width, height])
+        ;
 
     let path = sankey.link();
     
@@ -172,9 +177,6 @@ let tooltip = d3.select("body").append("div").style({
             return d;
         });
 
-        // set sankey graph
-        let graph = transformToGraph(results);
-
         // set crossfilter
         let ndx = crossfilter(results);
 
@@ -186,11 +188,8 @@ let tooltip = d3.select("body").append("div").style({
             yearDim = ndx.dimension(function(d) {
                 return d.Year;
             }),
-            businessDim = ndx.dimension(function(d) {
-                return d.BusinessArea;
-            }),
-            categoryDim = ndx.dimension(function(d) {
-                return d.Category;
+            sankeyDim = ndx.dimension(function(d) {
+                return d.Component;
             });
 
         // group dimensions
@@ -243,7 +242,7 @@ let tooltip = d3.select("body").append("div").style({
             bindHover();
             renderLabels();
         });
-
+        
         // menuselect
         yearSelect
             .dimension(yearDim)
@@ -251,18 +250,23 @@ let tooltip = d3.select("body").append("div").style({
             // .filterDisplayed(function () {
             //     return true;
             // })
-            .multiple(false)
-            .numberVisible(null)
+            // .multiple(false)
+            // .numberVisible(null)
             // .order(function (a,b) {
             //     return a.key > b.key ? 1 : b.key > a.key ? -1 : 0;
             // })
             .title(function(d) {
                 return d.key;
             })
-            .promptText('All Years')
-            .promptValue(null);
+            .promptText(null)
+            // .promptValue(null)
+            ;
 
         yearSelect.on('pretransition', function(chart) {
+            // remove empty option
+            // console.log(chart.select("select option:nth-child(1)").value)
+            // chart.select("select option:nth-child(1)").remove();  
+            
             // add styling to select input
             d3.select('#years').classed('dc-chart', false);
             chart.select('select').classed('w3-form', true);
@@ -273,6 +277,11 @@ let tooltip = d3.select("body").append("div").style({
             renderSankey(datum);
             bindHover();
         });
+        
+        yearSelect.filter(fiscalYear);
+
+        // set sankey graph data
+        let graph = transformToGraph(sankeyDim.top(Infinity));
 
         dc.renderAll();
         renderSankey(graph);
@@ -503,7 +512,7 @@ let tooltip = d3.select("body").append("div").style({
         sankey
             .nodes(graph.nodes)
             .links(graph.links)
-            .layout(32);
+            .layout(36);
 
         // Draw the links
         let links = linksGroup.selectAll(".link")
