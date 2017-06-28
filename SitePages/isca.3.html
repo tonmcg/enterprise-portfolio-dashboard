@@ -22,22 +22,12 @@
     <link href="../SiteAssets/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css">
     <!-- SharePoint Core JavaScript -->
     <SharePoint:ScriptLink name="clientforms.js" runat="server" LoadAfterUI="true" Localizable="false"></SharePoint:ScriptLink>
-    <!-- jQuery -->
-    <script src="../SiteAssets/js/jquery.min.js" type="text/javascript"></script>
     <!-- D3 -->
     <script charset="utf-8" src="../SiteAssets/js/d3.min.js" type="text/javascript"></script>
     <!-- Crossfilter -->
     <script src="../SiteAssets/js/crossfilter.min.js" type="text/javascript"></script>
     <!-- DC.js -->
     <script type="text/javascript" src="../SiteAssets/js/dc.2.1.0-dev.min.js"></script>
-    <!-- SheetJS -->
-    <script async src="../SiteAssets/js/xlsx.core.min.js" type="text/javascript"></script>
-    <!-- SheetJS -->
-    <script async src="../SiteAssets/js/Blob.js" type="text/javascript"></script>
-    <!-- SheetJS -->
-    <script async src="../SiteAssets/js/FileSaver.js" type="text/javascript"></script>
-    <!-- SheetJS -->
-    <script async src="../SiteAssets/js/Export2Excel.js" type="text/javascript"></script>
     <!-- Spin.js -->
     <script src="../SiteAssets/js/spin.min.js" type="text/javascript"></script>
     <!-- Colorbrewer -->
@@ -94,9 +84,10 @@
             <!--</a>-->
         </div>
         <!-- End Collapsible Sidebar -->
+
         <!-- Main Content -->
         <div id="main" class="w3-main" style="margin-left:200px">
-        <!--<div class="w3-main" style="margin-left:200px">-->
+
             <!-- Header -->
             <header class="w3-padding-8">
                 <a class="w3-button w3-white w3-xlarge w3-hide-large" onclick="javascript:w3_open()">☰</a>
@@ -119,24 +110,17 @@
                                 </div>
                                 <div class="w3-col l3">
                                     <div>
-                                        <h5 class="w3-text-uppercase">Data generated</h5>
-                                        <div class="dc-chart">
-                                            <span id="dateHeader" class="w3-xlarge"></span>
-                                        </div>
+                                        <h5 class="w3-text-uppercase"></h5>
                                     </div>
                                 </div>
                                 <div class="w3-col l2">
                                     <div>
-                                        <!--<h5 class="w3-text-uppercase" id="total-spend-header">Total IT Spend</h5>-->
-                                        <!--<div id="total-spend" class="w3-xlarge"></div>-->
+                                        <h5 class="w3-text-uppercase"></h5>
                                     </div>
                                 </div>
                                 <div class="w3-col l3">
                                     <div>
-                                        <!--<h5 class="w3-text-uppercase" id="filter-count-header">Selected Investments</h5>-->
-                                        <!--<div class="dc-chart" id="data-count">-->
-                                        <!--    <span class="filter-count w3-xlarge"></span> investments-->
-                                        <!--</div>-->
+                                        <h5 class="w3-text-uppercase"></h5>
                                     </div>
                                 </div>
                                 <!-- .w3-col l3 -->
@@ -203,7 +187,7 @@
                                 <div class="w3-container w3-card-4 w3-white" id="barChart2">
                                     <!-- Header -->
                                     <header class="w3-padding-4">
-                                        <h4 class="title">Infrastructure Groups
+                                        <h4 class="title">Infrastructure Categories
                                         </h4>
                                         <p class="category">
                                         </p>
@@ -235,7 +219,7 @@
                                 <div class="w3-container w3-card-4 w3-white" id="barChart3">
                                     <!-- Header -->
                                     <header class="w3-padding-4">
-                                        <h4 class="title">Solutions Groups
+                                        <h4 class="title">Solutions Categories
                                         </h4>
                                         <p class="category">
                                         </p>

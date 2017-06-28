@@ -24,7 +24,7 @@ var treeMapWidth = document.querySelector('#treeMap footer').offsetWidth - 16;
 // https://bost.ocks.org/mike/treemap/
 
 // Define the hierarchical categories of the sankey
-let steps = ["BusinessArea", "Category", "Service"];
+let hierarchy = ["BusinessArea", "Category", "Service"];
 
 var margin = {top: 20, right: 0, bottom: 0, left: 0},
     width = 960,
@@ -285,96 +285,41 @@ function createViz(error, data) {
 // inspired by DensityDesign Lab raw.js functions by Giorgio Caviglia, Michele Mauri, Giorgio Uboldi, Matteo Azzi
 // http://app.rawgraphs.io/
 function transformToGraph(data) {
+    
+    var root = { children : [] };
+    data.forEach(function (d){
 
-    let d = {
-        nodes: [],
-        links: []
-    };
+        if (!hierarchy) return root;
 
-    if (!steps || steps.length < 2) return d;
-
-    let n = [],
-        l = [],
-        si, ti;
-
-    for (let i = 0; i < steps.length - 1; i++) {
-
-        let sg = steps[i];
-        let tg = steps[i + 1];
-        let relations = d3.nest()
-            .key(function(d) {
-                return d[sg];
-            })
-            .key(function(d) {
-                return d[tg];
-            })
-            .entries(data);
-
-        relations.forEach(function(s) {
-            si = getNodeIndex(n, s.key, sg);
-
-            if (si == -1) {
-                n.push({
-                    name: s.key,
-                    group: sg
-                });
-                si = n.length - 1;
-            }
-
-            s.values.forEach(function(t) {
-                ti = getNodeIndex(n, t.key, tg);
-                if (ti == -1) {
-                    n.push({
-                        name: t.key,
-                        group: tg
-                    });
-                    ti = n.length - 1;
-                }
-                let value = d3.sum(t.values, function(d) {
-                    return d.Value;
-                });
-                let link = {
-                    source: n[si],
-                    target: n[ti],
-                    value: value
-                };
-                l.push(link);
-            });
+        let values = hierarchy.map(function(g) {
+            return d[g];    
         });
-    }
-    d.nodes = n.sort(customSort);
-    l.forEach(function(d) {
-        d.source = n.indexOf(d.source);
-        d.target = n.indexOf(d.target);
-    });
-    d.links = l;
+        
+        var leaf = seek(root, values, hierarchy);
+        if(leaf === false || !leaf) return;
 
-    function customSort(a, b) {
-        let Item1 = a.group;
-        let Item2 = b.group;
-        if (Item1 != Item2) {
-            return (Item1.localeCompare(Item2));
-        }
-        else {
-            return (a.name.localeCompare(b.name));
-        }
+        if (!leaf.size) leaf.size = 0;
+        leaf.size += +d.Value;
+
+        delete leaf.children;
+      });
+      return root;
     }
 
-    function getNodeIndex(array, name, group) {
-        for (let i in array) {
-            let a = array[i];
-            if (a['name'] == name && a['group'] == group) {
-                return i;
-            }
-        }
-        return -1;
+    function seek(root, path, classes) {
+      if (path.length < 1) return false;
+      if (!root.children) root.children = [];
+      var p = root.children.filter(function (d){ return d.name == path[0]; })[0];
+
+      if (!p) {
+        if( /\S/.test(path[0]) ) {
+          p = { name: path[0], class:classes[0], children:[]};
+          root.children.push(p);
+        } else p = root;
+      }
+      if (path.length == 1) return p;
+      else return seek(p, path.slice(1), classes.slice(1));
     }
-
-    return d;
-
-}
-
-
 
 // var chartWidth = treeMapWidth;
 // var chartHeight = treeMapHeight;
