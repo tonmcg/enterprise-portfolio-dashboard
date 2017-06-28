@@ -203,8 +203,8 @@ let tooltip = d3.select("body").append("div").style({
             .title(function(d) {
                 return d.key;
             })
-            // .promptText('2017')
-            .promptValue(2017);
+            .promptText(null)
+            .promptValue(null);
 
         yearSelect.on('pretransition', function(chart) {
             // add Bootstrap styling to select input
