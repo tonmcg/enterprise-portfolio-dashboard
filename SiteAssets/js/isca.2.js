@@ -135,7 +135,7 @@ let tooltip = d3.select("body").append("div").style({
         // define dimensions
         var
             treemapDim = ndx.dimension(function(d) {
-                return [d.Service, d.Category, d.BusinessArea];
+                return [d.InvestmentName, d.Service, d.Category, d.BusinessArea];
             }),
             timeDim = ndx.dimension(function(d) {
                 return d.Year;
@@ -260,6 +260,9 @@ let tooltip = d3.select("body").append("div").style({
             .group(amountByInvestmentByCategory)
             .ordinalColors(colorbrewer.Paired[9])
             .keyAccessor([
+                function(d) {
+                    return d.key[3];
+                },
                 function(d) {
                     return d.key[2];
                 },

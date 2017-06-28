@@ -13,7 +13,7 @@ let tooltip = d3.select("body").append("div").style({
 
 (function() {
     "use strict";
-    
+
     // define data
     const columns = [{
         "label": "Year",
@@ -108,16 +108,16 @@ let tooltip = d3.select("body").append("div").style({
         // define mouseover and mouseout events
         function bindHover() {
             document.body.addEventListener('mousemove', function(e) {
-                if (e.target.className.animVal == 'rect') {
+                if (e.target.className.animVal == 'bar') {
                     let d = d3.select(e.target).data()[0];
-                    let key = 'Year: ' + d.layer + '<br>' + d.data.key;
+                    let key = d.layer + '<br>' + d.data.key;
                     let amount = formatAbbreviation(d.data.value);
                     showDetail(e, key, amount, null, null)
                 }
             });
 
             document.body.addEventListener('mouseout', function(e) {
-                if (e.target.className.animVal == 'link' || e.target.nodeName == 'rect') hideDetail();
+                if (e.target.nodeName == 'rect') hideDetail();
             });
         }
 
