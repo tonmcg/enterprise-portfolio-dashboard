@@ -52,6 +52,8 @@ let tooltip = d3.select("body").append("div").style({"position": "absolute","z-i
 // trigger loader
 let spinner = new Spinner(opts).spin(target);
 
+let test = '';
+        
 function createViz(error, data) {
 
     if (error) throw error;
@@ -83,11 +85,15 @@ function createViz(error, data) {
     };
     
     // data preparation
-    
-    let results = data.value.map(function(d) {
-        d.Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-        return d;
-    });
+    let results = [];
+    if (!test) {
+        results = data.value;
+    } else {
+        results = data.value.map(function(d) {
+            d.Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            return d;
+        });
+    }
 
     // set crossfilter
     let ndx = crossfilter(results);
@@ -1108,7 +1114,6 @@ function createViz(error, data) {
 // if not, the endpoint will point to a json file
 function getData() {
 
-    let test = '';
     let siteUrl = '';
     let cols = [];
     let expand = '';
