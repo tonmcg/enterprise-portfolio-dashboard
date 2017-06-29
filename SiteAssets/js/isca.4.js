@@ -450,6 +450,16 @@ let tooltip = d3.select("body").append("div").style({
     
     function renderSankey(graph) {
         
+        // the function for moving the nodes
+          function dragmove(d) {
+            d3.select(this).attr("transform", 
+                "translate(" + d.x + "," + (
+                        d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                    ) + ")");
+            sankey.relayout();
+            links.attr("d", path);
+          }
+
         // Returns an event handler for fading a given chord group.
         // http://bl.ocks.org/mbostock/4062006
         function fade(opacity) {
@@ -555,6 +565,12 @@ let tooltip = d3.select("body").append("div").style({
             .attr("width", sankey.nodeWidth())
             .style('fill','#ccc')
             .append("title");
+            
+        nodes.call(d3.behavior.drag()
+          .origin(function(d) { return d; })
+          .on("dragstart", function() { 
+    		  this.parentNode.appendChild(this); })
+          .on("drag", dragmove));
 
         nodes.append("text")
             .attr("dy", ".35em")
