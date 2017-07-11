@@ -159,6 +159,16 @@ function hideDetail() {
     return tooltip.style("visibility", "hidden");
 }
 
+// switch between tabs
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("view");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(tabName).style.display = "block";  
+}
+
 // open and close sidebar on browser resize
 function w3_open() {
     document.getElementById('portSidebar').style.display = 'block';

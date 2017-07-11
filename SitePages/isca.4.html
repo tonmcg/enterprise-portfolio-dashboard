@@ -96,9 +96,10 @@
         </div>
         <!-- End Collapsible Sidebar -->
 
+
         <!-- Main Content -->
         <div id="main" class="w3-main" style="margin-left:200px">
-
+        
             <!-- Header -->
             <header class="w3-padding-8">
                 <a class="w3-button w3-white w3-xlarge w3-hide-large" onclick="javascript:w3_open()">☰</a>
@@ -149,28 +150,48 @@
                     <!-- container -->
                     <div class="w3-container w3-padding-4">
 
-                        <!-- treemap -->
+                        <!-- sankey -->
                         <div id="sankey" class="w3-row-padding">
                             <div class="w3-col l12">
                                 <div class="w3-container w3-card-4 w3-white">
 
                                     <!-- Header -->
                                     <header class="w3-padding-4">
-                                        <h4 class="title">Department of Justice ISCA Spending</h4>
+                                        <h4 class="title">Department of Justice Investment Service Category Apportionment Spending</h4>
                                         <p class="category">
                                         </p>
                                     </header>
                                     <!-- End Header -->
+                                    
+                                    <div class="w3-bar w3-indigo">
+                                      <a class="w3-bar-item w3-button" onclick="javascript:openTab('Hierarchy')">Hierarchy</a>
+                                      <a class="w3-bar-item w3-button" onclick="javascript:openTab('Trend')">Trend</a>
+                                      <a class="w3-bar-item w3-button" onclick="javascript:openTab('Flow')">Flow</a>
+                                    </div>                                    
 
-                                    <!-- Chart -->
-                                    <div id="component" class="scaling-svg-container"></div>
-                                    <!-- #component -->
+                                    <div id="Hierarchy" class="w3-container w3-display-container view">
+                                      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright"></span>
+                                        <!-- Chart -->
+                                        <div id="hierarchy" class="scaling-svg-container"></div>
+                                        <!-- #component -->
+                                        <!-- Footer -->
+                                        <footer class="w3-padding-4">
+                                            <div><i class="fa fa-history"></i><span class="w3-small">Total amount of yearly IT spend in dollars. Click on a box to filter by a component. Click on the box again to reset the chart. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC)</span></div>
+                                        </footer>
+                                        <!-- End Footer -->
+                                    </div>
 
-                                    <!-- Footer -->
-                                    <footer class="w3-padding-4">
-                                        <div><i class="fa fa-history"></i><span class="w3-small">Total amount of yearly IT spend in dollars. Click on a box to filter by a component. Click on the box again to reset the chart. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC)</span></div>
-                                    </footer>
-                                    <!-- End Footer -->
+                                    <div id="Trend" class="w3-container w3-display-container view">
+                                      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright"></span>
+                                        <!-- Chart -->
+                                        <div id="trend" class="scaling-svg-container"></div>
+                                        <!-- #component -->
+                                        <!-- Footer -->
+                                        <footer class="w3-padding-4">
+                                            <div><i class="fa fa-history"></i><span class="w3-small">Total amount of yearly IT spend in dollars. Click on a box to filter by a component. Click on the box again to reset the chart. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC)</span></div>
+                                        </footer>
+                                        <!-- End Footer -->
+                                    </div>
 
                                 </div>
                                 <!-- /.w3-container w3-card-4 w3-white -->

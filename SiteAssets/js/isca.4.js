@@ -112,7 +112,7 @@ let tooltip = d3.select("body").append("div").style({
     let steps = [{ "name": "BusinessArea", "label": "Business Area"}, { "name": "Category", "label": "Category" }, { "name": "Service", "label": "Service"  }];
 
     // append the svg canvas to the page
-    let svg = d3.select("#component").append("svg")
+    let svg = d3.select("#hierarchy").append("svg")
         .attr("width", width + margins.left + margins.right)
         .attr("height", height + margins.top + margins.bottom)
         .append("g")
