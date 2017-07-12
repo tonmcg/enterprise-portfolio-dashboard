@@ -259,6 +259,7 @@ let tooltip = d3.select("body").append("div").style({
             .dimension(treemapDim)
             .group(amountByInvestmentByCategory)
             .ordinalColors(colorbrewer.Paired[9])
+            // .ordinalColors(d3.range(d3.scale.category20()))
             .keyAccessor([
                 function(d) {
                     return d.key[3];
@@ -276,6 +277,7 @@ let tooltip = d3.select("body").append("div").style({
             .valueAccessor(function(d) {
                 return d.value;
             })
+            
             .margins({
                 top: margins.top,
                 right: margins.right,

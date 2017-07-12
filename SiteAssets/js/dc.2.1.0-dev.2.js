@@ -11406,7 +11406,7 @@
                 _y = d3.scale.linear().domain([0, 1]);
 
             // Options
-            var _rootName = 'Root',
+            var _rootName = 'Department of Justice Investment Service Category Apportionment',
                 _mode = 'squarify',
                 _breadcrumbHeight = 20,
                 _breadcrumbColor = 'rgb(224, 224, 224)',

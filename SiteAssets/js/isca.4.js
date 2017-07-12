@@ -627,7 +627,9 @@ let tooltip = d3.select("body").append("div").style({
             })
             .style('fill','#000000')
             .text(function(d) {
-                if (d.value > quantile || (d.x < width / 2)) {
+                // if (d.value > quantile || (d.x < width / 2)) {
+                if (d.dy > 25) { // arbitrary number of <rect> height
+                console.log(d.name + " " + d.dy);
                     return d.name;
                 }
                 else {

@@ -17,7 +17,7 @@
     
 }
 
-.tooltip.right::before{
+.tooltip.bottom::before{
     content:'';
     display:block;
     width:0;
@@ -26,11 +26,10 @@
 
     opacity: .9;
     border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left:8px solid #333;
-    right:-8px;
+    border-bottom: 8px solid #333;
+    border-left:8px solid transparent;
     
-    top:35px; /* arbitrarily set */
+    bottom:35px; /* arbitrarily set */
 }
 .tooltip.left::before{
     content:'';
@@ -41,8 +40,7 @@
 
     opacity: .9;
     border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    left:-8px;
-    border-right:8px solid #333;
-    top:35px; /* arbitrarily set */
+    border-bottom: 8px solid #333;
+    border-right:8px solid transparent;
+    bottom:35px; /* arbitrarily set */
 }

@@ -139,7 +139,8 @@ function showDetail(event, key, amount, count, percent) {
         notClassed = 'right';
     }
     
-    y_hover = (document.body.clientHeight - event.pageY < (tooltipHeight + 4)) ? event.pageY - (tooltipHeight + 4) : event.pageY - tooltipHeight / 2;
+    // y_hover = (document.body.clientHeight - event.pageY < (tooltipHeight + 4)) ? event.pageY - (tooltipHeight + 4) : event.pageY - tooltipHeight / 2;
+    y_hover = (document.body.clientHeight - event.pageY < (tooltipHeight + 4)) ? event.pageY - (tooltipHeight - 40) : event.pageY - tooltipHeight - 40;
 
     return tooltip
         .classed(classed,true)
