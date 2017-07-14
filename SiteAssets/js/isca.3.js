@@ -344,20 +344,16 @@ let tooltip = d3.select("body").append("div").style({
             .x(d3.scale.ordinal().domain(years))
             .elasticX(false)
             .xUnits(dc.units.ordinal)
-            // .barPadding(0.15)
-            // .legend(dc.legend().x(width * 3.25).y(height / 6).itemHeight(18).gap(6))
-            .legend(dc.legend().x(barChartWidth - legendOffset).horizontal(true))
             .margins({
-                top: margins.top,
-                right: margins.right,
-                bottom: margins.bottom,
-                left: margins.left + 50
+                top: margins.top  * 1.5,
+                right: margins.right * 1.5,
+                bottom: margins.bottom * 1.5,
+                left: (margins.left + 50) * 2
             })
             .renderLabel(false)
             .renderTitle(false)
             .renderHorizontalGridLines(true)
             .elasticY(true)
-            .yAxisLabel("Total Value")
             .yAxis().ticks(Math.max(barChart1Height / 50, 2)).tickFormat(function(d) {
                 return formatAbbreviation(d);
             });
@@ -392,19 +388,16 @@ let tooltip = d3.select("body").append("div").style({
             .elasticX(false)
             .xUnits(dc.units.ordinal)
             // .barPadding(0.15)
-            // .legend(dc.legend().x(width * 3.25).y(height / 6).itemHeight(18).gap(6))
-            .legend(dc.legend().x(barChartWidth - legendOffset).horizontal(true))
             .margins({
-                top: margins.top,
-                right: margins.right,
-                bottom: margins.bottom,
-                left: margins.left + 50
+                top: margins.top * 1.5,
+                right: margins.right * 1.5,
+                bottom: margins.bottom * 1.5,
+                left: (margins.left + 50) * 2
             })
             .renderLabel(false)
             .renderTitle(false)
             .renderHorizontalGridLines(true)
             .elasticY(true)
-            .yAxisLabel("Total Value")
             .yAxis().ticks(Math.max(barChart1Height / 50, 2)).tickFormat(function(d) {
                 return formatAbbreviation(d);
             });

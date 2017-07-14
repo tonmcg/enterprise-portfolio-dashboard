@@ -643,7 +643,7 @@ function createViz(error, dataSet) {
                 });
                 // cells.text('');
                 cells.data(projectArray).append('a').attr('href', function(d) {
-                    return 'https://itim.doj.gov/itdashboard/_layouts/15/FormServer.aspx?XmlLocation=/itdashboard/StatusReport/' + fiscalYear + selectedMonth + '-' + d + '.xml&ClientInstalled=true&DefaultItemOpen=1&Source=https://itim.doj.gov/itdashboard/StatusReport/Forms/AllItems.aspx';
+                    return 'https://itim.doj.gov/itdashboard/_layouts/15/FormServer.html?XmlLocation=/itdashboard/StatusReport/' + fiscalYear + selectedMonth + '-' + d + '.xml&ClientInstalled=true&DefaultItemOpen=1&Source=https://itim.doj.gov/itdashboard/StatusReport/Forms/AllItems.html';
                 }).text(function(d) {
                     return d;
                 });

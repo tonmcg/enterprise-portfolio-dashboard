@@ -84,7 +84,7 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="w3-bar-item w3-button dropbtn">
                         <i class="pe-7s-graph1"></i>
-                        <p>ISCA Views</p>
+                        <p>Service Spend Alignment</p>
                     </a>
                     <div class="dropdown-content">
                         <a href="isca.2.html">Hierarchy</a>
@@ -95,6 +95,7 @@
             </ul>
         </div>
         <!-- End Collapsible Sidebar -->
+
 
 
         <!-- Main Content -->
@@ -150,18 +151,18 @@
                     <!-- container -->
                     <div class="w3-container w3-padding-4">
 
-                        <div class="w3-bar w3-indigo">
-                            <a class="w3-bar-item w3-button" onclick="javascript:openTab('Hierarchy')">Hierarchy</a>
-                            <a class="w3-bar-item w3-button" onclick="javascript:openTab('Trend')">Trend</a>
-                            <a class="w3-bar-item w3-button" onclick="javascript:openTab('Flow')">Flow</a>
-                        </div>
-    
                         <!-- sankey -->
                         <div id="sankey" class="w3-row-padding">
                             <div class="w3-col l12">
                                 <div class="w3-container w3-card-4 w3-white">
 
-                                    <div id="Hierarchy" class="w3-container w3-display-container view">
+                                    <div class="w3-bar w3-indigo">
+                                        <a class="w3-bar-item w3-button" onclick="javascript:openTab('Flow')">Flow</a>
+                                        <a class="w3-bar-item w3-button" onclick="javascript:openTab('Trend')">Trend</a>
+                                        <a class="w3-bar-item w3-button" onclick="javascript:openTab('Hierarchy')">Hierarchy</a>
+                                    </div>
+                
+                                    <div id="Flow" class="w3-container w3-display-container view">
                                         <!-- Header -->
                                         <header class="w3-padding-4">
                                             <h4 class="title">Department of Justice Investment Service Category Apportionment Spending</h4>
@@ -172,7 +173,7 @@
 
                                         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright"></span>
                                         <!-- Chart -->
-                                        <div id="hierarchy" class="scaling-svg-container"></div>
+                                        <div id="flow" class="scaling-svg-container"></div>
                                         <!-- #component -->
                                         <!-- Footer -->
                                         <footer class="w3-padding-4">
@@ -194,11 +195,13 @@
                                     <div id="Trend" class="w3-container w3-display-container view">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright"></span>
                                         <!-- Chart -->
-                                        <div id="trend" class="scaling-svg-container"></div>
+                                        <div id="trend" class="scaling-svg-container">
+                                            <img src="../SiteAssets/img/trend.png" style="width:100%;vertical-align:initial;margin-bottom:15px" />
+                                        </div>
                                         <!-- #component -->
                                         <!-- Footer -->
                                         <footer class="w3-padding-4">
-                                            <div><i class="fa fa-history"></i><span class="w3-small">Total amount of yearly IT spend in dollars. Click on a box to filter by a component. Click on the box again to reset the chart. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC)</span></div>
+                                            <div><i class="fa fa-history"></i><span class="w3-small">Yo amount of yearly IT spend in dollars. Click on a box to filter by a component. Click on the box again to reset the chart. <em>Source</em>: Electronic Capital Planning and Investment Control (eCPIC)</span></div>
                                         </footer>
                                         <!-- End Footer -->
                                     </div>
@@ -213,10 +216,12 @@
                             <div class="w3-col l12">
                                 <div class="w3-container w3-card-4 w3-white">
 
-                                    <div id="Flow" class="w3-container w3-display-container view">
+                                    <div id="Hierarchy" class="w3-container w3-display-container view">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright"></span>
                                         <!-- Chart -->
-                                        <div id="flow" class="scaling-svg-container"></div>
+                                        <div id="hierarchy" class="scaling-svg-container">
+                                            <img src="../SiteAssets/img/hierarchy.png" style="width:100%;vertical-align:initial;margin-bottom:15px" />
+                                        </div>
                                         <!-- #component -->
                                         <!-- Footer -->
                                         <footer class="w3-padding-4">
