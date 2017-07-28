@@ -11512,7 +11512,7 @@
              */
             function name(node) {
                 return node.parent ?
-                    name(node.parent) + '.' + node.key :
+                    name(node.parent) + ' → ' + node.key :
                     node.key;
             }
 

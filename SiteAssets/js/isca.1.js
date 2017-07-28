@@ -836,18 +836,23 @@ function getData() {
     var expand = '';
     var filter = '';
     var top = '';
+    var instrg = 0;
 
-    // test if on SharePoint
-    try {
-        if (typeof _spPageContextInfo !== undefined) {
-            siteUrl = _spPageContextInfo.webAbsoluteUrl;
-            test = false;
+        // test if on SharePoint
+        try {
+            instrg = _spPageContextInfo.webAbsoluteUrl.indexOf('itim');
+            if (typeof _spPageContextInfo !== undefined &&  instrg > 0) {
+                siteUrl = _spPageContextInfo.webAbsoluteUrl;
+                test = false;
+            } else {
+                siteUrl = undefined;
+                test = true;
+            }
         }
-    }
-    catch (e) {
-        siteUrl = undefined;
-        test = true;
-    }
+        catch (e) {
+            siteUrl = undefined;
+            test = true;
+        }
 
     function callData(siteUrl, type, title, columns, expand, filter, top) {
 
@@ -864,7 +869,7 @@ function getData() {
 
         }
         else {
-            url = "../SiteAssets/data/" + title + ".json";
+            url = instrg == 0 ? "../SiteAssets/data/" + title + ".json" : "../SiteAssets/data/" + title + ".js";
             endpoint = d3.json(url);
         }
 

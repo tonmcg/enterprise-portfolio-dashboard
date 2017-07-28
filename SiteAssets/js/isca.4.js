@@ -658,10 +658,11 @@ let tooltip = d3.select("body").append("div").style({
         let expand = '';
         let filter = '';
         let top = '';
+        let instrg = 0;
 
         // test if on SharePoint
         try {
-            if (typeof _spPageContextInfo !== undefined) {
+            if (typeof _spPageContextInfo !== undefined && _spPageContextInfo.webAbsoluteUrl.indexOf('itim') > 0) {
                 siteUrl = _spPageContextInfo.webAbsoluteUrl;
                 test = false;
             }
@@ -687,7 +688,7 @@ let tooltip = d3.select("body").append("div").style({
 
             }
             else {
-                url = "../SiteAssets/data/" + title + ".json";
+                url = instrg == 0 ? "../SiteAssets/data/" + title + ".json" : "../SiteAssets/data/" + title + ".js";
                 endpoint = d3.json(url);
             }
 

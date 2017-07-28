@@ -1312,12 +1312,17 @@ function getData() {
     let expand = '';
     let filter = '';
     let top = '';
+    var instrg = 0;
 
     // test if on SharePoint
     try {
-        if (typeof _spPageContextInfo !== undefined) {
+        instrg = _spPageContextInfo.webAbsoluteUrl.indexOf('itim');
+        if (typeof _spPageContextInfo !== undefined &&  instrg > 0) {
             siteUrl = _spPageContextInfo.webAbsoluteUrl;
             test = false;
+        } else {
+            siteUrl = undefined;
+            test = true;
         }
     }
     catch (e) {
@@ -1327,21 +1332,20 @@ function getData() {
 
     function callData(siteUrl, type, title, columns, expand, filter, top) {
 
-        let url = "",
+        var url = "",
             endpoint;
 
         if (!test) {
-            if (type !== 'web') {
-                url = siteUrl + "/_api/web/lists/GetByTitle('" + title + "')/items?$select=" + columns + "&$expand=" + expand + "&$filter=" + filter + "&$top=" + top;
-            }
-            else {
-                url = siteUrl + "/_api/web/" + title;
-            }
+        	if (type !== 'web') {
+            	url = siteUrl + "/_api/web/lists/GetByTitle('" + title + "')/items?$select=" + columns + "&$expand=" + expand + "&$filter=" + filter + "&$top=" + top;
+        	} else {
+        		url = siteUrl + "/_api/web/" + title;
+        	}
             endpoint = d3.json(url).header("accept", "application/json;odata=nometadata");
 
         }
         else {
-            url = "../SiteAssets/data/" + title + ".json";
+            url = instrg == 0 ? "../SiteAssets/data/" + title + ".json" : "../SiteAssets/data/" + title + ".js";
             endpoint = d3.json(url);
         }
 
